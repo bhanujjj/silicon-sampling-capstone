@@ -3,13 +3,26 @@
 from typing import Optional
 
 
-def format_p0_control() -> str:
-    """P0: No demographics (control condition)."""
+def format_p0_control(**_ignored) -> str:
+    """P0: No demographics (control condition).
+
+    build_prompt() always forwards the full **demographics dict to whichever
+    template function is selected, so P0 -- the one condition that discards
+    demographics by design -- must still accept and ignore those kwargs.
+    """
     return "Please answer the following survey question:"
 
 
-def format_p1_minimal(age: Optional[int] = None, sex: Optional[str] = None, region: Optional[str] = None) -> str:
-    """P1: Minimal demographics (age, sex, region only)."""
+def format_p1_minimal(
+    age: Optional[int] = None, sex: Optional[str] = None, region: Optional[str] = None, **_ignored
+) -> str:
+    """P1: Minimal demographics (age, sex, region only).
+
+    build_prompt() forwards the full ~14-key demographics dict to whichever
+    condition is selected; P1 deliberately uses only 3 of those keys, so it
+    must accept (and drop) the rest via **_ignored -- same fix as P0 needed
+    after it crashed on its first-ever real run.
+    """
     demo_parts = []
 
     if age is not None:
@@ -79,8 +92,13 @@ def format_p3_naturalistic(
     urban_rural: Optional[str] = None,
     education: Optional[str] = None,
     religion: Optional[str] = None,
+    **_ignored,
 ) -> str:
-    """P3: Full naturalistic backstory (Argyle-style first-person prose)."""
+    """P3: Full naturalistic backstory (Argyle-style first-person prose).
+
+    Uses 7 of the ~14 demographics keys build_prompt() forwards; **_ignored
+    drops the rest instead of crashing (same bug class as P0/P1).
+    """
     # Build a narrative persona based on demographics
     gender_pronoun = "I'm a woman" if sex == "Female" else "I'm a man" if sex == "Male" else "I'm a person"
     age_desc = f"{age} years old" if age else "in my working years"

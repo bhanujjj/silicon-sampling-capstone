@@ -28,7 +28,17 @@ dependencies = [
     "matplotlib>=3.8",
     "tqdm>=4.66",
     "pydantic>=2.0",
+    "pypdf>=4.0",  # parses the WVS-7 codebook PDF into item metadata
+    "requests>=2.28",  # src/inference/groq.py calls Groq's REST API directly
 ]
+
+[tool.hatch.build.targets.wheel]
+# hatchling can't infer what to ship from a name/directory mismatch: the
+# package name below is "silicon-sampling-india" but the actual code lives
+# in src/ as a set of top-level modules (config.py, data/, eval/, ...), not
+# a src/silicon_sampling_india/ directory. This was causing `uv sync` to
+# fail outright with "unable to determine which files to ship".
+packages = ["src"]
 
 [project.optional-dependencies]
 dev = [

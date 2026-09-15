@@ -35,9 +35,18 @@ class NationalMarginalBaseline:
     def __init__(self):
         self.marginal = None
 
-    def fit(self, y_true: np.ndarray):
-        """Fit the marginal distribution from training data."""
-        counts = np.bincount(y_true)
+    def fit(self, y_true: np.ndarray, weights: np.ndarray = None):
+        """Fit the marginal distribution from training data.
+
+        Pass W_WEIGHT here: the "national marginal" is a population-level
+        claim, so it should be survey-weighted even though respondent-level
+        predictions (this baseline's own .predict(), and any LLM's) are not.
+        """
+        n_bins = int(y_true.max()) + 1
+        if weights is None:
+            counts = np.bincount(y_true, minlength=n_bins)
+        else:
+            counts = np.bincount(y_true, weights=weights, minlength=n_bins)
         self.marginal = counts / counts.sum()
 
     def predict_proba(self, n_samples: int) -> np.ndarray:
@@ -172,9 +181,18 @@ def evaluate_all_baselines(
     df_test: pd.DataFrame,
     y_col: str = "answer",
     demo_cols: List[str] = None,
+    weight_col: str = None,
+    matched_demo_cols: List[str] = None,
 ) -> Dict[str, Dict]:
     """
     Evaluate all baseline models on test set.
+
+    `demo_cols` drives cell_lookup (kept low-dimensional -- with the full
+    14-attribute LLM feature set almost every cell would be a singleton on
+    ~1.5k respondents, turning "lookup" into memorization). `matched_demo_cols`,
+    when given, is used for the supervised baselines (logistic/gbm) instead,
+    added as extra "logistic_matched"/"gbm_matched" entries -- this is the
+    baseline that actually gets the same information the LLM's P2 prompt did.
 
     Returns: {
         "uniform": {"accuracy": ..., "mae": ..., ...},
@@ -182,6 +200,8 @@ def evaluate_all_baselines(
         "cell_lookup": {...},
         "logistic": {...},
         "gbm": {...},
+        "logistic_matched": {...},  # only if matched_demo_cols given
+        "gbm_matched": {...},       # only if matched_demo_cols given
     }
     """
     if demo_cols is None:
@@ -198,9 +218,11 @@ def evaluate_all_baselines(
     probs = baseline_uniform.predict_proba(len(y_test))
     results["uniform"] = compute_metrics(y_test, y_pred, probs)
 
-    # 2. National marginal
+    # 2. National marginal -- survey-weighted, since this is the one baseline
+    # standing in for a population-level claim rather than a per-respondent one
     baseline_marginal = NationalMarginalBaseline()
-    baseline_marginal.fit(df_train[y_col].values)
+    weights = df_train[weight_col].values if weight_col else None
+    baseline_marginal.fit(df_train[y_col].values, weights=weights)
     y_pred = baseline_marginal.predict(len(y_test))
     probs = baseline_marginal.predict_proba(len(y_test))
     results["marginal"] = compute_metrics(y_test, y_pred, probs)
@@ -225,6 +247,22 @@ def evaluate_all_baselines(
     y_pred = baseline_gbm.predict(df_test)
     probs = baseline_gbm.predict_proba(df_test)
     results["gbm"] = compute_metrics(y_test, y_pred, probs)
+
+    # 6/7. Matched-feature supervised baselines -- same demographic attributes
+    # the LLM's P2 prompt actually saw, for a fair "did the LLM beat a model
+    # with equal information" comparison.
+    if matched_demo_cols:
+        baseline_logistic_m = SupervisedClassifierBaseline("logistic")
+        baseline_logistic_m.fit(df_train, y_col, matched_demo_cols)
+        y_pred = baseline_logistic_m.predict(df_test)
+        probs = baseline_logistic_m.predict_proba(df_test)
+        results["logistic_matched"] = compute_metrics(y_test, y_pred, probs)
+
+        baseline_gbm_m = SupervisedClassifierBaseline("gbm")
+        baseline_gbm_m.fit(df_train, y_col, matched_demo_cols)
+        y_pred = baseline_gbm_m.predict(df_test)
+        probs = baseline_gbm_m.predict_proba(df_test)
+        results["gbm_matched"] = compute_metrics(y_test, y_pred, probs)
 
     logger.info("\n=== BASELINE RESULTS ===")
     for baseline_name, metrics in results.items():

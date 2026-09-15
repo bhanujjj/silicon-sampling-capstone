@@ -1,76 +1,9 @@
-# Data (WVS is not redistributable)
-data/raw/
-# Keep processed data for reference (but not raw data)
 data/processed/*.parquet
-data/processed/*.csv
-
-# Cache & inference results
-results/
-*.cache
-.cache/
-
-# Python
+data/raw/*
+!data/raw/.gitkeep
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Notebooks
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Kaggle credentials
-kaggle.json
-kaggle/
-
-# Weights & checkpoints
-*.pt
-*.pth
-*.bin
-checkpoints/
-models/
-
-# Logs
-*.log
-logs/
-
-# Paper builds
-paper/build/
-paper/*.aux
-paper/*.out
-paper/*.bbl
-paper/*.blg
-paper/*.fdb_latexmk
-paper/*.fls
+*.pyc
+trackB_run/
+trackB_run_smoketest/
+trackB_run.log
+trackB_status.json

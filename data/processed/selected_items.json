@@ -1,0 +1,2789 @@
+{
+  "selected_items": [
+    "Q170",
+    "Q4",
+    "Q133",
+    "Q31",
+    "Q169",
+    "Q29",
+    "Q32",
+    "Q231",
+    "Q137",
+    "Q160",
+    "Q161",
+    "Q162",
+    "Q225",
+    "Q72",
+    "Q109",
+    "Q252",
+    "Q50",
+    "Q142",
+    "Q30",
+    "Q130",
+    "Q198",
+    "Q67",
+    "Q71",
+    "Q35",
+    "Q69",
+    "Q132",
+    "Q199",
+    "Q66",
+    "Q108",
+    "Q63",
+    "Q247",
+    "Q33",
+    "Q107",
+    "Q62",
+    "Q143",
+    "Q248",
+    "Q201",
+    "Q136",
+    "Q61",
+    "Q121",
+    "Q163",
+    "Q135",
+    "Q119",
+    "Q251",
+    "Q235",
+    "Q234A",
+    "Q76",
+    "Q176",
+    "Q110",
+    "Q205",
+    "Q28",
+    "Q48",
+    "Q54",
+    "Q159",
+    "Q227",
+    "Q73",
+    "Q3",
+    "Q134",
+    "Q49",
+    "Q171",
+    "Q148",
+    "Q70",
+    "Q106",
+    "Q241",
+    "Q244",
+    "Q120",
+    "Q229",
+    "Q224",
+    "Q158",
+    "Q37",
+    "Q230",
+    "Q53",
+    "Q115",
+    "Q118",
+    "Q146",
+    "Q147",
+    "Q116",
+    "Q233",
+    "Q74",
+    "Q232",
+    "Q60",
+    "Q172",
+    "Q114",
+    "Q195",
+    "Q190",
+    "Q59",
+    "Q208",
+    "Q112",
+    "Q113",
+    "Q202",
+    "Q164",
+    "Q253",
+    "Q34",
+    "Q47",
+    "Q138",
+    "Q207",
+    "Q51",
+    "Q46",
+    "Q2",
+    "Q185",
+    "Q55",
+    "Q243",
+    "Q75",
+    "Q238",
+    "Q78",
+    "Q206",
+    "Q249",
+    "Q131",
+    "Q184",
+    "Q52",
+    "Q6",
+    "Q177",
+    "Q250",
+    "Q188",
+    "Q41",
+    "Q203",
+    "Q204",
+    "Q196",
+    "Q39",
+    "Q40",
+    "Q65",
+    "Q178",
+    "Q64",
+    "Q257",
+    "Q256",
+    "Q186",
+    "Q38",
+    "Q234",
+    "Q183",
+    "Q180",
+    "Q189",
+    "Q5",
+    "Q191",
+    "Q181",
+    "Q193",
+    "Q187",
+    "Q192",
+    "Q194",
+    "Q179",
+    "Q255",
+    "Q27",
+    "Q254",
+    "Q58",
+    "Q1"
+  ],
+  "n_items": 144,
+  "n_candidates_evaluated": 373,
+  "criteria": {
+    "max_missingness_pct": 10,
+    "min_entropy": 0.15,
+    "min_scale_size": 4,
+    "excluded_items": {
+      "Q144": "Factual/behavioural recall (crime victimisation), not a values or attitude item",
+      "Q152": "Nominal: unordered first-choice among national aims",
+      "Q153": "Nominal: unordered second-choice among national aims",
+      "Q154": "Nominal: unordered first-choice among respondent aims",
+      "Q155": "Nominal: unordered second-choice among respondent aims",
+      "Q156": "Nominal: unordered first-choice among societal goals",
+      "Q157": "Nominal: unordered second-choice among societal goals",
+      "Q221": "Mixed scale: code 4 ('Not allowed to vote') is an eligibility category, not a frequency level",
+      "Q222": "Mixed scale: code 4 ('Not allowed to vote') is an eligibility category, not a frequency level"
+    },
+    "demographic_block_excluded": "Q260-Q290 (prompt conditioning variables)"
+  },
+  "rejection_ledger": {
+    "no_codebook_entry": 20,
+    "demographic_block": 40,
+    "derived_variant": 13,
+    "manually_excluded": 9,
+    "scale_too_small": 83,
+    "non_ordinal_codes": 1,
+    "observed_off_scale": 0,
+    "high_missingness": 63,
+    "low_entropy": 0
+  },
+  "item_details": [
+    {
+      "question_id": "Q170",
+      "title": "The only acceptable religion  is my religion",
+      "block": "religious_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 4.91,
+      "modal_entropy": 0.9988,
+      "scale_entropy": 0.9988,
+      "scale_labels": {
+        "1": "Strongly agree",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q4",
+      "title": "Important in life: Politics",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.84,
+      "modal_entropy": 0.9976,
+      "scale_entropy": 0.9976,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    },
+    {
+      "question_id": "Q133",
+      "title": "Frequency in your neighborhood: Alcohol consumed in the streets",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.59,
+      "modal_entropy": 0.9948,
+      "scale_entropy": 0.9948,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q31",
+      "title": "Men make better business executives than women do",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.84,
+      "modal_entropy": 0.9946,
+      "scale_entropy": 0.9946,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q169",
+      "title": "Whenever science and religion conflict,  religion is always right",
+      "block": "religious_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.38,
+      "modal_entropy": 0.9942,
+      "scale_entropy": 0.9942,
+      "scale_labels": {
+        "1": "Strongly agree",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q29",
+      "title": "Men make better political leaders than women do",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 5.08,
+      "modal_entropy": 0.9922,
+      "scale_entropy": 0.9922,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q32",
+      "title": "Being a housewife just as fulfilling",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.21,
+      "modal_entropy": 0.992,
+      "scale_entropy": 0.992,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q231",
+      "title": "How often in country´s elections: Voters are threatened with  violence at the polls",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.8,
+      "modal_entropy": 0.9841,
+      "scale_entropy": 0.9841,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q137",
+      "title": "Frequency in your neighborhood: Street violence and fights",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.36,
+      "modal_entropy": 0.9818,
+      "scale_entropy": 0.9818,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q160",
+      "title": "We depend too much on science and not enough on faith",
+      "block": "science_tech",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 5.32,
+      "modal_entropy": 0.98,
+      "scale_entropy": 0.98,
+      "scale_labels": {
+        "1": "Completely disagree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely agree"
+      }
+    },
+    {
+      "question_id": "Q161",
+      "title": "One of the bad effects of science is that it breaks down people’s ideas of right and",
+      "block": "science_tech",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 7.86,
+      "modal_entropy": 0.9785,
+      "scale_entropy": 0.9785,
+      "scale_labels": {
+        "1": "Completely disagree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely agree"
+      }
+    },
+    {
+      "question_id": "Q162",
+      "title": "It is not important for me to know about science in my daily life",
+      "block": "science_tech",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 6.44,
+      "modal_entropy": 0.9758,
+      "scale_entropy": 0.9758,
+      "scale_labels": {
+        "1": "Completely disagree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely agree"
+      }
+    },
+    {
+      "question_id": "Q225",
+      "title": "How often in country´s elections: Opposition candidates are prevented from",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 7.03,
+      "modal_entropy": 0.9745,
+      "scale_entropy": 0.9745,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q72",
+      "title": "Confidence: The Political Parties",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.66,
+      "modal_entropy": 0.9732,
+      "scale_entropy": 0.9732,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q109",
+      "title": "Competition good or harmful",
+      "block": "economic_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 4.73,
+      "modal_entropy": 0.9663,
+      "scale_entropy": 0.9663,
+      "scale_labels": {
+        "1": "Competition is good",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Competition is harmful"
+      }
+    },
+    {
+      "question_id": "Q252",
+      "title": "Satisfaction with the political system performance",
+      "block": "political_culture",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 5.02,
+      "modal_entropy": 0.9642,
+      "scale_entropy": 0.9642,
+      "scale_labels": {
+        "1": "Not satisfied at all",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely satisfied"
+      }
+    },
+    {
+      "question_id": "Q50",
+      "title": "Satisfaction with financial situation of household",
+      "block": "happiness_wellbeing",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.47,
+      "modal_entropy": 0.9604,
+      "scale_entropy": 0.9604,
+      "scale_labels": {
+        "1": "Dissatisfied",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Satisfied"
+      }
+    },
+    {
+      "question_id": "Q142",
+      "title": "Worries: Losing my job or not finding a job",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.97,
+      "modal_entropy": 0.96,
+      "scale_entropy": 0.96,
+      "scale_labels": {
+        "1": "Very much",
+        "2": "A great deal",
+        "3": "Not much",
+        "4": "Not at all"
+      }
+    },
+    {
+      "question_id": "Q30",
+      "title": "University is more important for a boy than for a girl",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.07,
+      "modal_entropy": 0.9597,
+      "scale_entropy": 0.9597,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q130",
+      "title": "Immigration policy preference",
+      "block": "migration",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 7.86,
+      "modal_entropy": 0.9585,
+      "scale_entropy": 0.9585,
+      "scale_labels": {
+        "1": "Let anyone come who wants to",
+        "2": "Let people come as long as there are jobs available",
+        "3": "Place strict limits on the number of foreigners who can come here",
+        "4": "Prohibit people coming here from other countries"
+      }
+    },
+    {
+      "question_id": "Q198",
+      "title": "Government has the right: Collect information about anyone living in this",
+      "block": "ethical_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 7.62,
+      "modal_entropy": 0.9585,
+      "scale_entropy": 0.9585,
+      "scale_labels": {
+        "1": "Definitely should have the right",
+        "2": "Probably should have the right",
+        "3": "Probably should not have the right",
+        "4": "Definitely should not have the right"
+      }
+    },
+    {
+      "question_id": "Q67",
+      "title": "Confidence: Television",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.84,
+      "modal_entropy": 0.9584,
+      "scale_entropy": 0.9584,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q71",
+      "title": "Confidence: The Government",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.01,
+      "modal_entropy": 0.958,
+      "scale_entropy": 0.958,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q35",
+      "title": "Problem if women have more income than husband",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 2.07,
+      "modal_entropy": 0.9544,
+      "scale_entropy": 0.9544,
+      "scale_labels": {
+        "1": "Strongly agree",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      }
+    },
+    {
+      "question_id": "Q69",
+      "title": "Confidence: The Police",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.65,
+      "modal_entropy": 0.9529,
+      "scale_entropy": 0.9529,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q132",
+      "title": "Frequency in your neighborhood: Robberies",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.35,
+      "modal_entropy": 0.9514,
+      "scale_entropy": 0.9514,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q199",
+      "title": "Interest in politics",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.77,
+      "modal_entropy": 0.9512,
+      "scale_entropy": 0.9512,
+      "scale_labels": {
+        "1": "Very interested",
+        "2": "Somewhat interested",
+        "3": "Not very interested",
+        "4": "Not at all interested"
+      }
+    },
+    {
+      "question_id": "Q66",
+      "title": "Confidence: The Press",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 4.85,
+      "modal_entropy": 0.9504,
+      "scale_entropy": 0.9504,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q108",
+      "title": "Government´s vs individual´s responsibility",
+      "block": "economic_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.3,
+      "modal_entropy": 0.9492,
+      "scale_entropy": 0.9492,
+      "scale_labels": {
+        "1": "The government should take more responsibility to ensure that everyone is",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "People should take more responsibility to provide for themselves"
+      }
+    },
+    {
+      "question_id": "Q63",
+      "title": "Trust: People of another nationality",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 8.51,
+      "modal_entropy": 0.9487,
+      "scale_entropy": 0.9487,
+      "scale_labels": {
+        "1": "Trust completely",
+        "2": "Trust somewhat",
+        "3": "Do not trust very much",
+        "4": "Do not trust at all"
+      }
+    },
+    {
+      "question_id": "Q247",
+      "title": "Democracy: The state makes people´s incomes equal",
+      "block": "political_culture",
+      "n_scale": 11,
+      "n_observed_categories": 11,
+      "missingness_pct": 8.75,
+      "modal_entropy": 0.9479,
+      "scale_entropy": 0.9479,
+      "scale_labels": {
+        "0": "It is against democracy (spontaneous)",
+        "1": "Not an essential characteristic of democracy",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "An essential characteristic of democracy"
+      }
+    },
+    {
+      "question_id": "Q33",
+      "title": "Jobs scarce: Men should have more right to a job than wome n",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 1.77,
+      "modal_entropy": 0.9435,
+      "scale_entropy": 0.9435,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      }
+    },
+    {
+      "question_id": "Q107",
+      "title": "Private vs state ownership of business",
+      "block": "economic_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.54,
+      "modal_entropy": 0.9433,
+      "scale_entropy": 0.9433,
+      "scale_labels": {
+        "1": "Private ownership of business should be increased",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Government ownership of business should be increased"
+      }
+    },
+    {
+      "question_id": "Q62",
+      "title": "Trust: People of another religion",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.95,
+      "modal_entropy": 0.942,
+      "scale_entropy": 0.942,
+      "scale_labels": {
+        "1": "Trust completely",
+        "2": "Trust somewhat",
+        "3": "Do not trust very much",
+        "4": "Do not trust at all"
+      }
+    },
+    {
+      "question_id": "Q143",
+      "title": "Worries: Not being able to give one´s children a good education",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 8.22,
+      "modal_entropy": 0.9411,
+      "scale_entropy": 0.9411,
+      "scale_labels": {
+        "1": "Very much",
+        "2": "A great deal",
+        "3": "Not much",
+        "4": "Not at all"
+      }
+    },
+    {
+      "question_id": "Q248",
+      "title": "Democracy: People obey their rulers",
+      "block": "political_culture",
+      "n_scale": 11,
+      "n_observed_categories": 11,
+      "missingness_pct": 7.15,
+      "modal_entropy": 0.9407,
+      "scale_entropy": 0.9407,
+      "scale_labels": {
+        "0": "It is against democracy (spontaneous)",
+        "1": "Not an essential characteristic of democracy",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "An essential characteristic of democracy"
+      }
+    },
+    {
+      "question_id": "Q201",
+      "title": "Information source: Daily newspaper",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 1.65,
+      "modal_entropy": 0.9393,
+      "scale_entropy": 0.9393,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q136",
+      "title": "Frequency in your neighborhood: Drug sale in streets",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.78,
+      "modal_entropy": 0.9392,
+      "scale_entropy": 0.9392,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q61",
+      "title": "Trust: People you meet for the first time",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.36,
+      "modal_entropy": 0.9383,
+      "scale_entropy": 0.9383,
+      "scale_labels": {
+        "1": "Trust completely",
+        "2": "Trust somewhat",
+        "3": "Do not trust very much",
+        "4": "Do not trust at all"
+      }
+    },
+    {
+      "question_id": "Q121",
+      "title": "Impact of immigrants on the development of the country",
+      "block": "migration",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 8.69,
+      "modal_entropy": 0.9378,
+      "scale_entropy": 0.9378,
+      "scale_labels": {
+        "1": "Rather bad",
+        "2": "Quite bad",
+        "3": "Neither good, nor bad",
+        "4": "Quite good",
+        "5": "Very good"
+      }
+    },
+    {
+      "question_id": "Q163",
+      "title": "The world is better off, or worse off, because of science and technology",
+      "block": "science_tech",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 3.31,
+      "modal_entropy": 0.9373,
+      "scale_entropy": 0.9373,
+      "scale_labels": {
+        "1": "A lot worse off",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "A lot better off"
+      }
+    },
+    {
+      "question_id": "Q135",
+      "title": "Frequency in your neighborhood: Racist behavior",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.77,
+      "modal_entropy": 0.9333,
+      "scale_entropy": 0.9333,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q119",
+      "title": "Degree of agreement: On the whole, women are less corrupt than men",
+      "block": "corruption",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 4.2,
+      "modal_entropy": 0.928,
+      "scale_entropy": 0.928,
+      "scale_labels": {
+        "0": "Hard to say",
+        "1": "Strongly agree",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q251",
+      "title": "How democratically is this country being governed today",
+      "block": "political_culture",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 6.38,
+      "modal_entropy": 0.9257,
+      "scale_entropy": 0.9257,
+      "scale_labels": {
+        "1": "Not at all democratic",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely democratic"
+      }
+    },
+    {
+      "question_id": "Q235",
+      "title": "Political system: Having a strong leader who does not have to bother with",
+      "block": "political_culture",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 9.57,
+      "modal_entropy": 0.9247,
+      "scale_entropy": 0.9247,
+      "scale_labels": {
+        "1": "Very good",
+        "2": "Fairly good",
+        "3": "Fairly bad",
+        "4": "Very bad"
+      }
+    },
+    {
+      "question_id": "Q234A",
+      "title": "How much the political system allows people to have a say",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 6.15,
+      "modal_entropy": 0.9237,
+      "scale_entropy": 0.9237,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "A lot",
+        "3": "Some",
+        "4": "Very little",
+        "5": "Not at all"
+      }
+    },
+    {
+      "question_id": "Q76",
+      "title": "Confidence: Election",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.96,
+      "modal_entropy": 0.9209,
+      "scale_entropy": 0.9209,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q176",
+      "title": "Degree of agreement: Nowadays one often has trouble deciding which moral rules",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 8.51,
+      "modal_entropy": 0.918,
+      "scale_entropy": 0.918,
+      "scale_labels": {
+        "1": "Completely agree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely disagree"
+      }
+    },
+    {
+      "question_id": "Q110",
+      "title": "Success: hard work vs luck",
+      "block": "economic_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.19,
+      "modal_entropy": 0.9107,
+      "scale_entropy": 0.9107,
+      "scale_labels": {
+        "1": "In the long run, hard work usually brings a better life",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Hard work doesn´t generally bring success - it´s more a matter of luck and"
+      }
+    },
+    {
+      "question_id": "Q205",
+      "title": "Information source: Email",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 7.39,
+      "modal_entropy": 0.9103,
+      "scale_entropy": 0.9103,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q28",
+      "title": "Pre-school child suffers with working mother",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.24,
+      "modal_entropy": 0.9102,
+      "scale_entropy": 0.9102,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q48",
+      "title": "How much freedom of choice and control",
+      "block": "happiness_wellbeing",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.65,
+      "modal_entropy": 0.9099,
+      "scale_entropy": 0.9099,
+      "scale_labels": {
+        "1": "None at all",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "A great deal"
+      }
+    },
+    {
+      "question_id": "Q54",
+      "title": "Frequency you/family (last 12 month): Gone without a cash income",
+      "block": "happiness_wellbeing",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.24,
+      "modal_entropy": 0.909,
+      "scale_entropy": 0.909,
+      "scale_labels": {
+        "1": "Often",
+        "2": "Sometimes",
+        "3": "Rarely",
+        "4": "Never"
+      }
+    },
+    {
+      "question_id": "Q159",
+      "title": "Because of science and technology, there will be more opportunities for the next",
+      "block": "science_tech",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 4.43,
+      "modal_entropy": 0.9073,
+      "scale_entropy": 0.9073,
+      "scale_labels": {
+        "1": "Completely disagree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely agree"
+      }
+    },
+    {
+      "question_id": "Q227",
+      "title": "How often in country´s elections: Voters are bribed",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 5.97,
+      "modal_entropy": 0.9071,
+      "scale_entropy": 0.9071,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q73",
+      "title": "Confidence: Parliament",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 8.39,
+      "modal_entropy": 0.906,
+      "scale_entropy": 0.906,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q3",
+      "title": "Important in life: Leisure time",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.77,
+      "modal_entropy": 0.9029,
+      "scale_entropy": 0.9029,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    },
+    {
+      "question_id": "Q134",
+      "title": "Frequency in your neighborhood: Police or military interfere with people’s private",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.25,
+      "modal_entropy": 0.9014,
+      "scale_entropy": 0.9014,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q49",
+      "title": "Satisfaction with your life",
+      "block": "happiness_wellbeing",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.24,
+      "modal_entropy": 0.9001,
+      "scale_entropy": 0.9001,
+      "scale_labels": {
+        "1": "Completely dissatisfied",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely satisfied"
+      }
+    },
+    {
+      "question_id": "Q171",
+      "title": "How often do you attend religious services",
+      "block": "religious_values",
+      "n_scale": 7,
+      "n_observed_categories": 7,
+      "missingness_pct": 0.71,
+      "modal_entropy": 0.8979,
+      "scale_entropy": 0.8979,
+      "scale_labels": {
+        "1": "More than once a week",
+        "2": "Once a week",
+        "3": "Once a month",
+        "4": "Only on special holy days",
+        "5": "Once a year",
+        "6": "Less often",
+        "7": "Never, practically never"
+      }
+    },
+    {
+      "question_id": "Q148",
+      "title": "Worries: A civil war",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.74,
+      "modal_entropy": 0.8972,
+      "scale_entropy": 0.8972,
+      "scale_labels": {
+        "1": "Very much",
+        "2": "A great deal",
+        "3": "Not much",
+        "4": "Not at all"
+      }
+    },
+    {
+      "question_id": "Q70",
+      "title": "Confidence: Justice System/Courts",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.77,
+      "modal_entropy": 0.8969,
+      "scale_entropy": 0.8969,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q106",
+      "title": "Income equality vs larger income differences",
+      "block": "economic_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.42,
+      "modal_entropy": 0.8914,
+      "scale_entropy": 0.8914,
+      "scale_labels": {
+        "1": "Incomes more equal",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Larger income differences"
+      }
+    },
+    {
+      "question_id": "Q241",
+      "title": "Democracy: Governments tax the rich and subsidize the poor",
+      "block": "political_culture",
+      "n_scale": 11,
+      "n_observed_categories": 11,
+      "missingness_pct": 5.38,
+      "modal_entropy": 0.8886,
+      "scale_entropy": 0.8886,
+      "scale_labels": {
+        "0": "It is against democracy (spontaneous)",
+        "1": "Not an essential characteristic of democracy",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "An essential characteristic of democracy"
+      }
+    },
+    {
+      "question_id": "Q244",
+      "title": "Democracy: People receive state aid for unemployment",
+      "block": "political_culture",
+      "n_scale": 11,
+      "n_observed_categories": 11,
+      "missingness_pct": 5.2,
+      "modal_entropy": 0.8873,
+      "scale_entropy": 0.8873,
+      "scale_labels": {
+        "0": "It is against democracy (spontaneous)",
+        "1": "Not an essential characteristic of democracy",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "An essential characteristic of democracy"
+      }
+    },
+    {
+      "question_id": "Q120",
+      "title": "Risk to be held accountable for giving or receiving a bribe",
+      "block": "corruption",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.42,
+      "modal_entropy": 0.8848,
+      "scale_entropy": 0.8848,
+      "scale_labels": {
+        "1": "No risk at all",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Very high risk"
+      }
+    },
+    {
+      "question_id": "Q229",
+      "title": "How often in country´s elections: Election officials are fai r",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 8.63,
+      "modal_entropy": 0.8804,
+      "scale_entropy": 0.8804,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q224",
+      "title": "How often in country´s elections: Votes are counted fairly",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.91,
+      "modal_entropy": 0.8733,
+      "scale_entropy": 0.8733,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q158",
+      "title": "Science and technology are making our lives healthier, easier, and more",
+      "block": "science_tech",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.96,
+      "modal_entropy": 0.8728,
+      "scale_entropy": 0.8728,
+      "scale_labels": {
+        "1": "Completely disagree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Completely agree"
+      }
+    },
+    {
+      "question_id": "Q37",
+      "title": "Duty towards society to have children",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 4.08,
+      "modal_entropy": 0.8704,
+      "scale_entropy": 0.8704,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      }
+    },
+    {
+      "question_id": "Q230",
+      "title": "How often in country´s elections: Rich people buy elections",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 7.15,
+      "modal_entropy": 0.8673,
+      "scale_entropy": 0.8673,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q53",
+      "title": "Frequency you/family (last 12 month): Gone without needed medicine or treatment",
+      "block": "happiness_wellbeing",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.18,
+      "modal_entropy": 0.8672,
+      "scale_entropy": 0.8672,
+      "scale_labels": {
+        "1": "Often",
+        "2": "Sometimes",
+        "3": "Rarely",
+        "4": "Never"
+      }
+    },
+    {
+      "question_id": "Q115",
+      "title": "Involved in corruption: Local authorities",
+      "block": "corruption",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 4.49,
+      "modal_entropy": 0.8649,
+      "scale_entropy": 0.8649,
+      "scale_labels": {
+        "1": "None of them",
+        "2": "Few of them",
+        "3": "Most of them",
+        "4": "All of them"
+      }
+    },
+    {
+      "question_id": "Q118",
+      "title": "Frequency ordinary people pay a bribe, give a gift or do a favor to local",
+      "block": "corruption",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.96,
+      "modal_entropy": 0.8641,
+      "scale_entropy": 0.8641,
+      "scale_labels": {
+        "1": "Never",
+        "2": "Rarely",
+        "3": "Frequently",
+        "4": "Always"
+      }
+    },
+    {
+      "question_id": "Q146",
+      "title": "Worries: A war involving my country",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.13,
+      "modal_entropy": 0.8641,
+      "scale_entropy": 0.8641,
+      "scale_labels": {
+        "1": "Very much",
+        "2": "A great deal",
+        "3": "Not much",
+        "4": "Not at all"
+      }
+    },
+    {
+      "question_id": "Q147",
+      "title": "Worries: A terrorist attack",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.78,
+      "modal_entropy": 0.8623,
+      "scale_entropy": 0.8623,
+      "scale_labels": {
+        "1": "Very much",
+        "2": "A great deal",
+        "3": "Not much",
+        "4": "Not at all"
+      }
+    },
+    {
+      "question_id": "Q116",
+      "title": "Involved in corruption: Civil service providers",
+      "block": "corruption",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.72,
+      "modal_entropy": 0.8618,
+      "scale_entropy": 0.8618,
+      "scale_labels": {
+        "1": "None of them",
+        "2": "Few of them",
+        "3": "Most of them",
+        "4": "All of them"
+      }
+    },
+    {
+      "question_id": "Q233",
+      "title": "How often in country´s elections: Women have equal opportunities to run the office",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.56,
+      "modal_entropy": 0.8579,
+      "scale_entropy": 0.8579,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q74",
+      "title": "Confidence: The Civil Services",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 7.09,
+      "modal_entropy": 0.8556,
+      "scale_entropy": 0.8556,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q232",
+      "title": "How often in country´s elections: Voters are offered a genuine choice in the",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 5.61,
+      "modal_entropy": 0.8551,
+      "scale_entropy": 0.8551,
+      "scale_labels": {
+        "1": "Very often",
+        "2": "Fairly often",
+        "3": "Not often",
+        "4": "Not at all often"
+      }
+    },
+    {
+      "question_id": "Q60",
+      "title": "Trust: People you know personally",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.53,
+      "modal_entropy": 0.8541,
+      "scale_entropy": 0.8541,
+      "scale_labels": {
+        "1": "Trust completely",
+        "2": "Trust somewhat",
+        "3": "Do not trust very much",
+        "4": "Do not trust at all"
+      }
+    },
+    {
+      "question_id": "Q172",
+      "title": "How often to you pray",
+      "block": "religious_values",
+      "n_scale": 8,
+      "n_observed_categories": 8,
+      "missingness_pct": 0.35,
+      "modal_entropy": 0.8535,
+      "scale_entropy": 0.8535,
+      "scale_labels": {
+        "1": "Several times a day",
+        "2": "Once a day",
+        "3": "Several times each week",
+        "4": "Only when attending religious services",
+        "5": "Only on special holy days",
+        "6": "Once a year",
+        "7": "Less often",
+        "8": "Never, practically never"
+      }
+    },
+    {
+      "question_id": "Q114",
+      "title": "Involved in corruption: Business executives",
+      "block": "corruption",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 9.1,
+      "modal_entropy": 0.8529,
+      "scale_entropy": 0.8529,
+      "scale_labels": {
+        "1": "None of them",
+        "2": "Few of them",
+        "3": "Most of them",
+        "4": "All of them"
+      }
+    },
+    {
+      "question_id": "Q195",
+      "title": "Justifiable: Death penalty",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 3.96,
+      "modal_entropy": 0.8475,
+      "scale_entropy": 0.8475,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q190",
+      "title": "Justifiable: Parents beating children",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.35,
+      "modal_entropy": 0.844,
+      "scale_entropy": 0.844,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q59",
+      "title": "Trust: Your neighborhood",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.06,
+      "modal_entropy": 0.8424,
+      "scale_entropy": 0.8424,
+      "scale_labels": {
+        "1": "Trust completely",
+        "2": "Trust somewhat",
+        "3": "Do not trust very much",
+        "4": "Do not trust at all"
+      }
+    },
+    {
+      "question_id": "Q208",
+      "title": "Information source: Talk with friends or colleagues",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 2.19,
+      "modal_entropy": 0.8419,
+      "scale_entropy": 0.8419,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q112",
+      "title": "Perceptions of corruption in the country",
+      "block": "corruption",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 1.6,
+      "modal_entropy": 0.8417,
+      "scale_entropy": 0.8417,
+      "scale_labels": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    {
+      "question_id": "Q113",
+      "title": "Involved in corruption: State authorities",
+      "block": "corruption",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 3.55,
+      "modal_entropy": 0.8397,
+      "scale_entropy": 0.8397,
+      "scale_labels": {
+        "1": "None of them",
+        "2": "Few of them",
+        "3": "Most of them",
+        "4": "All of them"
+      }
+    },
+    {
+      "question_id": "Q202",
+      "title": "Information source: TV news",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 0.65,
+      "modal_entropy": 0.8198,
+      "scale_entropy": 0.8198,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q164",
+      "title": "Importance of God",
+      "block": "religious_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.71,
+      "modal_entropy": 0.8063,
+      "scale_entropy": 0.8063,
+      "scale_labels": {
+        "1": "Not at all important",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Very important"
+      }
+    },
+    {
+      "question_id": "Q253",
+      "title": "Respect for individual human rights nowadays",
+      "block": "political_culture",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 7.27,
+      "modal_entropy": 0.8031,
+      "scale_entropy": 0.8031,
+      "scale_labels": {
+        "1": "A great deal of respect",
+        "2": "Fairly much  respect",
+        "3": "Not much respect",
+        "4": "No respect at all"
+      }
+    },
+    {
+      "question_id": "Q34",
+      "title": "Jobs scarce: Employers should give priority to (nation) people than immigrants",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 3.31,
+      "modal_entropy": 0.8004,
+      "scale_entropy": 0.8004,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      }
+    },
+    {
+      "question_id": "Q47",
+      "title": "State of health (subjective)",
+      "block": "happiness_wellbeing",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 0.06,
+      "modal_entropy": 0.794,
+      "scale_entropy": 0.794,
+      "scale_labels": {
+        "1": "Very good",
+        "2": "Good",
+        "3": "Fair",
+        "4": "Poor",
+        "5": "Very poor"
+      }
+    },
+    {
+      "question_id": "Q138",
+      "title": "Frequency in your neighborhood: Sexual harassment",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 5.61,
+      "modal_entropy": 0.792,
+      "scale_entropy": 0.792,
+      "scale_labels": {
+        "1": "Very Frequently",
+        "2": "Quite frequently",
+        "3": "Not frequently",
+        "4": "Not at all frequently"
+      }
+    },
+    {
+      "question_id": "Q207",
+      "title": "Information source: Social media (Facebook, Twitter, etc.)",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 4.49,
+      "modal_entropy": 0.7801,
+      "scale_entropy": 0.7801,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q51",
+      "title": "Frequency you/family (last 12 month): Gone without enough food to eat",
+      "block": "happiness_wellbeing",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.12,
+      "modal_entropy": 0.7767,
+      "scale_entropy": 0.7767,
+      "scale_labels": {
+        "1": "Often",
+        "2": "Sometimes",
+        "3": "Rarely",
+        "4": "Never"
+      }
+    },
+    {
+      "question_id": "Q46",
+      "title": "Feeling of happiness",
+      "block": "happiness_wellbeing",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.35,
+      "modal_entropy": 0.7751,
+      "scale_entropy": 0.7751,
+      "scale_labels": {
+        "1": "Very happy",
+        "2": "Quite happy",
+        "3": "Not very happy",
+        "4": "Not at all happy"
+      }
+    },
+    {
+      "question_id": "Q2",
+      "title": "Important in life: Friends",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.47,
+      "modal_entropy": 0.7709,
+      "scale_entropy": 0.7709,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    },
+    {
+      "question_id": "Q185",
+      "title": "Justifiable: Divorce",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.42,
+      "modal_entropy": 0.7697,
+      "scale_entropy": 0.7697,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q55",
+      "title": "In the last 12 month, how often have you or your family: Gone without a safe shelter",
+      "block": "happiness_wellbeing",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.47,
+      "modal_entropy": 0.7635,
+      "scale_entropy": 0.7635,
+      "scale_labels": {
+        "1": "Often",
+        "2": "Sometimes",
+        "3": "Rarely",
+        "4": "Never"
+      }
+    },
+    {
+      "question_id": "Q243",
+      "title": "Democracy: People choose their leaders in free elections",
+      "block": "political_culture",
+      "n_scale": 11,
+      "n_observed_categories": 11,
+      "missingness_pct": 4.14,
+      "modal_entropy": 0.7616,
+      "scale_entropy": 0.7616,
+      "scale_labels": {
+        "0": "It is against democracy (spontaneous)",
+        "1": "Not an essential characteristic of democracy",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "An essential characteristic of democracy"
+      }
+    },
+    {
+      "question_id": "Q75",
+      "title": "Confidence: Universities",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 6.86,
+      "modal_entropy": 0.7468,
+      "scale_entropy": 0.7468,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q238",
+      "title": "Political system: Having a democratic political system",
+      "block": "political_culture",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 8.16,
+      "modal_entropy": 0.7433,
+      "scale_entropy": 0.7433,
+      "scale_labels": {
+        "1": "Very good",
+        "2": "Fairly good",
+        "3": "Fairly bad",
+        "4": "Very bad"
+      }
+    },
+    {
+      "question_id": "Q78",
+      "title": "Confidence: Banks",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.19,
+      "modal_entropy": 0.7422,
+      "scale_entropy": 0.7422,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q206",
+      "title": "Information source: Internet",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 4.43,
+      "modal_entropy": 0.7404,
+      "scale_entropy": 0.7404,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q249",
+      "title": "Democracy: Women have the same rights as men",
+      "block": "political_culture",
+      "n_scale": 11,
+      "n_observed_categories": 11,
+      "missingness_pct": 3.72,
+      "modal_entropy": 0.7348,
+      "scale_entropy": 0.7348,
+      "scale_labels": {
+        "0": "It is against democracy (spontaneous)",
+        "1": "Not an essential characteristic of democracy",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "An essential characteristic of democracy"
+      }
+    },
+    {
+      "question_id": "Q131",
+      "title": "Secure in neighborhood",
+      "block": "security",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.41,
+      "modal_entropy": 0.7337,
+      "scale_entropy": 0.7337,
+      "scale_labels": {
+        "1": "Very Secure",
+        "2": "Quite secure",
+        "3": "Not very secure",
+        "4": "Not at all secure"
+      }
+    },
+    {
+      "question_id": "Q184",
+      "title": "Justifiable: Abortion",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 5.79,
+      "modal_entropy": 0.7244,
+      "scale_entropy": 0.7244,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q52",
+      "title": "Frequency you/family (last 12 month): Felt unsafe from crime in your own home",
+      "block": "happiness_wellbeing",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.71,
+      "modal_entropy": 0.7181,
+      "scale_entropy": 0.7181,
+      "scale_labels": {
+        "1": "Often",
+        "2": "Sometimes",
+        "3": "Rarely",
+        "4": "Never"
+      }
+    },
+    {
+      "question_id": "Q6",
+      "title": "Important in life: Religion",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.83,
+      "modal_entropy": 0.716,
+      "scale_entropy": 0.716,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    },
+    {
+      "question_id": "Q177",
+      "title": "Justifiable: Claiming government benefits to which you are not entitled",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.42,
+      "modal_entropy": 0.7114,
+      "scale_entropy": 0.7114,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q250",
+      "title": "Importance of democracy",
+      "block": "political_culture",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 4.73,
+      "modal_entropy": 0.7078,
+      "scale_entropy": 0.7078,
+      "scale_labels": {
+        "1": "Not at all important",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Absolutely important"
+      }
+    },
+    {
+      "question_id": "Q188",
+      "title": "Justifiable: Euthanasia",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 6.97,
+      "modal_entropy": 0.7068,
+      "scale_entropy": 0.7068,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q41",
+      "title": "Work should  always come first even if it means less spare time",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 0.59,
+      "modal_entropy": 0.7011,
+      "scale_entropy": 0.7011,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      }
+    },
+    {
+      "question_id": "Q203",
+      "title": "Information source: Radio news",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 6.32,
+      "modal_entropy": 0.6878,
+      "scale_entropy": 0.6878,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q204",
+      "title": "Information source: Mobile phone",
+      "block": "political_participation",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 1.54,
+      "modal_entropy": 0.6841,
+      "scale_entropy": 0.6841,
+      "scale_labels": {
+        "1": "Daily",
+        "2": "Weekly",
+        "3": "Monthly",
+        "4": "Less than monthly",
+        "5": "Never"
+      }
+    },
+    {
+      "question_id": "Q196",
+      "title": "Government has the right: Keep people under video surveillance in public areas",
+      "block": "ethical_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.84,
+      "modal_entropy": 0.6811,
+      "scale_entropy": 0.6811,
+      "scale_labels": {
+        "1": "Definitely should have the right",
+        "2": "Probably should have the right",
+        "3": "Probably should not have the right",
+        "4": "Definitely should not have the right"
+      }
+    },
+    {
+      "question_id": "Q39",
+      "title": "People who don´t work turn lazy",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 0.59,
+      "modal_entropy": 0.6715,
+      "scale_entropy": 0.6715,
+      "scale_labels": {
+        "1": "Strongly agree",
+        "2": "Agree",
+        "3": "Neither agree or disagree",
+        "4": "Disagree",
+        "5": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q40",
+      "title": "Work is a duty towards society",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 1.18,
+      "modal_entropy": 0.6679,
+      "scale_entropy": 0.6679,
+      "scale_labels": {
+        "1": "Strongly agree",
+        "2": "Agree",
+        "3": "Neither agree or disagree",
+        "4": "Disagree",
+        "5": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q65",
+      "title": "Confidence: Armed Forces",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.95,
+      "modal_entropy": 0.6624,
+      "scale_entropy": 0.6624,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q178",
+      "title": "Justifiable: Avoiding a fare on public transport",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.41,
+      "modal_entropy": 0.6392,
+      "scale_entropy": 0.6392,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q64",
+      "title": "Confidence: Churches",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.53,
+      "modal_entropy": 0.6277,
+      "scale_entropy": 0.6277,
+      "scale_labels": {
+        "1": "A great deal",
+        "2": "Quite a lot",
+        "3": "Not very much",
+        "4": "None at all"
+      }
+    },
+    {
+      "question_id": "Q257",
+      "title": "Feel close to your country",
+      "block": "political_culture",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 1.0,
+      "modal_entropy": 0.6195,
+      "scale_entropy": 0.6195,
+      "scale_labels": {
+        "1": "Very close",
+        "2": "Close",
+        "3": "Not very close",
+        "4": "Not close at all"
+      }
+    },
+    {
+      "question_id": "Q256",
+      "title": "Feel close to your district, region",
+      "block": "political_culture",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.89,
+      "modal_entropy": 0.6169,
+      "scale_entropy": 0.6169,
+      "scale_labels": {
+        "1": "Very close",
+        "2": "Close",
+        "3": "Not very close",
+        "4": "Not close at all"
+      }
+    },
+    {
+      "question_id": "Q186",
+      "title": "Justifiable: Sex before marriage",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 4.61,
+      "modal_entropy": 0.5948,
+      "scale_entropy": 0.5948,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q38",
+      "title": "It is children duty to take care of ill parent",
+      "block": "social_values",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 0.53,
+      "modal_entropy": 0.5681,
+      "scale_entropy": 0.5681,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      }
+    },
+    {
+      "question_id": "Q234",
+      "title": "Some people think that having honest elections makes a lot of difference in their",
+      "block": "political_participation",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 4.55,
+      "modal_entropy": 0.5584,
+      "scale_entropy": 0.5584,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    },
+    {
+      "question_id": "Q183",
+      "title": "Justifiable: Prostitution",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 5.67,
+      "modal_entropy": 0.5519,
+      "scale_entropy": 0.5519,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q180",
+      "title": "Justifiable: Cheating on taxes",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 2.6,
+      "modal_entropy": 0.548,
+      "scale_entropy": 0.548,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q189",
+      "title": "Justifiable: For a man to beat his wife",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.77,
+      "modal_entropy": 0.5477,
+      "scale_entropy": 0.5477,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q5",
+      "title": "Important in life: Work",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.47,
+      "modal_entropy": 0.5359,
+      "scale_entropy": 0.5359,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    },
+    {
+      "question_id": "Q191",
+      "title": "Justifiable: Violence against other people",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 1.24,
+      "modal_entropy": 0.5307,
+      "scale_entropy": 0.5307,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q181",
+      "title": "Justifiable: Someone accepting a bribe in the course of their duties",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 1.24,
+      "modal_entropy": 0.5156,
+      "scale_entropy": 0.5156,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q193",
+      "title": "Justifiable: Having casual se x",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 6.8,
+      "modal_entropy": 0.5111,
+      "scale_entropy": 0.5111,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q187",
+      "title": "Justifiable: Suicide",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 1.42,
+      "modal_entropy": 0.5001,
+      "scale_entropy": 0.5001,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q192",
+      "title": "Justifiable: Terrorism as a political, ideological or religious mean",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 5.26,
+      "modal_entropy": 0.4947,
+      "scale_entropy": 0.4947,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q194",
+      "title": "Justifiable: Political violence",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 4.26,
+      "modal_entropy": 0.4875,
+      "scale_entropy": 0.4875,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q179",
+      "title": "Justifiable: Stealing property",
+      "block": "ethical_values",
+      "n_scale": 10,
+      "n_observed_categories": 10,
+      "missingness_pct": 0.53,
+      "modal_entropy": 0.4828,
+      "scale_entropy": 0.4828,
+      "scale_labels": {
+        "1": "Never justifiable",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Always justifiable"
+      }
+    },
+    {
+      "question_id": "Q255",
+      "title": "Feel close to your village, town or city",
+      "block": "political_culture",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.06,
+      "modal_entropy": 0.4467,
+      "scale_entropy": 0.4467,
+      "scale_labels": {
+        "1": "Very close",
+        "2": "Close",
+        "3": "Not very close",
+        "4": "Not close at all"
+      }
+    },
+    {
+      "question_id": "Q27",
+      "title": "One of main goals in life has been to make my parents proud",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 2.3,
+      "modal_entropy": 0.4416,
+      "scale_entropy": 0.4416,
+      "scale_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Disagree",
+        "4": "Strongly disagree"
+      }
+    },
+    {
+      "question_id": "Q254",
+      "title": "National pride",
+      "block": "political_culture",
+      "n_scale": 5,
+      "n_observed_categories": 5,
+      "missingness_pct": 1.77,
+      "modal_entropy": 0.4409,
+      "scale_entropy": 0.4409,
+      "scale_labels": {
+        "1": "Very proud",
+        "2": "Quite proud",
+        "3": "Not very proud",
+        "4": "Not at all proud",
+        "5": "I am not [nationality]"
+      }
+    },
+    {
+      "question_id": "Q58",
+      "title": "How much you trust: Your family",
+      "block": "social_capital_trust",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.06,
+      "modal_entropy": 0.3329,
+      "scale_entropy": 0.3329,
+      "scale_labels": {
+        "1": "Trust completely",
+        "2": "Trust somewhat",
+        "3": "Do not trust very much",
+        "4": "Do not trust at all"
+      }
+    },
+    {
+      "question_id": "Q1",
+      "title": "Important in life: Family",
+      "block": "social_values",
+      "n_scale": 4,
+      "n_observed_categories": 4,
+      "missingness_pct": 0.0,
+      "modal_entropy": 0.1797,
+      "scale_entropy": 0.1797,
+      "scale_labels": {
+        "1": "Very important",
+        "2": "Rather important",
+        "3": "Not very important",
+        "4": "Not at all important"
+      }
+    }
+  ],
+  "codebook_source": "WVS-7 Variables Report V6.0"
+}

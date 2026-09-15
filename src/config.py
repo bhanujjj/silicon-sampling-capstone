@@ -8,6 +8,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 DATA_RAW = DATA_DIR / "raw"
 DATA_PROCESSED = DATA_DIR / "processed"
+DATA_REFERENCE = DATA_DIR / "reference"  # Codebook-derived metadata (committed)
 RESULTS_DIR = PROJECT_ROOT / "results"
 PAPER_DIR = PROJECT_ROOT / "paper"
 DECK_DIR = PROJECT_ROOT / "deck"
@@ -20,6 +21,47 @@ WVS_INDIA_N = 1692  # Approximate; verify at download
 COUNTRY_CODE = "IND"
 WVS_WAVE = 7
 
+# The India survey was fielded 2022-2023 (completed July 2023) and only entered
+# the WVS-7 cross-national file at v6.0. Releases at v5.0 and earlier cover 64
+# countries and contain NO India rows -- see DATA_ACQUISITION.md.
+WVS_MIN_VERSION = "v6_0"
+
+# Filenames the WVS-7 cross-national zip unpacks to, best first. Both the
+# standard and the inverted-scale archives unpack to the same name, so the
+# filename alone cannot tell them apart.
+WVS_CSV_CANDIDATES = (
+    "WVS_Cross-National_Wave_7_csv_v6_0.csv",
+    "WVS_Cross-National_Wave_7_csv_v5_0.csv",  # no India; rejected downstream
+)
+
+
+def resolve_wvs_csv(data_raw: Path = DATA_RAW) -> Path:
+    """Locate the WVS-7 cross-national CSV in data/raw/.
+
+    Tries the known release filenames, then falls back to any CSV that looks
+    like a WVS cross-national extract, so a renamed download still works.
+
+    Raises:
+        FileNotFoundError: with download instructions if nothing matches.
+    """
+    for name in WVS_CSV_CANDIDATES:
+        candidate = data_raw / name
+        if candidate.exists():
+            return candidate
+
+    loose = sorted(p for p in data_raw.glob("*.csv") if "Cross-National" in p.name)
+    if loose:
+        return loose[0]
+
+    raise FileNotFoundError(
+        f"No WVS-7 cross-national CSV found in {data_raw}/\n"
+        f"Expected: {WVS_CSV_CANDIDATES[0]}\n"
+        "Download it (free registration) from\n"
+        "  https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp\n"
+        "  -> Statistical Data Files -> 'WVS Cross-National Wave 7 csv v6 0.zip'\n"
+        "then unzip into data/raw/. See DATA_ACQUISITION.md for the full walkthrough."
+    )
+
 # Models
 MODELS = {
     "llama-3.1-8b": {
@@ -27,7 +69,9 @@ MODELS = {
         "provider": "huggingface",
         "quantize": "4bit",  # QLoRA
     },
-    "gemini-2.5-flash": {
+    "gemini-3.5-flash-lite": {
+        # gemini-2.5-flash was retired for new API keys in early 2026;
+        # verified working against a real key -- see src/inference/gemini.py
         "provider": "google",
         "api_key_env": "GOOGLE_API_KEY",
     },
