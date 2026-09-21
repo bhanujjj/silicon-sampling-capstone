@@ -337,12 +337,22 @@ def sanity_check_examples(examples: list, min_expected: int):
 # Live progress logging (JSONL, one line per training step)
 # ---------------------------------------------------------------------------
 
-class JsonlProgressCallback:
-    """Transformers TrainerCallback that appends one JSONL record per
-    logging step to logs/train_progress.jsonl (append-only, flushed
-    immediately -- a crash loses at most the in-flight line) and keeps the
-    status file updated with epoch/step/loss/ETA, so progress is visible
-    live from another pane without tailing the full text log."""
+from transformers import TrainerCallback
+
+
+class JsonlProgressCallback(TrainerCallback):
+    """Appends one JSONL record per logging step to logs/train_progress.jsonl
+    (append-only, flushed immediately -- a crash loses at most the in-flight
+    line) and keeps the status file updated with epoch/step/loss/ETA, so
+    progress is visible live from another pane without tailing the full text
+    log.
+
+    MUST inherit from TrainerCallback: Trainer calls ~16 hook methods
+    (on_init_end, on_train_begin, on_step_begin, ...) on every registered
+    callback via getattr(callback, event). A plain class that only defines
+    on_log/on_epoch_end/on_save crashes with AttributeError the moment
+    training starts, since it has no method for the other ~13 events --
+    inheriting TrainerCallback supplies a no-op default for all of them."""
 
     def __init__(self, jsonl_path: Path, status_extra_dir: Path, total_steps: int):
         self.jsonl_path = jsonl_path
@@ -423,8 +433,8 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
     halving, down to batch size 1) rather than losing the whole run to a
     single bad batch-size guess."""
     import torch
-    from transformers import TrainingArguments
-    from trl import SFTTrainer
+    from datasets import Dataset
+    from trl import SFTConfig, SFTTrainer
 
     batch_size = args.batch_size
     grad_accum = args.grad_accum
@@ -435,6 +445,7 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
     total_steps = int(steps_per_epoch * args.epochs)
 
     progress_jsonl = dirs["logs"] / "train_progress.jsonl"
+    hf_dataset = Dataset.from_list(train_examples)
 
     while batch_size >= 1:
         try:
@@ -443,9 +454,12 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
             if resume_from:
                 logger.info(f"Found existing checkpoint {resume_from} -- resuming, NOT starting over.")
 
-            training_args = TrainingArguments(
+            # NOTE: current trl (1.x) uses SFTConfig, not a plain TrainingArguments
+            # -- max_seq_length/packing/tokenizer are no longer valid SFTTrainer
+            # kwargs, they moved into SFTConfig as max_length/packing, and the
+            # tokenizer kwarg was renamed to processing_class.
+            sft_config = SFTConfig(
                 output_dir=str(dirs["checkpoints"]),
-                overwrite_output_dir=False,
                 num_train_epochs=args.epochs,
                 per_device_train_batch_size=batch_size,
                 gradient_accumulation_steps=grad_accum,
@@ -461,15 +475,15 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
                 max_grad_norm=1.0,
                 remove_unused_columns=False,
                 report_to="none",
+                packing=False,
+                max_length=768,
+                dataset_text_field="text",
             )
             trainer = SFTTrainer(
                 model=model,
-                train_dataset=train_examples,
-                args=training_args,
-                packing=False,
-                max_seq_length=768,
-                tokenizer=tokenizer,
-                formatting_func=lambda x: x["text"],
+                args=sft_config,
+                train_dataset=hf_dataset,
+                processing_class=tokenizer,
             )
             trainer.add_callback(JsonlProgressCallback(progress_jsonl, dirs["logs"], total_steps))
 
