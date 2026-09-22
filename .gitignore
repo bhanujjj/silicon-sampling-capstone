@@ -1,6 +1,8 @@
 data/processed/*.parquet
+!data/processed/pew_india_2021.parquet
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/India Religion Public Data - Pew Research Center (All Vars).csv
 __pycache__/
 *.pyc
 trackB_run/

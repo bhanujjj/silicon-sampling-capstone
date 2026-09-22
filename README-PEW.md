@@ -4,20 +4,25 @@ This is the Pew-dataset counterpart to `README-LAB.md` (WVS-7 Track B). Same
 branch philosophy: this touches only the Pew pipeline, not your paper or
 Track A results.
 
-## Before you leave for the lab — ONE thing you must add by hand
+## Before you leave for the lab — nothing to add by hand
 
-**The raw Pew CSV**, at this exact path:
+The raw Pew CSV and the cleaned parquet built from it are **both committed
+directly in this branch** (`data/raw/India Religion Public Data - Pew
+Research Center (All Vars).csv` and `data/processed/pew_india_2021.parquet`)
+— `git clone`, install requirements, open the notebook, run cells. No
+manual file placement, no risk of putting it in the wrong folder.
 
-```
-data/raw/India Religion Public Data - Pew Research Center (All Vars).csv
-```
+**Note on this choice:** Pew's own `READ ME.txt` states no explicit
+redistribution terms for this data either way (no permission, no
+prohibition) — unlike WVS, whose license explicitly forbids
+redistribution (WVS's parquet stays gitignored for that reason, see
+`README-LAB.md`). This repository is **public**, so committing Pew's
+respondent-level data here does make it publicly downloadable. This was
+an explicit, informed choice made in favor of a zero-setup lab workflow,
+not an oversight — flagging it here so it's on record, not to relitigate
+it.
 
-Not in git (`.gitignore` excludes `data/raw/*` — same treatment as the WVS
-parquet, pending confirmation of Pew's exact redistribution terms: Pew's
-own `READ ME.txt` describes the study but states no redistribution terms
-either way, so this stays gitignored as the cautious default).
-
-**Everything else is already resolved and committed.** Real question
+**Everything else is already resolved and committed too.** Real question
 wording for **302 of 304 columns**, and **73 fully-screened items** ready
 to train on, all parsed from Pew's own `Pew India DDI metadata.xml`
 (DDI-Codebook 2.5, the machine-readable metadata file in Pew's release --
@@ -83,7 +88,7 @@ data/
                                         the codebook above (regenerate with
                                         parse_pew_ddi_xml.py if Pew ever
                                         revises the release)
-  raw/<csv>, processed/pew_india_2021.parquet  <- YOU ADD/GENERATE THESE (see above)
+  raw/<csv>, processed/pew_india_2021.parquet  <- both already committed (see above)
 
 test_pipeline_dryrun_pew.py    <- proves the prompt-building pipeline is
                                    mechanically sound against real committed
@@ -93,34 +98,48 @@ test_pipeline_dryrun_pew.py    <- proves the prompt-building pipeline is
 
 ## Exact commands, in order
 
+Everything data-related (loading, codebook, item selection, folds) is
+**already done and committed** — you only need to install dependencies and
+run the notebook or script. Nothing in this section regenerates data; it's
+here only if you ever want to (e.g. Pew revises the release).
+
 ```bash
+git clone -b pew-dataset-training https://github.com/bhanujjj/silicon-sampling-capstone.git
+cd silicon-sampling-capstone
 pip install -r scripts/pewB_requirements.txt
 pip install huggingface_hub
 
-# 1. Build the processed data (run once -- codebook/selected-items/folds
-#    are already committed with real labels; re-run only if you regenerate
-#    data/raw/<csv> or want to re-derive them from scratch)
+# Optional sanity check before touching the GPU (no CUDA needed for this one)
+python test_pipeline_dryrun_pew.py
+
+tmux new -s pewb
+jupyter lab --no-browser --ip=0.0.0.0 --port=8888
+# open the printed link in your laptop's browser, open scripts/pewB_finetune.ipynb,
+# Kernel > Restart & Run All -- Preflight/Smoke Test are hard asserts, so a
+# real problem stops the notebook there instead of silently continuing
+# Ctrl+B then D to detach the tmux session; `tmux attach -t pewb` to come back later
+
+# -- OR, if you prefer the plain script instead of the notebook --
+python -m scripts.pewB_finetune --preflight
+python -m scripts.pewB_finetune --smoke-test
+python -m scripts.pewB_finetune --fold 0 --n-items 15
+
+# After training: answer new questions without retraining
+python scripts/pewB_inference.py --model-path pewB_run/model_fold0 \
+  --base-model openai/gpt-oss-20b --question-id Q43b --sex Female --religion Hindu
+
+# Paper-ready results table
+python scripts/pewB_test_panel.py --model-path pewB_run/model_fold0 \
+  --base-model openai/gpt-oss-20b --fold 0 --n-respondents 8 --n-items 5
+```
+
+**To regenerate the processed data from scratch** (only if you replace the
+raw CSV with a newer Pew release):
+```bash
 python -m src.data.load_pew
 python -m src.data.build_pew_codebook --labels data/reference/pew_labels_ddi.json
 python -m src.data.select_items_pew
 python -m src.data.build_folds_pew
-
-# 2. Sanity check before touching the GPU (no CUDA needed for this one)
-python test_pipeline_dryrun_pew.py
-
-tmux new -s pewb
-python -m scripts.pewB_finetune --preflight
-python -m scripts.pewB_finetune --smoke-test
-python -m scripts.pewB_finetune --fold 0 --n-items 15
-# Ctrl+B then D to detach; `tmux attach -t pewb` to come back
-
-# 3. After training: answer new questions without retraining
-python scripts/pewB_inference.py --model-path pewB_run/model_fold0 \
-  --base-model openai/gpt-oss-20b --question-id Q37a --sex Female --religion Hindu
-
-# 4. Paper-ready results table
-python scripts/pewB_test_panel.py --model-path pewB_run/model_fold0 \
-  --base-model openai/gpt-oss-20b --fold 0 --n-respondents 8 --n-items 5
 ```
 
 For the headline accuracy/MAE/fidelity-gap numbers (not the illustrative

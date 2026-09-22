@@ -12,16 +12,13 @@ same prompt/parsing pipeline shape, swapped to:
       smaller download, same MoE architecture/chat template, fits
       comfortably on a single lab GPU in 4-bit
 
-IMPORTANT -- pew_selected_items.json will be EMPTY until Pew's own
-codebook document (DDI XML / recode-syntax .txt / CODEBOOK_India.pdf) is
-parsed and merged into data/reference/pew_codebook.json. See
-src/data/build_pew_codebook.py's docstring for why: Pew's raw CSV ships
-bare numeric codes with no question wording attached, and this project
-does not train on or report guessed survey question text. --preflight
-and --smoke-test will both fail loudly and cheaply (before any real GPU
-time is spent) with a clear message if you try to run before that step
-is done -- that is the intended, safe failure mode, not a bug to work
-around.
+Data note: the raw CSV, cleaned parquet, codebook (302/304 columns
+verified, parsed from Pew's own DDI metadata XML -- see
+scripts/parse_pew_ddi_xml.py), 73 screened items, and folds are all
+already committed to this branch -- nothing to download or copy by hand.
+--preflight still checks these files exist and that pew_selected_items.json
+is non-empty before doing anything expensive, in case that ever regresses
+(e.g. a partial git checkout), rather than assuming it's always fine.
 
 REQUIRED SEQUENCE -- do not skip steps, this is a one-shot expensive run:
 
@@ -197,7 +194,7 @@ def preflight(args) -> bool:
     write_status("preflight", "checking data files present")
     for p in [DATA_PROCESSED / "pew_india_2021.parquet", DATA_PROCESSED / "pew_selected_items.json", DATA_PROCESSED / "pew_folds.json", DATA_REFERENCE / "pew_codebook.json"]:
         if not p.exists():
-            logger.error(f"PREFLIGHT FAIL: missing {p} -- did you copy the full data/ directory (including the .parquet, which is NOT in git) and run the src.data.load_pew / build_pew_codebook / select_items_pew / build_folds_pew pipeline?")
+            logger.error(f"PREFLIGHT FAIL: missing {p} -- this file is committed to the repo, so a missing file usually means an incomplete git clone/checkout (or you're not running from the repo root). Re-clone or re-checkout the pew-dataset-training branch.")
             ok = False
     if not ok:
         return False
