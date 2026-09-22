@@ -2,7 +2,7 @@
   "_source": "Pew Research Center, 'Religion in India: Tolerance and Segregation' (2021), India microdata (All Vars).",
   "_note": "Derived question metadata, not survey microdata. Fields with 'verified': false have real numeric structure but NO confirmed wording/labels yet -- do not use as an LLM prompt or in the paper until re-built with --labels from Pew's own codebook document. See this module's docstring.",
   "n_questions": 304,
-  "n_unverified": 302,
+  "n_unverified": 281,
   "questions": {
     "Q2": {
       "title": null,
@@ -3099,11 +3099,11 @@
       "verified": false
     },
     "Q43a": {
-      "title": null,
-      "wording": null,
+      "title": "Belief in God",
+      "wording": "Do you believe in God, or not?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Believe in God",
+        "2": "Do not believe in God"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3121,16 +3121,16 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q43b": {
-      "title": null,
-      "wording": null,
+      "title": "Certainty of belief in God",
+      "wording": "[If believes in God] How certain are you about this belief?",
       "valid_codes": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4"
+        "1": "Absolutely certain",
+        "2": "Fairly certain",
+        "3": "Not too certain",
+        "4": "Not at all certain"
       },
       "n_scale": 4,
       "min_code": 1,
@@ -3148,15 +3148,15 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q43c": {
-      "title": null,
-      "wording": null,
+      "title": "Nature of God",
+      "wording": "[If believes in God] Do you believe that there is only one God, only one God with many manifestations, or that there are many Gods?",
       "valid_codes": {
-        "1": "1",
-        "2": "2",
-        "3": "3"
+        "1": "There is only one God",
+        "2": "There is only one God with many manifestations",
+        "3": "There are many Gods"
       },
       "n_scale": 3,
       "min_code": 1,
@@ -3174,7 +3174,7 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q44rec_1": {
       "title": null,
@@ -3677,11 +3677,11 @@
       "verified": false
     },
     "Q45a": {
-      "title": null,
-      "wording": null,
+      "title": "God manifested in nature",
+      "wording": "[If believes in God] Do you think God can be manifested in nature, such as mountains, rivers or trees?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3699,14 +3699,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q45b": {
-      "title": null,
-      "wording": null,
+      "title": "God manifested in animals",
+      "wording": "[If believes in God] Do you think God can be manifested in animals?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3724,14 +3724,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q45c": {
-      "title": null,
-      "wording": null,
+      "title": "God manifested in people",
+      "wording": "[If believes in God] Do you think God can be manifested in people?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3749,14 +3749,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q46a": {
-      "title": null,
-      "wording": null,
+      "title": "God manifested in lower-caste people",
+      "wording": "[If believes God can be manifested in people] Do you think God can be manifested in people who belong to a lower caste?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3774,14 +3774,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q46b": {
-      "title": null,
-      "wording": null,
+      "title": "God manifested in people who have done bad things",
+      "wording": "[If believes God can be manifested in people] Do you think God can be manifested in people who have done bad things in their life?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3799,14 +3799,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q47a": {
-      "title": null,
-      "wording": null,
+      "title": "Ask God for good health",
+      "wording": "[If believes in God] Do you ever ask God for good health for you or your family?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3824,14 +3824,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q47b": {
-      "title": null,
-      "wording": null,
+      "title": "Ask God for prosperity",
+      "wording": "[If believes in God] Do you ever ask God for prosperity for you or your family?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3849,14 +3849,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q47c": {
-      "title": null,
-      "wording": null,
+      "title": "Ask God for forgiveness",
+      "wording": "[If believes in God] Do you ever ask God for forgiveness for you or your family?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -3874,7 +3874,7 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q48a": {
       "title": null,
@@ -4574,11 +4574,11 @@
       "verified": false
     },
     "Q54b": {
-      "title": null,
-      "wording": null,
+      "title": "Pray all five namaz (Muslims who offer namaz several times a day)",
+      "wording": "[If Muslim and offers namaz several times a day] Do you pray all five namaz every day?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -4596,14 +4596,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q55a": {
-      "title": null,
-      "wording": null,
+      "title": "Vegetarian",
+      "wording": "Are you vegetarian, or not?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Vegetarian",
+        "2": "Not vegetarian"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -4621,7 +4621,7 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q55b": {
       "title": null,
@@ -4649,11 +4649,11 @@
       "verified": false
     },
     "Q55c": {
-      "title": null,
-      "wording": null,
+      "title": "Abstain from meat on certain days",
+      "wording": "[If not vegetarian] Do you abstain from eating meat on certain days?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -4671,14 +4671,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q55d": {
-      "title": null,
-      "wording": null,
+      "title": "Abstain from certain meats",
+      "wording": "[If not vegetarian] Do you abstain from eating certain meats?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -4696,7 +4696,7 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q56a": {
       "title": null,
@@ -6709,15 +6709,15 @@
       "verified": false
     },
     "ISCED": {
-      "title": null,
-      "wording": null,
+      "title": "Highest educational level [ISCED 2011]",
+      "wording": "Highest educational level completed, coded to the International Standard Classification of Education (ISCED 2011) -- an external UN standard, not Pew-specific wording. Consistent with the grouping in Pew's own recode syntax (codes 0 / 1-4 / 5).",
       "valid_codes": {
-        "0": "0",
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5"
+        "0": "Early childhood education / no education",
+        "1": "Primary education",
+        "2": "Lower secondary education",
+        "3": "Upper secondary education",
+        "4": "Post-secondary non-tertiary education",
+        "5": "Short-cycle tertiary education or above"
       },
       "n_scale": 6,
       "min_code": 0,
@@ -6735,7 +6735,7 @@
       ],
       "numeric_variable": false,
       "block": "DEMOGRAPHIC",
-      "verified": false
+      "verified": true
     },
     "QINCINDrec": {
       "title": null,
@@ -6988,11 +6988,11 @@
       "verified": false
     },
     "QPOVa": {
-      "title": null,
-      "wording": null,
+      "title": "Financial hardship: food",
+      "wording": "Have there been times during the last year when you did not have enough money to buy food your family needed?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -7010,14 +7010,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "QPOVb": {
-      "title": null,
-      "wording": null,
+      "title": "Financial hardship: medical care",
+      "wording": "Have there been times during the last year when you did not have enough money to pay for medical and health care your family needed?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -7035,14 +7035,14 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "QPOVc": {
-      "title": null,
-      "wording": null,
+      "title": "Financial hardship: rent/housing",
+      "wording": "Have there been times during the last year when you did not have enough money to pay rent or housing costs?",
       "valid_codes": {
-        "1": "1",
-        "2": "2"
+        "1": "Yes",
+        "2": "No"
       },
       "n_scale": 2,
       "min_code": 1,
@@ -7060,7 +7060,7 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q83": {
       "title": null,
@@ -7116,13 +7116,13 @@
       "verified": false
     },
     "QPTY2a": {
-      "title": null,
-      "wording": null,
+      "title": "Favorability of the BJP",
+      "wording": "Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of the BJP.",
       "valid_codes": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4"
+        "1": "Very favorable",
+        "2": "Somewhat favorable",
+        "3": "Somewhat unfavorable",
+        "4": "Very unfavorable"
       },
       "n_scale": 4,
       "min_code": 1,
@@ -7140,16 +7140,16 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "QPTY2b": {
-      "title": null,
-      "wording": null,
+      "title": "Favorability of the Congress party",
+      "wording": "Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of Congress.",
       "valid_codes": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4"
+        "1": "Very favorable",
+        "2": "Somewhat favorable",
+        "3": "Somewhat unfavorable",
+        "4": "Very unfavorable"
       },
       "n_scale": 4,
       "min_code": 1,
@@ -7167,7 +7167,7 @@
       ],
       "numeric_variable": false,
       "block": "UNVERIFIED_ITEM",
-      "verified": false
+      "verified": true
     },
     "Q85": {
       "title": null,

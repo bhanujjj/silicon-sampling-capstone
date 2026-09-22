@@ -5,6 +5,7 @@ import logging
 from pathlib import Path
 
 import pandas as pd
+import pandas.api.types as ptypes
 
 from src.config import DATA_PROCESSED, PEW_INDIA_N, resolve_pew_csv
 
@@ -20,7 +21,14 @@ MISSING_CODES = {96, 97, 98, 99, 996, 997, 998, 999}
 
 # Columns that are IDs/weights, not survey items -- never touch these during
 # missing-value recoding, and never select them as a training-target item.
-NON_ITEM_COLS = {"COUNTRY", "QRID", "weight", "QMLangRec"}
+# respondent_id (added by add_respondent_id(), a copy of QRID) is listed
+# here too: it used to slip through the recode loop since it doesn't exist
+# yet when this set is defined, silently NaN-ing out any respondent whose
+# ID happened to equal a sentinel code (96-99, 996-999). No such collision
+# actually occurs in this release's ID range (confirmed by direct check),
+# but that was luck, not a guarantee -- respondent_id must never be treated
+# as a survey answer regardless.
+NON_ITEM_COLS = {"COUNTRY", "QRID", "weight", "QMLangRec", "respondent_id"}
 
 
 def load_pew_raw(csv_path: Path) -> pd.DataFrame:
@@ -42,19 +50,32 @@ def recode_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     item_cols = [c for c in df.columns if c not in NON_ITEM_COLS]
 
     n_recoded = 0
+    n_coerced_cols = 0
     for col in item_cols:
         # Blank-string cells (skip-logic "not asked") show up as NaN already
-        # after pd.read_csv for a numeric column, or as literal "" for an
-        # object-dtype column -- coerce object columns to numeric first so
-        # both cases end up as one consistent NaN, then apply the sentinel
-        # recode on top.
-        series = pd.to_numeric(df[col], errors="coerce") if df[col].dtype == object else df[col]
+        # for a column pandas inferred as numeric, or as a literal " "/""
+        # string for a non-numeric column -- coerce any non-numeric column
+        # to numeric first so both cases end up as one consistent NaN, then
+        # apply the sentinel recode on top. `dtype == object` alone is NOT
+        # enough to detect this: about half of this CSV's columns (150/308,
+        # confirmed by direct inspection) come back as pandas' newer
+        # Arrow-backed "string" dtype rather than legacy "object" -- that
+        # comparison silently returns False for them, so they skipped
+        # to_numeric entirely and kept raw strings (including un-recoded
+        # sentinel codes) straight through to the saved parquet, a real bug
+        # caught only by later re-testing against an item that happened to
+        # live in one of those 150 columns.
+        if not ptypes.is_numeric_dtype(df[col]):
+            series = pd.to_numeric(df[col], errors="coerce")
+            n_coerced_cols += 1
+        else:
+            series = df[col]
         mask = series.isin(MISSING_CODES)
         if mask.any():
             n_recoded += int(mask.sum())
         df[col] = series.where(~mask, pd.NA)
 
-    logger.info(f"Recoded {n_recoded} missing value codes across {len(item_cols)} columns")
+    logger.info(f"Coerced {n_coerced_cols} non-numeric-dtype columns to numeric. Recoded {n_recoded} missing value codes across {len(item_cols)} columns")
     return df
 
 

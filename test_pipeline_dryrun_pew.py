@@ -3,15 +3,15 @@ uses, without needing a GPU. Uses the real parquet if data/processed/
 pew_india_2021.parquet is present locally (gitignored, same as WVS's),
 else falls back to a synthetic row built from real observed column values.
 
-EXPECTED RESULT TODAY: 0 selected items, because data/reference/
-pew_codebook.json has no verified question wording yet (see
-src/data/build_pew_codebook.py's docstring) -- this is the correct, safe
-state, not a test failure. What this DOES verify today: the demographic
-verbalization pipeline (real column names, real value codes) works
-end-to-end against a real respondent row, and the generic verbalize_item/
-build_prompt/parse_answer_from_text machinery works correctly once ANY
-item has verified wording (proven here with one clearly-marked synthetic
-test item, never treated as real Pew content).
+CURRENT STATE: 1 item (Q43b) has real, verified wording -- sourced from
+Pew's own "recode syntax for public release.txt" (see
+data/reference/pew_labels_recode_syntax.json and that file's provenance
+comment), not guessed. The other 303 columns are still unverified (see
+src/data/build_pew_codebook.py's docstring) and correctly excluded from
+training. This number will only ever go up as more of Pew's own codebook
+document gets parsed -- if it's higher than 1 when you run this, that's
+expected progress, not a failure; the assertion below only checks
+"at least 1", not an exact count.
 """
 import json
 import sys
@@ -32,12 +32,14 @@ print("=" * 70)
 with open(DATA_PROCESSED / "pew_selected_items.json") as f:
     sel = json.load(f)
 print(f"pew_selected_items.json: {sel['n_items']} items selected (rejection ledger: {sel['rejection_ledger']})")
-assert sel["n_items"] == 0, (
-    "Expected 0 selected items at this stage of the project (codebook wording "
-    "not yet verified) -- if this is no longer 0, the codebook has been "
-    "updated with real labels; update this test's expectations accordingly."
+assert sel["n_items"] >= 1, (
+    "Expected at least 1 selected item (Q43b, verified from Pew's own "
+    "recode-syntax file) -- 0 means either the codebook wasn't rebuilt with "
+    "--labels data/reference/pew_labels_recode_syntax.json, or something "
+    "regressed. Re-run: python -m src.data.build_pew_codebook --labels "
+    "data/reference/pew_labels_recode_syntax.json && python -m src.data.select_items_pew"
 )
-print("0 items is the CORRECT current state (see build_pew_codebook.py docstring), not a failure.")
+print(f"{sel['n_items']} verified, fully-screened item(s) -- real progress, not a failure state.")
 
 with open(DATA_PROCESSED / "pew_folds.json") as f:
     folds = json.load(f)["folds"]
@@ -69,16 +71,11 @@ print("OK: verified fields resolve to real labels, unverified fields correctly r
 print()
 print("=" * 70)
 print("3. Generic verbalize_item()/build_prompt()/parse_answer_from_text() mechanics")
-print("   (using ONE synthetic test item -- proves the pipeline works, is NOT real Pew content)")
+print("   using Q43b -- a REAL Pew item, verified from Pew's own recode-syntax file")
 print("=" * 70)
-test_codebook = dict(codebook)
-test_codebook["TEST_ITEM"] = {
-    "title": "[SYNTHETIC TEST ITEM -- not a real Pew question]",
-    "wording": "[SYNTHETIC TEST ITEM -- not a real Pew question]",
-    "valid_codes": {"1": "Strongly disagree", "2": "Disagree", "3": "Agree", "4": "Strongly agree"},
-}
-item = verbalize_item("TEST_ITEM", test_codebook)
+item = verbalize_item("Q43b", codebook)
 assert item["n_options"] == 4
+assert item["question_text"] == "Certainty of belief in God"
 option_labels = [str(c) for c in item["ordinal_values"]]
 prompt = build_prompt("P2", item["question_text"], item["options_text"], **demo) + build_answer_instruction(option_labels)
 print("Constructed prompt (truncated):")

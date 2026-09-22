@@ -1,15 +1,17 @@
 {
-  "selected_items": [],
-  "n_items": 0,
+  "selected_items": [
+    "Q43b"
+  ],
+  "n_items": 1,
   "n_candidates_evaluated": 304,
   "rejection_ledger": {
     "no_codebook_entry": 0,
-    "unverified_wording": 302,
-    "demographic_block": 2,
-    "scale_too_small": 0,
+    "unverified_wording": 281,
+    "demographic_block": 3,
+    "scale_too_small": 17,
     "non_ordinal_codes": 0,
     "observed_off_scale": 0,
-    "high_missingness": 0,
+    "high_missingness": 2,
     "low_entropy": 0
   },
   "codebook_source": "Pew Research Center 'Religion in India' (2021)"

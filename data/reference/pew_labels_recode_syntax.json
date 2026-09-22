@@ -1,0 +1,107 @@
+{
+  "Q43a": {
+    "title": "Belief in God",
+    "wording": "Do you believe in God, or not?",
+    "valid_codes": {"1": "Believe in God", "2": "Do not believe in God"}
+  },
+  "Q43b": {
+    "title": "Certainty of belief in God",
+    "wording": "[If believes in God] How certain are you about this belief?",
+    "valid_codes": {"1": "Absolutely certain", "2": "Fairly certain", "3": "Not too certain", "4": "Not at all certain"}
+  },
+  "Q43c": {
+    "title": "Nature of God",
+    "wording": "[If believes in God] Do you believe that there is only one God, only one God with many manifestations, or that there are many Gods?",
+    "valid_codes": {"1": "There is only one God", "2": "There is only one God with many manifestations", "3": "There are many Gods"}
+  },
+  "Q45a": {
+    "title": "God manifested in nature",
+    "wording": "[If believes in God] Do you think God can be manifested in nature, such as mountains, rivers or trees?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q45b": {
+    "title": "God manifested in animals",
+    "wording": "[If believes in God] Do you think God can be manifested in animals?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q45c": {
+    "title": "God manifested in people",
+    "wording": "[If believes in God] Do you think God can be manifested in people?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q46a": {
+    "title": "God manifested in lower-caste people",
+    "wording": "[If believes God can be manifested in people] Do you think God can be manifested in people who belong to a lower caste?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q46b": {
+    "title": "God manifested in people who have done bad things",
+    "wording": "[If believes God can be manifested in people] Do you think God can be manifested in people who have done bad things in their life?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q47a": {
+    "title": "Ask God for good health",
+    "wording": "[If believes in God] Do you ever ask God for good health for you or your family?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q47b": {
+    "title": "Ask God for prosperity",
+    "wording": "[If believes in God] Do you ever ask God for prosperity for you or your family?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q47c": {
+    "title": "Ask God for forgiveness",
+    "wording": "[If believes in God] Do you ever ask God for forgiveness for you or your family?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q54b": {
+    "title": "Pray all five namaz (Muslims who offer namaz several times a day)",
+    "wording": "[If Muslim and offers namaz several times a day] Do you pray all five namaz every day?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q55a": {
+    "title": "Vegetarian",
+    "wording": "Are you vegetarian, or not?",
+    "valid_codes": {"1": "Vegetarian", "2": "Not vegetarian"}
+  },
+  "Q55c": {
+    "title": "Abstain from meat on certain days",
+    "wording": "[If not vegetarian] Do you abstain from eating meat on certain days?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "Q55d": {
+    "title": "Abstain from certain meats",
+    "wording": "[If not vegetarian] Do you abstain from eating certain meats?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "QPTY2a": {
+    "title": "Favorability of the BJP",
+    "wording": "Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of the BJP.",
+    "valid_codes": {"1": "Very favorable", "2": "Somewhat favorable", "3": "Somewhat unfavorable", "4": "Very unfavorable"}
+  },
+  "QPTY2b": {
+    "title": "Favorability of the Congress party",
+    "wording": "Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of Congress.",
+    "valid_codes": {"1": "Very favorable", "2": "Somewhat favorable", "3": "Somewhat unfavorable", "4": "Very unfavorable"}
+  },
+  "QPOVa": {
+    "title": "Financial hardship: food",
+    "wording": "Have there been times during the last year when you did not have enough money to buy food your family needed?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "QPOVb": {
+    "title": "Financial hardship: medical care",
+    "wording": "Have there been times during the last year when you did not have enough money to pay for medical and health care your family needed?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "QPOVc": {
+    "title": "Financial hardship: rent/housing",
+    "wording": "Have there been times during the last year when you did not have enough money to pay rent or housing costs?",
+    "valid_codes": {"1": "Yes", "2": "No"}
+  },
+  "ISCED": {
+    "title": "Highest educational level [ISCED 2011]",
+    "wording": "Highest educational level completed, coded to the International Standard Classification of Education (ISCED 2011) -- an external UN standard, not Pew-specific wording. Consistent with the grouping in Pew's own recode syntax (codes 0 / 1-4 / 5).",
+    "valid_codes": {"0": "Early childhood education / no education", "1": "Primary education", "2": "Lower secondary education", "3": "Upper secondary education", "4": "Post-secondary non-tertiary education", "5": "Short-cycle tertiary education or above"}
+  }
+}

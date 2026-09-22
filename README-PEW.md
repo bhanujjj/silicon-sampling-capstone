@@ -26,6 +26,18 @@ Pew India DDI metadata.xml
 This second one is the real blocker (see next section) — the CSV alone is
 not enough to run this pipeline.
 
+**Current progress: 1 of ~280 candidate items verified** (`Q43b`, "how
+certain are you in your belief in God" — 4-point scale), sourced from
+`data/reference/pew_labels_recode_syntax.json` (real wording quoted from
+Pew's own "recode syntax for public release.txt", not guessed — see that
+file for provenance per item). Confirmed by an actual end-to-end run of
+the real training-data-construction code against the real 29,999-row
+dataset: **22,859 real (prompt, answer) training examples** were built
+correctly from fold 0 alone. That's real proof the mechanics work — 1
+item is just not enough to train anything useful yet. `CODEBOOK_India.pdf`
+or `Pew India DDI metadata.xml` (the other two files in Pew's release,
+either one, per `READ ME.txt`) has the wording for the rest.
+
 ## Why a codebook document is required, not optional
 
 Pew's raw CSV ships bare numeric codes (`Q37a` = 1/2/98/99) with **no
@@ -33,11 +45,26 @@ question text or answer-option labels attached**. There is no public,
 already-labeled version of this file. Training on / reporting a *guessed*
 Pew survey question in your paper would misattribute fabricated content to
 a real research organization — so this pipeline is built to refuse to do
-that: as shipped, `data/reference/pew_codebook.json` has real, verified
-labels for only 2 of 304 columns (`QGEN` sex, `QRELSING` religion — both
-independently confirmed against Pew's own published numbers), and
-`data/processed/pew_selected_items.json` correctly has **0 selected
-items** as a result.
+that: `data/reference/pew_codebook.json` currently has real, verified
+labels for 23 of 304 columns (sex, religion, and 21 more pulled from Pew's
+"recode syntax for public release.txt" — see above), and only 1 of those
+23 survives full item screening (`Q43b`) once the demographic columns are
+excluded and WVS's existing scale/missingness/entropy filters are applied
+(most of the 21 are plain yes/no items, filtered out by the project's
+existing `MIN_RESPONSE_SCALE_SIZE = 4` — a real, considered choice, not a
+bug: see the "silicon sampling" project's earlier discussion on why mixing
+coarse binary items with fine-grained ones makes accuracy numbers hard to
+compare fairly. That threshold lives in `src/config.py` and is shared with
+WVS, so change it there, not per-track, if you want binary Pew items included).
+
+**The recode-syntax file was NOT the primary source** — per Pew's own
+`READ ME.txt`, that file only holds *derived/combined* variables (age
+buckets, caste buckets, combined topline variables), not the full
+question-by-question wording. It happened to have enough embedded context
+in a few variable labels to confirm 21 real base items as a side effect.
+The actual full codebook is `CODEBOOK_India.pdf` (human-readable) or `Pew
+India DDI metadata.xml` (machine-readable, likely easier to parse
+completely) — either one unlocks the rest of the ~280 remaining items.
 
 **To unblock it**, once you have one of the three codebook documents above:
 
