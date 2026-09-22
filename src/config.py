@@ -21,6 +21,10 @@ WVS_INDIA_N = 1692  # Approximate; verify at download
 COUNTRY_CODE = "IND"
 WVS_WAVE = 7
 
+# Pew "Religion in India" (2021) settings
+PEW_INDIA_N = 29999  # Approximate; verify at download
+PEW_RAW_CSV_NAME = "India Religion Public Data - Pew Research Center (All Vars).csv"
+
 # The India survey was fielded 2022-2023 (completed July 2023) and only entered
 # the WVS-7 cross-national file at v6.0. Releases at v5.0 and earlier cover 64
 # countries and contain NO India rows -- see DATA_ACQUISITION.md.
@@ -62,6 +66,37 @@ def resolve_wvs_csv(data_raw: Path = DATA_RAW) -> Path:
         "then unzip into data/raw/. See DATA_ACQUISITION.md for the full walkthrough."
     )
 
+
+def resolve_pew_csv(data_raw: Path = DATA_RAW) -> Path:
+    """Locate the Pew "Religion in India" (2021) raw CSV in data/raw/.
+
+    Tries the exact release filename, then falls back to any CSV in
+    data/raw/ with "India" and "Pew" in the name, so a renamed download
+    still works.
+
+    Raises:
+        FileNotFoundError: with download instructions if nothing matches.
+    """
+    candidate = data_raw / PEW_RAW_CSV_NAME
+    if candidate.exists():
+        return candidate
+
+    loose = sorted(
+        p for p in data_raw.glob("*.csv")
+        if "india" in p.name.lower() and "pew" in p.name.lower()
+    )
+    if loose:
+        return loose[0]
+
+    raise FileNotFoundError(
+        f"No Pew India CSV found in {data_raw}/\n"
+        f"Expected something like: {PEW_RAW_CSV_NAME}\n"
+        "Download it (free account) from\n"
+        "  https://www.pewresearch.org/dataset/india-survey-dataset/\n"
+        "(mirror: https://www.thearda.com/data-archive?fid=PWIND20)\n"
+        "then place the '...(All Vars).csv' file into data/raw/."
+    )
+
 # Models
 MODELS = {
     "llama-3.1-8b": {
@@ -82,6 +117,11 @@ MODELS = {
     },
     "gemma-3-4b": {
         "hf_id": "google/gemma-3-4b-it",
+        "provider": "huggingface",
+        "quantize": "4bit",
+    },
+    "gpt-oss-20b": {
+        "hf_id": "openai/gpt-oss-20b",
         "provider": "huggingface",
         "quantize": "4bit",
     },

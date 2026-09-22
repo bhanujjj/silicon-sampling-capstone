@@ -1,0 +1,7954 @@
+{
+  "_source": "Pew Research Center, 'Religion in India: Tolerance and Segregation' (2021), India microdata (All Vars).",
+  "_note": "Derived question metadata, not survey microdata. Fields with 'verified': false have real numeric structure but NO confirmed wording/labels yet -- do not use as an LLM prompt or in the paper until re-built with --labels from Pew's own codebook document. See this module's docstring.",
+  "n_questions": 304,
+  "n_unverified": 302,
+  "questions": {
+    "Q2": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_1": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_2": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_3": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_4": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_5": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_6": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_7": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_98": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3rec_99": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q4": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q5": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q6a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q6b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q6c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q6d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q6e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q7": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q9": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "ABORT": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q10": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11ya": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yb": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yc": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yd": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11ye": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yf": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yg": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yh": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yi": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q11yj": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q12": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q13": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q14a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q14b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q14c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q14d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q15": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q17a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q17b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q18a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q18b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q18c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q18d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q18e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q18f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q19a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q19b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QW21a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QW21b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QM21a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QM21b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q22a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q22b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q22c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q23a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q23b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q24": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q26": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QRELSING": {
+      "title": "Religious identity (single response)",
+      "wording": "What is your present religion, if any?",
+      "valid_codes": {
+        "1": "Hindu",
+        "2": "Muslim",
+        "3": "Christian",
+        "4": "Sikh",
+        "5": "Buddhist",
+        "6": "Jain",
+        "7": "Other religion",
+        "8": "Unaffiliated"
+      },
+      "n_scale": 8,
+      "min_code": 1,
+      "max_code": 8,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": true
+    },
+    "QCASTE": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QCASTEb": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QHINDU": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "n_scale": 6,
+      "min_code": 1,
+      "max_code": 6,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QSECTrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QDENOMrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "6": "6",
+        "9": "9",
+        "12": "12"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 12,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QSIKHrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "7": "7",
+        "8": "8"
+      },
+      "n_scale": 6,
+      "min_code": 1,
+      "max_code": 8,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QBUDDHISTrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "n_scale": 3,
+      "min_code": 4,
+      "max_code": 6,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QJAIN": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QSUFIrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "Q28rec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      },
+      "n_scale": 8,
+      "min_code": 1,
+      "max_code": 8,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q29a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q29b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "q29cdrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q29e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q29f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q29g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q29h": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "q30derec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30h": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30i": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30j": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30k": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q30l": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q3132rec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q33a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q33b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q33c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q33d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q33e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q33f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q34a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q34b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q35": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q36a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q36b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q36c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37h": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q37i": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q38": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q39a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q39b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q39c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q40": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QCHRELrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "Q42": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q43a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q43b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q43c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_1": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_2": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_3": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_4": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_5": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_6": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_7": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_8": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_9": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_10": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_11": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_12": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_13": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_14": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_15": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_16": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_17": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_18": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_98": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q44rec_99": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q45a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q45b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q45c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q46a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q46b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q47a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q47b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q47c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q48a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q48b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q48c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q48d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q48e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q48f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49h": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49i": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49j": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49k": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49l": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49m": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49n": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q49o": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q50": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q51": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q52": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q53a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q53b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q54a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "n_scale": 7,
+      "min_code": 1,
+      "max_code": 7,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q54b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q55a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q55b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q55c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q55d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q56a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q56b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q56c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q56d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q57a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q57b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q57c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q58xa": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "n_scale": 6,
+      "min_code": 1,
+      "max_code": 6,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q58xb": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "n_scale": 6,
+      "min_code": 1,
+      "max_code": 6,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q60": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QGEN": {
+      "title": "Sex",
+      "wording": "Interviewer-recorded respondent sex (standard Pew convention; verify against the official codebook before publication).",
+      "valid_codes": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": true
+    },
+    "QDIV": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q61a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q61b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q62a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q62b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q62c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q62d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q62e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q62f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q63g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q65": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q66a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q66b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q66c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q67a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q67b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q67c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q68": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69h": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69i": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q69j": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q70": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72e": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72f": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72g": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72h": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q72i": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q73a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "q73abrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "n_scale": 6,
+      "min_code": 1,
+      "max_code": 6,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QAGErec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QFERTrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QCHGENabrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "0": "0",
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 3,
+      "min_code": 0,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QHH1": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12",
+        "13": "13",
+        "14": "14",
+        "15": "15",
+        "16": "16",
+        "17": "17",
+        "18": "18",
+        "19": "19",
+        "20": "20",
+        "21": "21",
+        "22": "22",
+        "23": "23",
+        "25": "25"
+      },
+      "n_scale": 24,
+      "min_code": 1,
+      "max_code": 25,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QHH2": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12",
+        "13": "13",
+        "15": "15"
+      },
+      "n_scale": 14,
+      "min_code": 1,
+      "max_code": 15,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QMARRIEDrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QSPRELrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QCHSPRELrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QHHCH": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QCHILDrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q74a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q74b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q74c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q74d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q75": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q76": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q77arec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "24": "24",
+        "994": "994",
+        "995": "995"
+      },
+      "n_scale": 5,
+      "min_code": 1,
+      "max_code": 995,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QEDU": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      },
+      "n_scale": 11,
+      "min_code": 1,
+      "max_code": 11,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "ISCED": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "n_scale": 6,
+      "min_code": 0,
+      "max_code": 5,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QINCINDrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "QINT": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QMOBILE": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q78": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q79": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q81": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q82a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q82b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q82c": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q82d": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QPOVa": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QPOVb": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QPOVc": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q83": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "n_scale": 3,
+      "min_code": 1,
+      "max_code": 3,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QPTYrec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "24": "24",
+        "25": "25"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 25,
+      "contiguous": false,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QPTY2a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QPTY2b": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q85": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "n_scale": 4,
+      "min_code": 1,
+      "max_code": 4,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "q85arec": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86a": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_1": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_2": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_3": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_4": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_5": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_6": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_7": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_8": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_9": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_10": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_11": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_12": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_13": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_14": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_15": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_16": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_17": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_18": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_19": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_20": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_21": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_97": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_98": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q86b_99": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "Q87": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "QIV7": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "UNVERIFIED_ITEM",
+      "verified": false
+    },
+    "REGION": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "n_scale": 6,
+      "min_code": 1,
+      "max_code": 6,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    },
+    "Urban": {
+      "title": null,
+      "wording": null,
+      "valid_codes": {
+        "1": "1",
+        "2": "2"
+      },
+      "n_scale": 2,
+      "min_code": 1,
+      "max_code": 2,
+      "contiguous": true,
+      "missing_codes": [
+        96,
+        97,
+        98,
+        99,
+        996,
+        997,
+        998,
+        999
+      ],
+      "numeric_variable": false,
+      "block": "DEMOGRAPHIC",
+      "verified": false
+    }
+  }
+}

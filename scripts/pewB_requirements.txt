@@ -1,0 +1,20 @@
+# transformers/trl/peft are pinned to EXACT versions on purpose: this whole
+# script was verified (real forward/backward step, real SFTConfig
+# construction, real Trainer callback dispatch) against these exact
+# versions. `trl>=0.9` used to resolve to trl 1.13.0 -- a major-version jump
+# with breaking API changes (SFTConfig replacing TrainingArguments,
+# processing_class replacing tokenizer=, max_length replacing
+# max_seq_length=) that silently broke this script. Do not loosen these
+# pins unless you re-verify SFTConfig/SFTTrainer construction against
+# whatever version you switch to.
+torch>=2.1
+transformers==5.17.0
+peft==0.21.0
+trl==1.13.0
+datasets>=2.14
+bitsandbytes>=0.43
+accelerate>=0.33
+pandas
+pyarrow
+numpy
+huggingface_hub

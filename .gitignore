@@ -7,3 +7,7 @@ trackB_run/
 trackB_run_smoketest/
 trackB_run.log
 trackB_status.json
+pewB_run/
+pewB_run_smoketest/
+pewB_run.log
+pewB_status.json

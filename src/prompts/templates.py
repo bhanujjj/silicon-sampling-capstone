@@ -55,8 +55,18 @@ def format_p2_structured(
     region: Optional[str] = None,
     town_size: Optional[str] = None,
     interview_language: Optional[str] = None,
+    caste: Optional[str] = None,
+    **_ignored,
 ) -> str:
-    """P2: Full structured list of 14 demographic attributes."""
+    """P2: Full structured list of demographic attributes.
+
+    **_ignored, and the caste kwarg, were added when src.prompts.verbalize_pew
+    started forwarding a "caste" key (a real Pew demographic WVS doesn't
+    have) through the identical build_prompt(**demo) call site P0/P1/P3
+    already use -- without this, any demographics dict carrying a key
+    outside this exact 14-name list crashes here with a TypeError, the
+    same bug class P0/P1/P3 were already patched for.
+    """
     attributes = [
         ("Sex", sex),
         ("Age", age),
@@ -72,6 +82,7 @@ def format_p2_structured(
         ("Region", region),
         ("Town size", town_size),
         ("Interview language", interview_language),
+        ("Caste", caste),
     ]
 
     # Only include non-None attributes
