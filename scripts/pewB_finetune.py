@@ -36,7 +36,7 @@ REQUIRED SEQUENCE -- do not skip steps, this is a one-shot expensive run:
         # pewB_run/logs/smoke_test_result.json when done -- read it before
         # moving on.
 
-    python -m scripts.pewB_finetune --fold 0 --n-items 15
+    python -m scripts.pewB_finetune --fold 0
         # The real run. Run this under tmux or nohup (see
         # TRACKB_LAB_INSTRUCTIONS.md, same tmux/nohup advice applies here) --
         # do NOT run it in a bare foreground shell over SSH.
@@ -561,8 +561,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--fold", type=int, default=0)
-    ap.add_argument("--n-items", type=int, default=15)
-    ap.add_argument("--epochs", type=float, default=2.0)
+    ap.add_argument("--n-items", type=int, default=8, help="73 items pass full screening (data/processed/pew_selected_items.json); 8 keeps the real run to roughly a quarter of the steps that 15 needs, more overnight-run friendly -- raise this if you have more GPU time")
+    ap.add_argument("--epochs", type=float, default=1.0)
     ap.add_argument("--batch-size", type=int, default=4, help="gpt-oss-20b is far smaller than the 120B model -- preflight will tell you if you can safely go higher still")
     ap.add_argument("--grad-accum", type=int, default=8)
     ap.add_argument("--lr", type=float, default=2e-4)

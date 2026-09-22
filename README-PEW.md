@@ -122,7 +122,7 @@ jupyter lab --no-browser --ip=0.0.0.0 --port=8888
 # -- OR, if you prefer the plain script instead of the notebook --
 python -m scripts.pewB_finetune --preflight
 python -m scripts.pewB_finetune --smoke-test
-python -m scripts.pewB_finetune --fold 0 --n-items 15
+python -m scripts.pewB_finetune --fold 0
 
 # After training: answer new questions without retraining
 python scripts/pewB_inference.py --model-path pewB_run/model_fold0 \
