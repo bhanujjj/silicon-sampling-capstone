@@ -3,15 +3,13 @@ uses, without needing a GPU. Uses the real parquet if data/processed/
 pew_india_2021.parquet is present locally (gitignored, same as WVS's),
 else falls back to a synthetic row built from real observed column values.
 
-CURRENT STATE: 1 item (Q43b) has real, verified wording -- sourced from
-Pew's own "recode syntax for public release.txt" (see
-data/reference/pew_labels_recode_syntax.json and that file's provenance
-comment), not guessed. The other 303 columns are still unverified (see
-src/data/build_pew_codebook.py's docstring) and correctly excluded from
-training. This number will only ever go up as more of Pew's own codebook
-document gets parsed -- if it's higher than 1 when you run this, that's
-expected progress, not a failure; the assertion below only checks
-"at least 1", not an exact count.
+CURRENT STATE: 302/304 columns have real, verified wording, parsed from
+Pew's own DDI-Codebook 2.5 metadata XML (see
+scripts/parse_pew_ddi_xml.py and data/reference/pew_labels_ddi.json) --
+not guessed. 73 items survive full item screening as of this writing.
+This number will only ever go up (more parsing, or a loosened
+MIN_RESPONSE_SCALE_SIZE) -- the assertion below only checks "enough items
+for a real run", not an exact count.
 """
 import json
 import sys
@@ -32,14 +30,14 @@ print("=" * 70)
 with open(DATA_PROCESSED / "pew_selected_items.json") as f:
     sel = json.load(f)
 print(f"pew_selected_items.json: {sel['n_items']} items selected (rejection ledger: {sel['rejection_ledger']})")
-assert sel["n_items"] >= 1, (
-    "Expected at least 1 selected item (Q43b, verified from Pew's own "
-    "recode-syntax file) -- 0 means either the codebook wasn't rebuilt with "
-    "--labels data/reference/pew_labels_recode_syntax.json, or something "
-    "regressed. Re-run: python -m src.data.build_pew_codebook --labels "
-    "data/reference/pew_labels_recode_syntax.json && python -m src.data.select_items_pew"
+assert sel["n_items"] >= 15, (
+    f"Expected at least 15 selected items (73 confirmed as of this writing, "
+    f"from the DDI XML), got {sel['n_items']}. Re-run: python -m src.data."
+    "build_pew_codebook --labels data/reference/pew_labels_ddi.json && "
+    "python -m src.data.select_items_pew"
 )
-print(f"{sel['n_items']} verified, fully-screened item(s) -- real progress, not a failure state.")
+assert "Q43b" in sel["selected_items"], "Q43b (the first item ever verified, cross-checked between the recode-syntax file and the DDI XML) should still be selected"
+print(f"{sel['n_items']} verified, fully-screened items -- enough for a real training run.")
 
 with open(DATA_PROCESSED / "pew_folds.json") as f:
     folds = json.load(f)["folds"]
@@ -71,11 +69,11 @@ print("OK: verified fields resolve to real labels, unverified fields correctly r
 print()
 print("=" * 70)
 print("3. Generic verbalize_item()/build_prompt()/parse_answer_from_text() mechanics")
-print("   using Q43b -- a REAL Pew item, verified from Pew's own recode-syntax file")
+print("   using Q43b -- a REAL Pew item, verified from Pew's own DDI metadata XML")
 print("=" * 70)
 item = verbalize_item("Q43b", codebook)
 assert item["n_options"] == 4
-assert item["question_text"] == "Certainty of belief in God"
+assert item["question_text"] == "How certain are you about this belief?"
 option_labels = [str(c) for c in item["ordinal_values"]]
 prompt = build_prompt("P2", item["question_text"], item["options_text"], **demo) + build_answer_instruction(option_labels)
 print("Constructed prompt (truncated):")
@@ -90,6 +88,6 @@ print("OK: build_prompt + parse_answer_from_text round-trip correctly (valid dig
 print()
 print("=" * 70)
 print("ALL DRY-RUN CHECKS PASSED")
-print("Mechanically, the pipeline is sound end-to-end. The only missing piece")
-print("is real Pew question wording -- see src/data/build_pew_codebook.py.")
+print("The pipeline is sound end-to-end with real, DDI-verified question")
+print("wording -- ready for --preflight / --smoke-test on an actual GPU.")
 print("=" * 70)

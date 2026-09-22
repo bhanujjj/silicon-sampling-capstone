@@ -4,85 +4,44 @@ This is the Pew-dataset counterpart to `README-LAB.md` (WVS-7 Track B). Same
 branch philosophy: this touches only the Pew pipeline, not your paper or
 Track A results.
 
-## Before you leave for the lab — TWO things you must add by hand
+## Before you leave for the lab — ONE thing you must add by hand
 
-**1. The raw Pew CSV**, at this exact path:
+**The raw Pew CSV**, at this exact path:
 
 ```
 data/raw/India Religion Public Data - Pew Research Center (All Vars).csv
 ```
 
 Not in git (`.gitignore` excludes `data/raw/*` — same treatment as the WVS
-parquet, pending confirmation of Pew's exact redistribution terms).
+parquet, pending confirmation of Pew's exact redistribution terms: Pew's
+own `READ ME.txt` describes the study but states no redistribution terms
+either way, so this stays gitignored as the cautious default).
 
-**2. Pew's own codebook document** (whichever you have — any one of these three):
+**Everything else is already resolved and committed.** Real question
+wording for **302 of 304 columns**, and **73 fully-screened items** ready
+to train on, all parsed from Pew's own `Pew India DDI metadata.xml`
+(DDI-Codebook 2.5, the machine-readable metadata file in Pew's release --
+see `scripts/parse_pew_ddi_xml.py`) and cross-checked against
+`CODEBOOK_India.pdf`. Confirmed by actually running the real
+training-data-construction code against the real 29,999-row dataset:
+fold 0 alone builds **349,415 real (prompt, answer) examples** across the
+first 15 selected items -- a genuinely large, real, verified dataset, not
+a placeholder.
 
-```
-CODEBOOK_India.pdf
-India recode syntax for public release.txt
-Pew India DDI metadata.xml
-```
+An earlier hand-parse of "India recode syntax for public release.txt"
+(before the DDI XML was available) recovered 21 items as a side effect of
+that file's derived-variable definitions -- see
+`data/reference/pew_labels_recode_syntax.json`, kept for provenance. The
+DDI XML supersedes it (covers everything that file did, plus the rest).
 
-This second one is the real blocker (see next section) — the CSV alone is
-not enough to run this pipeline.
-
-**Current progress: 1 of ~280 candidate items verified** (`Q43b`, "how
-certain are you in your belief in God" — 4-point scale), sourced from
-`data/reference/pew_labels_recode_syntax.json` (real wording quoted from
-Pew's own "recode syntax for public release.txt", not guessed — see that
-file for provenance per item). Confirmed by an actual end-to-end run of
-the real training-data-construction code against the real 29,999-row
-dataset: **22,859 real (prompt, answer) training examples** were built
-correctly from fold 0 alone. That's real proof the mechanics work — 1
-item is just not enough to train anything useful yet. `CODEBOOK_India.pdf`
-or `Pew India DDI metadata.xml` (the other two files in Pew's release,
-either one, per `READ ME.txt`) has the wording for the rest.
-
-## Why a codebook document is required, not optional
-
-Pew's raw CSV ships bare numeric codes (`Q37a` = 1/2/98/99) with **no
-question text or answer-option labels attached**. There is no public,
-already-labeled version of this file. Training on / reporting a *guessed*
-Pew survey question in your paper would misattribute fabricated content to
-a real research organization — so this pipeline is built to refuse to do
-that: `data/reference/pew_codebook.json` currently has real, verified
-labels for 23 of 304 columns (sex, religion, and 21 more pulled from Pew's
-"recode syntax for public release.txt" — see above), and only 1 of those
-23 survives full item screening (`Q43b`) once the demographic columns are
-excluded and WVS's existing scale/missingness/entropy filters are applied
-(most of the 21 are plain yes/no items, filtered out by the project's
-existing `MIN_RESPONSE_SCALE_SIZE = 4` — a real, considered choice, not a
-bug: see the "silicon sampling" project's earlier discussion on why mixing
-coarse binary items with fine-grained ones makes accuracy numbers hard to
-compare fairly. That threshold lives in `src/config.py` and is shared with
-WVS, so change it there, not per-track, if you want binary Pew items included).
-
-**The recode-syntax file was NOT the primary source** — per Pew's own
-`READ ME.txt`, that file only holds *derived/combined* variables (age
-buckets, caste buckets, combined topline variables), not the full
-question-by-question wording. It happened to have enough embedded context
-in a few variable labels to confirm 21 real base items as a side effect.
-The actual full codebook is `CODEBOOK_India.pdf` (human-readable) or `Pew
-India DDI metadata.xml` (machine-readable, likely easier to parse
-completely) — either one unlocks the rest of the ~280 remaining items.
-
-**To unblock it**, once you have one of the three codebook documents above:
-
-```bash
-# If you have the recode-syntax .txt (try this first, it's plain text):
-python scripts/parse_pew_recode_syntax.py "data/raw/India recode syntax for public release.txt" -o data/reference/pew_labels_raw.json
-# NOT YET VERIFIED against the real file -- if it parses fewer than ~50
-# variables, the file's exact syntax differs from what the parser expects;
-# open the .txt and compare it against parse_pew_recode_syntax.py's
-# docstring, or come back with the real format and this will be fixed.
-
-python -m src.data.build_pew_codebook --labels data/reference/pew_labels_raw.json
-python -m src.data.select_items_pew
-```
-
-If `select_items_pew` reports more than 0 items, you're unblocked — nothing
-downstream (training script, notebook, inference, test panel) needs any
-further changes.
+231 of the 304 columns are correctly excluded from item selection
+regardless of wording -- 195 for being binary (below the project's
+existing `MIN_RESPONSE_SCALE_SIZE = 4`, shared with WVS: a real,
+considered choice about comparability, not a bug -- raise it in
+`src/config.py` if you want binary items included too), 19 as
+demographic-conditioning columns, 11 for missingness above 10%, the rest
+for non-ordinal codes or near-unanimous answers. Only `QHH1`/`QHH2`
+(household composition fields) remain genuinely unlabeled.
 
 ## What's in this branch
 
@@ -98,8 +57,12 @@ scripts/
   pewB_test_panel.py           <- paper-ready markdown table: real (demographics,
                                    question, true answer, model answer) rows
                                    from held-out respondents
+  parse_pew_ddi_xml.py          <- turns Pew's DDI metadata XML into real
+                                   question/answer labels (the primary
+                                   source used already -- see above)
   parse_pew_recode_syntax.py   <- turns Pew's SPSS recode-syntax .txt into
-                                   real question/answer labels (see above)
+                                   real question/answer labels (superseded
+                                   by the DDI parser, kept for provenance)
 
 src/
   data/load_pew.py             <- raw CSV -> cleaned parquet (missing-code
@@ -112,11 +75,15 @@ src/
                                    (adds caste as a bonus axis WVS doesn't have)
 
 data/
-  processed/pew_selected_items.json  <- screened items (0 until codebook is done)
+  processed/pew_selected_items.json  <- 73 screened items, ready to train on
   processed/pew_folds.json           <- 5-fold split (respondent IDs only,
                                         safe to commit -- no survey answers)
-  reference/pew_codebook.json        <- question metadata (2/304 verified as shipped)
-  raw/<csv>, processed/pew_india_2021.parquet  <- YOU ADD THESE (see above)
+  reference/pew_codebook.json        <- question metadata (302/304 verified)
+  reference/pew_labels_ddi.json      <- the parsed DDI labels merged into
+                                        the codebook above (regenerate with
+                                        parse_pew_ddi_xml.py if Pew ever
+                                        revises the release)
+  raw/<csv>, processed/pew_india_2021.parquet  <- YOU ADD/GENERATE THESE (see above)
 
 test_pipeline_dryrun_pew.py    <- proves the prompt-building pipeline is
                                    mechanically sound against real committed
@@ -130,9 +97,11 @@ test_pipeline_dryrun_pew.py    <- proves the prompt-building pipeline is
 pip install -r scripts/pewB_requirements.txt
 pip install huggingface_hub
 
-# 1. Build the processed data (run once)
+# 1. Build the processed data (run once -- codebook/selected-items/folds
+#    are already committed with real labels; re-run only if you regenerate
+#    data/raw/<csv> or want to re-derive them from scratch)
 python -m src.data.load_pew
-python -m src.data.build_pew_codebook --labels <your parsed labels file>   # see above
+python -m src.data.build_pew_codebook --labels data/reference/pew_labels_ddi.json
 python -m src.data.select_items_pew
 python -m src.data.build_folds_pew
 

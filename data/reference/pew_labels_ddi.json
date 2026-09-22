@@ -1,0 +1,2745 @@
+{
+  "COUNTRY": {
+    "title": "COUNTRY ID",
+    "wording": "COUNTRY. COUNTRY ID",
+    "valid_codes": {
+      "1": "INDIA"
+    }
+  },
+  "QMLangRec": {
+    "title": "[DO NOT READ] Main language of interview? [INTERVIEWER: THIS QUESTION IS NOT TO BE READ TO RESPONDENT. YOU NEED TO RECORD THE MAIN LANGUAGE SELECTED TO CONDUCT THIS INTERVIEW.]",
+    "wording": "QMLangRec. [DO NOT READ] Main language of interview? [INTERVIEWER: THIS QUESTION IS NOT TO BE READ TO RESPONDENT. YOU NEED TO RECORD THE MAIN LANGUAGE SELECTED TO CONDUCT THIS INTERVIEW.]",
+    "valid_codes": {
+      "1": "Hindi",
+      "2": "Language other than Hindi"
+    }
+  },
+  "Q2": {
+    "title": "How often, if at all, do you follow the news?",
+    "wording": "Q2. How often, if at all, do you follow the news?",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q3rec_1": {
+    "title": "How have you been getting the news? Television",
+    "wording": "Q3. How have you been getting the news? Television",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_2": {
+    "title": "How have you been getting the news? Newspapers or magazines",
+    "wording": "Q3. How have you been getting the news? Newspapers or magazines",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_3": {
+    "title": "How have you been getting the news? Radio",
+    "wording": "Q3. How have you been getting the news? Radio",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_4": {
+    "title": "How have you been getting the news? Internet",
+    "wording": "Q3. How have you been getting the news? Internet",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_5": {
+    "title": "How have you been getting the news? Social media (Facebook, Twitter, WhatsApp)",
+    "wording": "Q3. How have you been getting the news? Social media (Facebook, Twitter, WhatsApp)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_6": {
+    "title": "How have you been getting the news? Word of mouth, family, friends",
+    "wording": "Q3. How have you been getting the news? Word of mouth, family, friends",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_7": {
+    "title": "How have you been getting the news? Other",
+    "wording": "Q3. How have you been getting the news? Other",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_98": {
+    "title": "How have you been getting the news? DK",
+    "wording": "Q3. How have you been getting the news? DK",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q3rec_99": {
+    "title": "How have you been getting the news? Refused",
+    "wording": "Q3. How have you been getting the news? Refused",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q4": {
+    "title": "Thinking about your current economic situation, how would you describe it?",
+    "wording": "Q4. Thinking about your current economic situation, how would you describe it?",
+    "valid_codes": {
+      "1": "Very good",
+      "2": "Somewhat good",
+      "3": "Somewhat bad [OR]",
+      "4": "Very bad"
+    }
+  },
+  "Q5": {
+    "title": "Over the next 12 months, do you expect your economic situation to …?",
+    "wording": "Q5. Over the next 12 months, do you expect your economic situation to …?",
+    "valid_codes": {
+      "1": "Improve",
+      "2": "Remain the same [OR]",
+      "3": "Worsen"
+    }
+  },
+  "Q6a": {
+    "title": "Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. a. Unemployment",
+    "wording": "Q6. Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. a. Unemployment",
+    "valid_codes": {
+      "1": "Very big problem",
+      "2": "Moderately big problem",
+      "3": "Small problem [OR]",
+      "4": "Not a problem at all"
+    }
+  },
+  "Q6b": {
+    "title": "Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. b. Crime",
+    "wording": "Q6. Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. b. Crime",
+    "valid_codes": {
+      "1": "Very big problem",
+      "2": "Moderately big problem",
+      "3": "Small problem [OR]",
+      "4": "Not a problem at all"
+    }
+  },
+  "Q6c": {
+    "title": "Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. c. Communal violence",
+    "wording": "Q6. Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. c. Communal violence",
+    "valid_codes": {
+      "1": "Very big problem",
+      "2": "Moderately big problem",
+      "3": "Small problem [OR]",
+      "4": "Not a problem at all"
+    }
+  },
+  "Q6d": {
+    "title": "Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. d. Corruption",
+    "wording": "Q6. Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. d. Corruption",
+    "valid_codes": {
+      "1": "Very big problem",
+      "2": "Moderately big problem",
+      "3": "Small problem [OR]",
+      "4": "Not a problem at all"
+    }
+  },
+  "Q6e": {
+    "title": "Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. e. Violence against women",
+    "wording": "Q6. Now I am going to read you a list of things that may be problems in India. As I read each one, please tell me if you think it is a …. e. Violence against women",
+    "valid_codes": {
+      "1": "Very big problem",
+      "2": "Moderately big problem",
+      "3": "Small problem [OR]",
+      "4": "Not a problem at all"
+    }
+  },
+  "Q7": {
+    "title": "To improve the safety of women in our community, which do you think is more important?",
+    "wording": "Q7. To improve the safety of women in our community, which do you think is more important?",
+    "valid_codes": {
+      "1": "Teaching boys to respect all women",
+      "2": "Teaching girls to behave appropriately",
+      "3": "Women are already safe (DO NOT READ)",
+      "4": "Improve law and order/Policing (DO NOT READ)",
+      "5": "Both/Depends/Other (DO NOT READ)"
+    }
+  },
+  "Q9": {
+    "title": "How important is it for women to have the same rights as men?",
+    "wording": "Q9. How important is it for women to have the same rights as men?",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "ABORT": {
+    "title": "Do you think having an abortion should be …?",
+    "wording": "ABORT. Do you think having an abortion should be …?",
+    "valid_codes": {
+      "1": "Legal in all cases",
+      "2": "Legal in most cases",
+      "3": "Illegal in most cases [OR]",
+      "4": "Illegal in all cases"
+    }
+  },
+  "Q10": {
+    "title": "Some feel that we should rely on a democratic form of government to solve our country’s problems. Others feel that we should rely on a leader with a strong hand to solve our country’s problems. Which comes closer to your opinion?",
+    "wording": "Q10. Some feel that we should rely on a democratic form of government to solve our country’s problems. Others feel that we should rely on a leader with a strong hand to solve our country’s problems. Which comes closer to your opinion?",
+    "valid_codes": {
+      "1": "Democratic form of government",
+      "2": "Leader with a strong hand"
+    }
+  },
+  "Q11ya": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? a. Hindus",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? a. Hindus",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yb": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? b. Muslims",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? b. Muslims",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yc": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? c. Christians",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? c. Christians",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yd": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? d. Sikhs",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? d. Sikhs",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11ye": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? e. Buddhists",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? e. Buddhists",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yf": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? f. Jains",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? f. Jains",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yg": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? g. Members of Scheduled Castes",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? g. Members of Scheduled Castes",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yh": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? h. Members of Scheduled Tribes",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? h. Members of Scheduled Tribes",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yi": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? i. Members of Other Backward Classes",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? i. Members of Other Backward Classes",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q11yj": {
+    "title": "Just your impression, in India today, is there a lot of discrimination against ...? j. Women",
+    "wording": "Q11y. Just your impression, in India today, is there a lot of discrimination against ...? j. Women",
+    "valid_codes": {
+      "1": "Yes, a lot of discrimination",
+      "2": "No, not a lot of discrimination"
+    }
+  },
+  "Q12": {
+    "title": "How much influence should politicians have in religious matters?",
+    "wording": "Q12. How much influence should politicians have in religious matters?",
+    "valid_codes": {
+      "1": "A large influence",
+      "2": "Some influence",
+      "3": "Not too much influence [OR]",
+      "4": "No influence at all"
+    }
+  },
+  "Q13": {
+    "title": "Nowadays, would you say that your health is …?",
+    "wording": "Q13. Nowadays, would you say that your health is …?",
+    "valid_codes": {
+      "1": "Excellent",
+      "2": "Good",
+      "3": "Fair [OR]",
+      "4": "Poor"
+    }
+  },
+  "Q14a": {
+    "title": "In general, when you or someone in your family has health problems, how much do you trust ... for treatment? a. ayurveda or home remedies",
+    "wording": "Q14. In general, when you or someone in your family has health problems, how much do you trust ... for treatment? a. ayurveda or home remedies",
+    "valid_codes": {
+      "1": "A lot",
+      "2": "Some",
+      "3": "Not too much [OR]",
+      "4": "Not at all",
+      "5": "Depends on situation (DO NOT READ)"
+    }
+  },
+  "Q14b": {
+    "title": "In general, when you or someone in your family has health problems, how much do you trust ... for treatment? b. religious ritual",
+    "wording": "Q14. In general, when you or someone in your family has health problems, how much do you trust ... for treatment? b. religious ritual",
+    "valid_codes": {
+      "1": "A lot",
+      "2": "Some",
+      "3": "Not too much [OR]",
+      "4": "Not at all",
+      "5": "Depends on situation (DO NOT READ)"
+    }
+  },
+  "Q14c": {
+    "title": "In general, when you or someone in your family has health problems, how much do you trust ... for treatment? c. homeopathy",
+    "wording": "Q14. In general, when you or someone in your family has health problems, how much do you trust ... for treatment? c. homeopathy",
+    "valid_codes": {
+      "1": "A lot",
+      "2": "Some",
+      "3": "Not too much [OR]",
+      "4": "Not at all",
+      "5": "Depends on situation (DO NOT READ)"
+    }
+  },
+  "Q14d": {
+    "title": "In general, when you or someone in your family has health problems, how much do you trust ... for treatment? d. medical science",
+    "wording": "Q14. In general, when you or someone in your family has health problems, how much do you trust ... for treatment? d. medical science",
+    "valid_codes": {
+      "1": "A lot",
+      "2": "Some",
+      "3": "Not too much [OR]",
+      "4": "Not at all",
+      "5": "Depends on situation (DO NOT READ)"
+    }
+  },
+  "Q15": {
+    "title": "How acceptable or unacceptable is it to get a checkup using modern methods to balance the number of girls and boys in the family?",
+    "wording": "Q15. How acceptable or unacceptable is it to get a checkup using modern methods to balance the number of girls and boys in the family?",
+    "valid_codes": {
+      "1": "Completely acceptable",
+      "2": "Somewhat acceptable",
+      "3": "Somewhat unacceptable [OR]",
+      "4": "Completely unacceptable"
+    }
+  },
+  "Q17a": {
+    "title": "In India today, how free are …? a. people of other religions to practice their religion",
+    "wording": "Q17. In India today, how free are …? a. people of other religions to practice their religion",
+    "valid_codes": {
+      "1": "Very free",
+      "2": "Somewhat free",
+      "3": "Not too free [OR]",
+      "4": "Not at all free",
+      "5": "Not religious/Do not practice religion/Other/Depends (DO NOT READ)"
+    }
+  },
+  "Q17b": {
+    "title": "In India today, how free are …? b. you to practice your religion",
+    "wording": "Q17. In India today, how free are …? b. you to practice your religion",
+    "valid_codes": {
+      "1": "Very free",
+      "2": "Somewhat free",
+      "3": "Not too free [OR]",
+      "4": "Not at all free",
+      "5": "Not religious/Do not practice religion/Other/Depends (DO NOT READ)"
+    }
+  },
+  "Q18a": {
+    "title": "How much do you know about …? a. the Hindu religion and its practices",
+    "wording": "Q18. How much do you know about …? a. the Hindu religion and its practices",
+    "valid_codes": {
+      "1": "A great deal",
+      "2": "Some",
+      "3": "Not very much [OR]",
+      "4": "Nothing at all"
+    }
+  },
+  "Q18b": {
+    "title": "How much do you know about …? b. the Muslim religion and its practices",
+    "wording": "Q18. How much do you know about …? b. the Muslim religion and its practices",
+    "valid_codes": {
+      "1": "A great deal",
+      "2": "Some",
+      "3": "Not very much [OR]",
+      "4": "Nothing at all"
+    }
+  },
+  "Q18c": {
+    "title": "How much do you know about …? c. the Christian religion and its practices",
+    "wording": "Q18. How much do you know about …? c. the Christian religion and its practices",
+    "valid_codes": {
+      "1": "A great deal",
+      "2": "Some",
+      "3": "Not very much [OR]",
+      "4": "Nothing at all"
+    }
+  },
+  "Q18d": {
+    "title": "How much do you know about …? d. the Jain religion and its practices",
+    "wording": "Q18. How much do you know about …? d. the Jain religion and its practices",
+    "valid_codes": {
+      "1": "A great deal",
+      "2": "Some",
+      "3": "Not very much [OR]",
+      "4": "Nothing at all"
+    }
+  },
+  "Q18e": {
+    "title": "How much do you know about …? e. the Sikh religion and its practices",
+    "wording": "Q18. How much do you know about …? e. the Sikh religion and its practices",
+    "valid_codes": {
+      "1": "A great deal",
+      "2": "Some",
+      "3": "Not very much [OR]",
+      "4": "Nothing at all"
+    }
+  },
+  "Q18f": {
+    "title": "How much do you know about …? f. the Buddhist religion and its practices",
+    "wording": "Q18. How much do you know about …? f. the Buddhist religion and its practices",
+    "valid_codes": {
+      "1": "A great deal",
+      "2": "Some",
+      "3": "Not very much [OR]",
+      "4": "Nothing at all"
+    }
+  },
+  "Q19a": {
+    "title": "How important is it for a family to have at least one …? a. son",
+    "wording": "Q19. How important is it for a family to have at least one …? a. son",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q19b": {
+    "title": "How important is it for a family to have at least one …? b. daughter",
+    "wording": "Q19. How important is it for a family to have at least one …? b. daughter",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "QW21a": {
+    "title": "How important is it to stop women in your community from marrying into another …? a. caste",
+    "wording": "QW21. How important is it to stop women in your community from marrying into another …? a. caste",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important",
+      "5": "It depends (DO NOT READ)"
+    }
+  },
+  "QW21b": {
+    "title": "How important is it to stop women in your community from marrying into another …? b. religion",
+    "wording": "QW21. How important is it to stop women in your community from marrying into another …? b. religion",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important",
+      "5": "It depends (DO NOT READ)"
+    }
+  },
+  "QM21a": {
+    "title": "How important is it to stop men in your community from marrying into another …? a. caste",
+    "wording": "QM21. How important is it to stop men in your community from marrying into another …? a. caste",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important",
+      "5": "It depends (DO NOT READ)"
+    }
+  },
+  "QM21b": {
+    "title": "How important is it to stop men in your community from marrying into another …? b. religion",
+    "wording": "QM21. How important is it to stop men in your community from marrying into another …? b. religion",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important",
+      "5": "It depends (DO NOT READ)"
+    }
+  },
+  "Q22a": {
+    "title": "In a family, who should be primarily responsible for …? a. earning money",
+    "wording": "Q22. In a family, who should be primarily responsible for …? a. earning money",
+    "valid_codes": {
+      "1": "Men",
+      "2": "Women [OR]",
+      "3": "Both",
+      "4": "Depends/Other (DO NOT READ)"
+    }
+  },
+  "Q22b": {
+    "title": "In a family, who should be primarily responsible for …? b. taking care of children",
+    "wording": "Q22. In a family, who should be primarily responsible for …? b. taking care of children",
+    "valid_codes": {
+      "1": "Men",
+      "2": "Women [OR]",
+      "3": "Both",
+      "4": "Depends/Other (DO NOT READ)"
+    }
+  },
+  "Q22c": {
+    "title": "In a family, who should be primarily responsible for …? c. making decisions about expenses",
+    "wording": "Q22. In a family, who should be primarily responsible for …? c. making decisions about expenses",
+    "valid_codes": {
+      "1": "Men",
+      "2": "Women [OR]",
+      "3": "Both",
+      "4": "Depends/Other (DO NOT READ)"
+    }
+  },
+  "Q23a": {
+    "title": "Please tell me whether you completely agree, mostly agree, mostly disagree or completely disagree with the following statements. a. A wife must always obey her husband",
+    "wording": "Q23. Please tell me whether you completely agree, mostly agree, mostly disagree or completely disagree with the following statements. a. A wife must always obey her husband",
+    "valid_codes": {
+      "1": "Completely agree",
+      "2": "Mostly agree",
+      "3": "Mostly disagree",
+      "4": "Completely disagree"
+    }
+  },
+  "Q23b": {
+    "title": "Please tell me whether you completely agree, mostly agree, mostly disagree or completely disagree with the following statements. b. When there are few jobs, men should have more rights to a job than women",
+    "wording": "Q23. Please tell me whether you completely agree, mostly agree, mostly disagree or completely disagree with the following statements. b. When there are few jobs, men should have more rights to a job than women",
+    "valid_codes": {
+      "1": "Completely agree",
+      "2": "Mostly agree",
+      "3": "Mostly disagree",
+      "4": "Completely disagree"
+    }
+  },
+  "Q24": {
+    "title": "In your opinion, who should have a greater right to parents’ inheritance?",
+    "wording": "Q24. In your opinion, who should have a greater right to parents’ inheritance?",
+    "valid_codes": {
+      "1": "Sons [OR]",
+      "2": "Daughters [OR]",
+      "3": "Both should have equal rights",
+      "4": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q26": {
+    "title": "Which of these three statements comes closest to your opinion?",
+    "wording": "Q26. Which of these three statements comes closest to your opinion?",
+    "valid_codes": {
+      "1": "Men generally make better political leaders than women [OR]",
+      "2": "Women generally make better political leaders than men [OR]",
+      "3": "In general, women and men make equally good political leaders"
+    }
+  },
+  "QRELSING": {
+    "title": "What is your present religion, if any? Are you Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or have no religion?",
+    "wording": "QRELSING. What is your present religion, if any? Are you Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or have no religion?",
+    "valid_codes": {
+      "1": "Hindu",
+      "2": "Muslim",
+      "3": "Christian",
+      "4": "Sikh",
+      "5": "Buddhist",
+      "6": "Jain",
+      "7": "Some other religion",
+      "8": "No religion"
+    }
+  },
+  "QCASTE": {
+    "title": "Are you from a …?",
+    "wording": "QCASTE. Are you from a …?",
+    "valid_codes": {
+      "1": "General Category",
+      "2": "Scheduled Caste",
+      "3": "Scheduled Tribe [OR]",
+      "4": "Other Backward Class",
+      "5": "Most Backward Class (DO NOT READ)"
+    }
+  },
+  "QCASTEb": {
+    "title": "Are you …?",
+    "wording": "QCASTEb. Are you …?",
+    "valid_codes": {
+      "1": "Brahmin",
+      "2": "Other Forward Caste [OR]"
+    }
+  },
+  "QHINDU": {
+    "title": "I would like to ask you about some sects within Hinduism. It is possible that some of these may not be familiar to you. Which, if any, of the sects do you identify with?",
+    "wording": "QHINDU. I would like to ask you about some sects within Hinduism. It is possible that some of these may not be familiar to you. Which, if any, of the sects do you identify with?",
+    "valid_codes": {
+      "1": "Vaishnavite",
+      "2": "Shaivite",
+      "3": "Shakta",
+      "4": "Some other sect [SPECIFY QHINDUb] [OR]",
+      "5": "No sect in particular",
+      "6": "Smartism (DO NOT READ)"
+    }
+  },
+  "QSECTrec": {
+    "title": "Are you …?",
+    "wording": "QSECT. Are you …?",
+    "valid_codes": {
+      "1": "Sunni",
+      "3": "Some other sect",
+      "4": "No sect in particular"
+    }
+  },
+  "QDENOMrec": {
+    "title": "Please tell me which denomination or church, if any, you identify with MOST CLOSELY?",
+    "wording": "QDENOM. Please tell me which denomination or church, if any, you identify with MOST CLOSELY?",
+    "valid_codes": {
+      "1": "Catholic",
+      "6": "No denomination or church in particular",
+      "9": "Baptist (DO NOT READ)",
+      "12": "Presbyterian (DO NOT READ)"
+    }
+  },
+  "QSIKHrec": {
+    "title": "I would like to ask you about some sects within Sikhism. It is possible that some of these may not be familiar to you. Which, if any, of the sects do you identify with?",
+    "wording": "QSIKH. I would like to ask you about some sects within Sikhism. It is possible that some of these may not be familiar to you. Which, if any, of the sects do you identify with?",
+    "valid_codes": {
+      "1": "Amritdhari",
+      "2": "Keshdhari",
+      "3": "Namdhaari",
+      "4": "Sahajdhari",
+      "7": "Some other sect",
+      "8": "No sect in particular"
+    }
+  },
+  "QBUDDHISTrec": {
+    "title": "I would like to ask you about some orders within Buddhism. It is possible that some of these may not be familiar to you. Which, if any, of the orders do you identify with?",
+    "wording": "QBUDDHIST. I would like to ask you about some orders within Buddhism. It is possible that some of these may not be familiar to you. Which, if any, of the orders do you identify with?",
+    "valid_codes": {
+      "4": "Navayana",
+      "5": "Some other order",
+      "6": "No order in particular"
+    }
+  },
+  "QJAIN": {
+    "title": "I would like to ask you about some schools of thought or traditions within Jainism. It is possible that some of these may not be familiar to you. Which, if any, of the schools of thought or traditions do you identify with?",
+    "wording": "QJAIN. I would like to ask you about some schools of thought or traditions within Jainism. It is possible that some of these may not be familiar to you. Which, if any, of the schools of thought or traditions do you identify with?",
+    "valid_codes": {
+      "1": "Shwetambara",
+      "2": "Digambara (DO NOT READ: Samanar)",
+      "3": "Some other school of thought or tradition [SPECIFY QJAINb]  [OR]",
+      "4": "No school of thought or tradition in particular"
+    }
+  },
+  "QSUFIrec": {
+    "title": "I would like to ask you about some orders within Sufiism. It is possible that some of these may not be familiar to you. Do you follow any Sufi order, such as …?",
+    "wording": "QSUFI. I would like to ask you about some orders within Sufiism. It is possible that some of these may not be familiar to you. Do you follow any Sufi order, such as …?",
+    "valid_codes": {
+      "1": "Identify as a Sufi (recode)",
+      "2": "I am not a Sufi"
+    }
+  },
+  "Q28rec": {
+    "title": "To you personally, is being [QRELSING]...? Mainly a matter or religion, mainly a matter of ancestry, or mainly a matter of culture (SELECT UP TO THREE)",
+    "wording": "Q28rec. To you personally, is being [QRELSING]...? Mainly a matter or religion, mainly a matter of ancestry, or mainly a matter of culture (SELECT UP TO THREE)",
+    "valid_codes": {
+      "1": "Mainly a matter of religion",
+      "2": "Mainly a matter of ancestry",
+      "3": "Mainly a matter of culture",
+      "4": "All of these",
+      "5": "Religion and ancestry",
+      "6": "Religion and culture",
+      "7": "Ancestry and culture",
+      "8": "Other/ None of these"
+    }
+  },
+  "Q29a": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? a. respecting elders",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? a. respecting elders",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "Q29b": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? b. believing in God",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? b. believing in God",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "q29cdrec": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [INSERT QRELSING] means to you? cdrec. [praying/offering namaz]",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [INSERT QRELSING] means to you? cdrec. [praying/offering namaz]",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "Q29e": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? e. helping the poor and needy",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? e. helping the poor and needy",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "Q29f": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? f. respecting other religions",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? f. respecting other religions",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "Q29g": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? g. being born into a [QRELSING] family",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? g. being born into a [QRELSING] family",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "Q29h": {
+    "title": "Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? h. respecting India",
+    "wording": "Q29. Is ... a very important, somewhat important, not too important or not at all important part of what being [QRELSING] means to you? h. respecting India",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important",
+      "4": "Not at all important"
+    }
+  },
+  "Q30a": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? a. show disrespect to elders",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? a. show disrespect to elders",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30b": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? b. do not believe in God",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? b. do not believe in God",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30c": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? c. never go to [temple/mosque/church/gurudwara]",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? c. never go to [temple/mosque/church/gurudwara]",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "q30derec": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? derec. [never perform prayers/ never offer namaz]",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? derec. [never perform prayers/ never offer namaz]",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30f": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? f. eat beef",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? f. eat beef",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30g": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? g. eat pork",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? g. eat pork",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30h": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? h. do not celebrate [QRELSING] festivals",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? h. do not celebrate [QRELSING] festivals",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30i": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? i. celebrate Christmas",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? i. celebrate Christmas",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30j": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? j. celebrate Eid",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? j. celebrate Eid",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30k": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? k. celebrate Diwali",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? k. celebrate Diwali",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q30l": {
+    "title": "In your opinion, can a person be [INSERT QRELSING] if they ...? l. disrespect India",
+    "wording": "Q30. In your opinion, can a person be [INSERT QRELSING] if they ...? l. disrespect India",
+    "valid_codes": {
+      "1": "Yes, can be",
+      "2": "No, cannot be"
+    }
+  },
+  "Q3132rec": {
+    "title": "[IF CHRISTIAN: Aside from weddings and funerals,] how often do you [go to the temple/attend the mosque for namaz/go to the gurudwara/attend religious services]?",
+    "wording": "Q3132rec. [IF CHRISTIAN: Aside from weddings and funerals,] how often do you [go to the temple/attend the mosque for namaz/go to the gurudwara/attend religious services]?",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q33a": {
+    "title": "Have you ever prayed, meditated or performed a ritual at a ...? a. Hindu temple",
+    "wording": "Q33. Have you ever prayed, meditated or performed a ritual at a ...? a. Hindu temple",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q33b": {
+    "title": "Have you ever prayed, meditated or performed a ritual at a ...? b. Mosque",
+    "wording": "Q33. Have you ever prayed, meditated or performed a ritual at a ...? b. Mosque",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q33c": {
+    "title": "Have you ever prayed, meditated or performed a ritual at a ...? c. Church",
+    "wording": "Q33. Have you ever prayed, meditated or performed a ritual at a ...? c. Church",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q33d": {
+    "title": "Have you ever prayed, meditated or performed a ritual at a ...? d. Gurudwara",
+    "wording": "Q33. Have you ever prayed, meditated or performed a ritual at a ...? d. Gurudwara",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q33e": {
+    "title": "Have you ever prayed, meditated or performed a ritual at a ...? e. Buddhist stupa",
+    "wording": "Q33. Have you ever prayed, meditated or performed a ritual at a ...? e. Buddhist stupa",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q33f": {
+    "title": "Have you ever prayed, meditated or performed a ritual at a ...? f. Sufi shrine",
+    "wording": "Q33. Have you ever prayed, meditated or performed a ritual at a ...? f. Sufi shrine",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q34a": {
+    "title": "How often do you ..., if at all? a. meditate",
+    "wording": "Q34. How often do you ..., if at all? a. meditate",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q34b": {
+    "title": "How often do you ..., if at all? b. practice yoga",
+    "wording": "Q34. How often do you ..., if at all? b. practice yoga",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q35": {
+    "title": "How important is religion in your life?",
+    "wording": "Q35. How important is religion in your life?",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q36a": {
+    "title": "Have you ever …? a. made a pilgrimage",
+    "wording": "Q36. Have you ever …? a. made a pilgrimage",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q36b": {
+    "title": "Have you ever …? b. participated in or witnessed animal sacrifices for religious purposes",
+    "wording": "Q36. Have you ever …? b. participated in or witnessed animal sacrifices for religious purposes",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q36c": {
+    "title": "Have you ever …? c. received purification by taking a dip in a holy body of water, like the Ganges River",
+    "wording": "Q36. Have you ever …? c. received purification by taking a dip in a holy body of water, like the Ganges River",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37a": {
+    "title": "Do you …? a. give money to a [temple/mosque/church/gurudwara/house of worship]",
+    "wording": "Q37. Do you …? a. give money to a [temple/mosque/church/gurudwara/house of worship]",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37b": {
+    "title": "Do you …? b. give money to any other charitable causes",
+    "wording": "Q37. Do you …? b. give money to any other charitable causes",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37c": {
+    "title": "Do you …? c. have an altar, shrine or religious symbol in your home for worship",
+    "wording": "Q37. Do you …? c. have an altar, shrine or religious symbol in your home for worship",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37d": {
+    "title": "Do you …? d. ever invite [a pundit or learned person/a monk or learned person/a priest or pastor/an imam/a religious leader] to conduct religious rites at your home",
+    "wording": "Q37. Do you …? d. ever invite [a pundit or learned person/a monk or learned person/a priest or pastor/an imam/a religious leader] to conduct religious rites at your home",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37e": {
+    "title": "Do you …? e. sing devotionally",
+    "wording": "Q37. Do you …? e. sing devotionally",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37f": {
+    "title": "Do you …? f. dance devotionally",
+    "wording": "Q37. Do you …? f. dance devotionally",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37g": {
+    "title": "Do you …? g. fast",
+    "wording": "Q37. Do you …? g. fast",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37h": {
+    "title": "Do you …? h. have holy basil at home",
+    "wording": "Q37. Do you …? h. have holy basil at home",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q37i": {
+    "title": "Do you …? i. fix important dates, such as for a wedding, based on auspicious times or dates",
+    "wording": "Q37. Do you …? i. fix important dates, such as for a wedding, based on auspicious times or dates",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q38": {
+    "title": "Do you currently follow a guru, pir or baba?",
+    "wording": "Q38. Do you currently follow a guru, pir or baba?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "My family follows one, but I do not (DO NOT READ)"
+    }
+  },
+  "Q39a": {
+    "title": "How often do you watch ..., if at all? a. Religious programs or serials",
+    "wording": "Q39. How often do you watch ..., if at all? a. Religious programs or serials",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q39b": {
+    "title": "How often do you watch …, if at all? b. Other serials",
+    "wording": "Q39. How often do you watch …, if at all? b. Other serials",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q39c": {
+    "title": "How often do you watch …, if at all? c. News programs",
+    "wording": "Q39. How often do you watch …, if at all? c. News programs",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q40": {
+    "title": "Which of these two statements is closest to your opinion?",
+    "wording": "Q40. Which of these two statements is closest to your opinion?",
+    "valid_codes": {
+      "1": "My religion is the one true religion",
+      "2": "Many religions can be true",
+      "3": "Neither/Both equally (DO NOT READ)"
+    }
+  },
+  "QCHRELrec": {
+    "title": "Now, thinking about when you were a child, in what religion were you raised, if any?",
+    "wording": "QCHRELrec. Now, thinking about when you were a child, in what religion were you raised, if any?",
+    "valid_codes": {
+      "1": "Childhood religion same as current religion",
+      "2": "Childhood religion different from current religion"
+    }
+  },
+  "Q42": {
+    "title": "Still thinking about when you were growing up, how important was religion to your family?",
+    "wording": "Q42. Still thinking about when you were growing up, how important was religion to your family?",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q43a": {
+    "title": "Do you believe in God?",
+    "wording": "Q43a. Do you believe in God?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q43b": {
+    "title": "How certain are you about this belief?",
+    "wording": "Q43b. How certain are you about this belief?",
+    "valid_codes": {
+      "1": "Absolutely certain",
+      "2": "Fairly certain",
+      "3": "Not too certain [OR]",
+      "4": "Not at all certain"
+    }
+  },
+  "Q43c": {
+    "title": "Do you believe that …?",
+    "wording": "Q43c. Do you believe that …?",
+    "valid_codes": {
+      "1": "There is only one God [OR]",
+      "2": "There is only one God with many manifestations [OR]",
+      "3": "There are many Gods"
+    }
+  },
+  "Q44rec_1": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Ganesha",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Ganesha",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_2": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Hanuman",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Hanuman",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_3": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Kali",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Kali",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_4": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Krishna",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Krishna",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_5": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Lakshmi",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Lakshmi",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_6": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Lord Ram",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Lord Ram",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_7": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Saraswati",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Saraswati",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_8": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Shiva",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Shiva",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_9": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Vishnu",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Vishnu",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_10": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Dattatreya",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Dattatreya",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_11": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Ayyappa",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Ayyappa",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_12": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Meenakshi",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Meenakshi",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_13": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Murugan",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Murugan",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_14": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, the Sun",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, the Sun",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_15": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Jesus",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, Jesus",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_16": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, another God",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes, another God",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_17": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes believe, No, I do not have a God I feel closest to",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes believe, No, I do not have a God I feel closest to",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_18": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? I have many personal Gods",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? I have many personal Gods",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_98": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes believe, Do not know (DO NOT READ)",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes believe, Do not know (DO NOT READ)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q44rec_99": {
+    "title": "Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes believe, Refused (DO NOT READ)",
+    "wording": "Q44. Do you believe in God? [If yes] Do you feel closest to any God? If so, which one? Yes believe, Refused (DO NOT READ)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q45a": {
+    "title": "Do you think God can be manifested in ...? a. nature, such as mountains, rivers or trees",
+    "wording": "Q45. Do you think God can be manifested in ...? a. nature, such as mountains, rivers or trees",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q45b": {
+    "title": "Do you think God can be manifested in ...? b. animals",
+    "wording": "Q45. Do you think God can be manifested in ...? b. animals",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q45c": {
+    "title": "Do you think God can be manifested in ...? c. people",
+    "wording": "Q45. Do you think God can be manifested in ...? c. people",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q46a": {
+    "title": "Do you think God can be manifested in people who …? a. belong to a lower caste",
+    "wording": "Q46. Do you think God can be manifested in people who …? a. belong to a lower caste",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q46b": {
+    "title": "Do you think God can be manifested in people who …? b. have done bad things in their life",
+    "wording": "Q46. Do you think God can be manifested in people who …? b. have done bad things in their life",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q47a": {
+    "title": "Do you ever ask God for … for you or your family? a. good health",
+    "wording": "Q47. Do you ever ask God for … for you or your family? a. good health",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q47b": {
+    "title": "Do you ever ask God for … for you or your family? b. prosperity",
+    "wording": "Q47. Do you ever ask God for … for you or your family? b. prosperity",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q47c": {
+    "title": "Do you ever ask God for … for you or your family? c. forgiveness",
+    "wording": "Q47. Do you ever ask God for … for you or your family? c. forgiveness",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q48a": {
+    "title": "Do you participate in celebrations of …? a. Christmas",
+    "wording": "Q48. Do you participate in celebrations of …? a. Christmas",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q48b": {
+    "title": "Do you participate in celebrations of …? b. Eid",
+    "wording": "Q48. Do you participate in celebrations of …? b. Eid",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q48c": {
+    "title": "Do you participate in celebrations of …? c. Diwali",
+    "wording": "Q48. Do you participate in celebrations of …? c. Diwali",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q48d": {
+    "title": "Do you participate in celebrations of …? d. Holi",
+    "wording": "Q48. Do you participate in celebrations of …? d. Holi",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q48e": {
+    "title": "Do you participate in celebrations of …? e. Valentine's Day",
+    "wording": "Q48. Do you participate in celebrations of …? e. Valentine's Day",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q48f": {
+    "title": "Do you participate in celebrations of …? f. Independence Day (15 August)",
+    "wording": "Q48. Do you participate in celebrations of …? f. Independence Day (15 August)",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49a": {
+    "title": "Do you believe …? a. in the “evil eye”",
+    "wording": "Q49. Do you believe …? a. in the “evil eye”",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49b": {
+    "title": "Do you believe …? b. in reincarnation",
+    "wording": "Q49. Do you believe …? b. in reincarnation",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49c": {
+    "title": "Do you believe …? c. in fate",
+    "wording": "Q49. Do you believe …? c. in fate",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49d": {
+    "title": "Do you believe …? d. in astrology",
+    "wording": "Q49. Do you believe …? d. in astrology",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49e": {
+    "title": "Do you believe …? e. that magic, sorcery or witchcraft can influence people's lives",
+    "wording": "Q49. Do you believe …? e. that magic, sorcery or witchcraft can influence people's lives",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49f": {
+    "title": "Do you believe …? f. in miracles",
+    "wording": "Q49. Do you believe …? f. in miracles",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49g": {
+    "title": "Do you believe …? g. in Heaven",
+    "wording": "Q49. Do you believe …? g. in Heaven",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49h": {
+    "title": "Do you believe …? h. in Judgement Day",
+    "wording": "Q49. Do you believe …? h. in Judgement Day",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49i": {
+    "title": "Do you believe …? i. in Nirvana",
+    "wording": "Q49. Do you believe …? i. in Nirvana",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49j": {
+    "title": "Do you believe …? j. in Moksha",
+    "wording": "Q49. Do you believe …? j. in Moksha",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49k": {
+    "title": "Do you believe …? k. in Kaivalya",
+    "wording": "Q49. Do you believe …? k. in Kaivalya",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49l": {
+    "title": "Do you believe …? l. in Karma",
+    "wording": "Q49. Do you believe …? l. in Karma",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49m": {
+    "title": "Do you believe …? m. in angels or benevolent spirits",
+    "wording": "Q49. Do you believe …? m. in angels or benevolent spirits",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49n": {
+    "title": "Do you believe …? n. in demons or evil spirits",
+    "wording": "Q49. Do you believe …? n. in demons or evil spirits",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q49o": {
+    "title": "Do you believe …? o. that the Ganges has the power to purify",
+    "wording": "Q49. Do you believe …? o. that the Ganges has the power to purify",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q50": {
+    "title": "How often do you read or listen to recitations of religious books [, for example, the Bhagavad Gita/the Quran/the Bible/the Guru Granth Sahib/the Sutras]?",
+    "wording": "Q50. How often do you read or listen to recitations of religious books [, for example, the Bhagavad Gita/the Quran/the Bible/the Guru Granth Sahib/the Sutras]?",
+    "valid_codes": {
+      "1": "Every day",
+      "2": "More than once a week",
+      "3": "Once a week",
+      "4": "Once or twice a month",
+      "5": "A few times a year",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q51": {
+    "title": "Which comes closest to your view? The [Bhagavad Gita/Quran/Bible/Guru Granth Sahib/Sutras/sacred text of your religion] …?",
+    "wording": "Q51. Which comes closest to your view? The [Bhagavad Gita/Quran/Bible/Guru Granth Sahib/Sutras/sacred text of your religion] …?",
+    "valid_codes": {
+      "1": "Is the word of God [OR]",
+      "2": "Is not the word of God",
+      "3": "Other (DO NOT READ)"
+    }
+  },
+  "Q52": {
+    "title": "Which of these two statements is closest to your opinion?",
+    "wording": "Q52. Which of these two statements is closest to your opinion?",
+    "valid_codes": {
+      "1": "There is only ONE true way to interpret the teachings of my religion [OR]",
+      "2": "There is MORE than one true way to interpret the teachings of my religion",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q53a": {
+    "title": "Do you perform puja …? a. at home",
+    "wording": "Q53. Do you perform puja …? a. at home",
+    "valid_codes": {
+      "1": "Several times a day",
+      "2": "Once a day",
+      "3": "A few times a week",
+      "4": "Once a week",
+      "5": "A few times a month",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q53b": {
+    "title": "Do you perform puja …? b. at temple",
+    "wording": "Q53. Do you perform puja …? b. at temple",
+    "valid_codes": {
+      "1": "Several times a day",
+      "2": "Once a day",
+      "3": "A few times a week",
+      "4": "Once a week",
+      "5": "A few times a month",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q54a": {
+    "title": "Do you [pray/offer namaz] …?",
+    "wording": "Q54a. Do you [pray/offer namaz] …?",
+    "valid_codes": {
+      "1": "Several times a day",
+      "2": "Once a day",
+      "3": "A few times a week",
+      "4": "Once a week",
+      "5": "A few times a month",
+      "6": "Seldom [OR]",
+      "7": "Never"
+    }
+  },
+  "Q54b": {
+    "title": "Do you pray all five namaz every day?",
+    "wording": "Q54b. Do you pray all five namaz every day?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q55a": {
+    "title": "Are you a vegetarian?",
+    "wording": "Q55a. Are you a vegetarian?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q55b": {
+    "title": "Do you abstain from eating root vegetables, such as garlic and onion?",
+    "wording": "Q55b. Do you abstain from eating root vegetables, such as garlic and onion?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q55c": {
+    "title": "Do you abstain from eating meat on certain days?",
+    "wording": "Q55c. Do you abstain from eating meat on certain days?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q55d": {
+    "title": "Do you abstain from eating certain meats?",
+    "wording": "Q55d. Do you abstain from eating certain meats?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q56a": {
+    "title": "Would you ever eat food …? a. in a restaurant that serves both vegetarian and non-vegetarian food",
+    "wording": "Q56. Would you ever eat food …? a. in a restaurant that serves both vegetarian and non-vegetarian food",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Depends (DO NOT READ)"
+    }
+  },
+  "Q56b": {
+    "title": "Would you ever eat food …? b. in the home of a friend or neighbor who is non-vegetarian",
+    "wording": "Q56. Would you ever eat food …? b. in the home of a friend or neighbor who is non-vegetarian",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Depends (DO NOT READ)"
+    }
+  },
+  "Q56c": {
+    "title": "Would you ever eat food …? c. in the home of someone whose religion has different rules about food than yours",
+    "wording": "Q56. Would you ever eat food …? c. in the home of someone whose religion has different rules about food than yours",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Depends (DO NOT READ)"
+    }
+  },
+  "Q56d": {
+    "title": "Would you ever eat food …? d. at a function hosted by people whose religion has different rules about food than yours",
+    "wording": "Q56. Would you ever eat food …? d. at a function hosted by people whose religion has different rules about food than yours",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Depends (DO NOT READ)"
+    }
+  },
+  "Q57a": {
+    "title": "How important is it for you to have …? a. [a baptism/a religious naming ceremony] for sons or daughters in your family",
+    "wording": "Q57. How important is it for you to have …? a. [a baptism/a religious naming ceremony] for sons or daughters in your family",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q57b": {
+    "title": "How important is it for you to have …? b. a religious wedding ceremony for you or the children in your family",
+    "wording": "Q57. How important is it for you to have …? b. a religious wedding ceremony for you or the children in your family",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q57c": {
+    "title": "How important is it for you to have …? c. a religious [INSERT: “burial” IF MUSLIM OR CHRISTIAN; INSERT “cremation” IF NOT MUSLIM OR CHRISTIAN] for your loved ones",
+    "wording": "Q57. How important is it for you to have …? c. a religious [INSERT: “burial” IF MUSLIM OR CHRISTIAN; INSERT “cremation” IF NOT MUSLIM OR CHRISTIAN] for your loved ones",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q58xa": {
+    "title": "In a family, who should have the primary responsibility ...? a. to care for parents as they age",
+    "wording": "Q58x. In a family, who should have the primary responsibility ...? a. to care for parents as they age",
+    "valid_codes": {
+      "1": "Sons",
+      "2": "Daughters [OR]",
+      "3": "Both should have the responsibility",
+      "4": "Daughters-in-law (DO NOT READ)",
+      "5": "Sons-in-law (DO NOT READ)",
+      "6": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q58xb": {
+    "title": "In a family, who should have the primary responsibility ...? b. for a parent’s [IF CHRISTIAN OR MUSLIM INSERT “burial rituals”; ELSE INSERT “last rites”]",
+    "wording": "Q58x. In a family, who should have the primary responsibility ...? b. for a parent’s [IF CHRISTIAN OR MUSLIM INSERT “burial rituals”; ELSE INSERT “last rites”]",
+    "valid_codes": {
+      "1": "Sons",
+      "2": "Daughters [OR]",
+      "3": "Both should have the responsibility",
+      "4": "Daughters-in-law (DO NOT READ)",
+      "5": "Sons-in-law (DO NOT READ)",
+      "6": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q60": {
+    "title": "Should Muslim men be able to divorce their wives by saying “Talaq” three times?",
+    "wording": "Q60. Should Muslim men be able to divorce their wives by saying “Talaq” three times?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QGEN": {
+    "title": "Gender",
+    "wording": "QGEN. Gender",
+    "valid_codes": {
+      "1": "Male",
+      "2": "Female"
+    }
+  },
+  "QDIV": {
+    "title": "All in all, do you think India’s religious diversity …?",
+    "wording": "QDIV. All in all, do you think India’s religious diversity …?",
+    "valid_codes": {
+      "1": "Benefits our country [OR]",
+      "2": "Harms our country",
+      "3": "Neither benefits nor harms (DO NOT READ)"
+    }
+  },
+  "Q61a": {
+    "title": "How many of your close friends …? a. [are QRELSING/have the same religion as you/belong to no particular religion]",
+    "wording": "Q61. How many of your close friends …? a. [are QRELSING/have the same religion as you/belong to no particular religion]",
+    "valid_codes": {
+      "1": "All of them",
+      "2": "Most of them",
+      "3": "Some of them [OR]",
+      "4": "Hardly any of them",
+      "5": "None of them (DO NOT READ)"
+    }
+  },
+  "Q61b": {
+    "title": "How many of your close friends …? b. are the same caste as you",
+    "wording": "Q61. How many of your close friends …? b. are the same caste as you",
+    "valid_codes": {
+      "1": "All of them",
+      "2": "Most of them",
+      "3": "Some of them [OR]",
+      "4": "Hardly any of them",
+      "5": "None of them (DO NOT READ)"
+    }
+  },
+  "Q62a": {
+    "title": "From what you know, do you think [INSERT QRELSING]s and ... in India …? a.  Hindus",
+    "wording": "Q62. From what you know, do you think [INSERT QRELSING]s and ... in India …? a.  Hindus",
+    "valid_codes": {
+      "1": "Have a lot in common [OR]",
+      "2": "Are very different",
+      "3": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q62b": {
+    "title": "From what you know, do you think [INSERT QRELSING]s and ... in India …? b.  Muslims",
+    "wording": "Q62. From what you know, do you think [INSERT QRELSING]s and ... in India …? b.  Muslims",
+    "valid_codes": {
+      "1": "Have a lot in common [OR]",
+      "2": "Are very different",
+      "3": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q62c": {
+    "title": "From what you know, do you think [INSERT QRELSING]s and ... in India …? c.  Christians",
+    "wording": "Q62. From what you know, do you think [INSERT QRELSING]s and ... in India …? c.  Christians",
+    "valid_codes": {
+      "1": "Have a lot in common [OR]",
+      "2": "Are very different",
+      "3": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q62d": {
+    "title": "From what you know, do you think [INSERT QRELSING]s and ... in India …? d.  Sikhs",
+    "wording": "Q62. From what you know, do you think [INSERT QRELSING]s and ... in India …? d.  Sikhs",
+    "valid_codes": {
+      "1": "Have a lot in common [OR]",
+      "2": "Are very different",
+      "3": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q62e": {
+    "title": "From what you know, do you think [INSERT QRELSING]s and ... in India …? e.  Buddhists",
+    "wording": "Q62. From what you know, do you think [INSERT QRELSING]s and ... in India …? e.  Buddhists",
+    "valid_codes": {
+      "1": "Have a lot in common [OR]",
+      "2": "Are very different",
+      "3": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q62f": {
+    "title": "From what you know, do you think [INSERT QRELSING]s and … in India …? f.  Jains",
+    "wording": "Q62. From what you know, do you think [INSERT QRELSING]s and … in India …? f.  Jains",
+    "valid_codes": {
+      "1": "Have a lot in common [OR]",
+      "2": "Are very different",
+      "3": "Other/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63a": {
+    "title": "Would you be willing to accept a … as a neighbor? a.  Hindu",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? a.  Hindu",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63b": {
+    "title": "Would you be willing to accept a … as a neighbor? b.  Muslim",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? b.  Muslim",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63c": {
+    "title": "Would you be willing to accept a … as a neighbor? c.  Christian",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? c.  Christian",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63d": {
+    "title": "Would you be willing to accept a … as a neighbor? d.  Sikh",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? d.  Sikh",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63e": {
+    "title": "Would you be willing to accept a … as a neighbor? e.  Buddhist",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? e.  Buddhist",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63f": {
+    "title": "Would you be willing to accept a … as a neighbor? f.  Jain",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? f.  Jain",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q63g": {
+    "title": "Would you be willing to accept a … as a neighbor? g.  Scheduled Caste",
+    "wording": "Q63. Would you be willing to accept a … as a neighbor? g.  Scheduled Caste",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Other/Both/Neither/Depends (DO NOT READ)"
+    }
+  },
+  "Q65": {
+    "title": "Do you support or oppose allowing Muslims to go to their own religious court to solve family disputes, such as divorce or inheritance?",
+    "wording": "Q65. Do you support or oppose allowing Muslims to go to their own religious court to solve family disputes, such as divorce or inheritance?",
+    "valid_codes": {
+      "1": "Support Muslims going to their own religious court",
+      "2": "Oppose Muslims going to their own religious court",
+      "3": "Other/Neither (DO NOT READ)"
+    }
+  },
+  "Q66a": {
+    "title": "In the last 12 months, have you personally felt discriminated against …? a. because you are a [man/woman]",
+    "wording": "Q66. In the last 12 months, have you personally felt discriminated against …? a. because you are a [man/woman]",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q66b": {
+    "title": "In the last 12 months, have you personally felt discriminated against …? b. because you are [QRELSING/a person with no religion]",
+    "wording": "Q66. In the last 12 months, have you personally felt discriminated against …? b. because you are [QRELSING/a person with no religion]",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q66c": {
+    "title": "In the last 12 months, have you personally felt discriminated against …? c. because of your caste",
+    "wording": "Q66. In the last 12 months, have you personally felt discriminated against …? c. because of your caste",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q67a": {
+    "title": "How proud are you to be …? a. Indian",
+    "wording": "Q67. How proud are you to be …? a. Indian",
+    "valid_codes": {
+      "1": "Very proud",
+      "2": "Somewhat proud",
+      "3": "Not very proud [OR]",
+      "4": "Not proud at all",
+      "5": "I am not ___ (DO NOT READ)"
+    }
+  },
+  "Q67b": {
+    "title": "How proud are you to be …? b. a [INSERT STATE] resident",
+    "wording": "Q67. How proud are you to be …? b. a [INSERT STATE] resident",
+    "valid_codes": {
+      "1": "Very proud",
+      "2": "Somewhat proud",
+      "3": "Not very proud [OR]",
+      "4": "Not proud at all",
+      "5": "I am not ___ (DO NOT READ)"
+    }
+  },
+  "Q67c": {
+    "title": "How proud are you to be …? c. [QRELSING/a person with no religion]",
+    "wording": "Q67. How proud are you to be …? c. [QRELSING/a person with no religion]",
+    "valid_codes": {
+      "1": "Very proud",
+      "2": "Somewhat proud",
+      "3": "Not very proud [OR]",
+      "4": "Not proud at all",
+      "5": "I am not ___ (DO NOT READ)"
+    }
+  },
+  "Q68": {
+    "title": "Was the partition of India and Pakistan a good thing or a bad thing for Hindu-Muslim relations?",
+    "wording": "Q68. Was the partition of India and Pakistan a good thing or a bad thing for Hindu-Muslim relations?",
+    "valid_codes": {
+      "1": "A good thing",
+      "2": "A bad thing",
+      "3": "Neither good nor bad (DO NOT READ)",
+      "4": "Depends (DO NOT READ)"
+    }
+  },
+  "Q69a": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? a. To be able to speak Hindi",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? a. To be able to speak Hindi",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69b": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? b. To be a Hindu",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? b. To be a Hindu",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69c": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? c. To respect the army",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? c. To respect the army",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69d": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? d. To stand for the national anthem",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? d. To stand for the national anthem",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69e": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? e. To respect elders",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? e. To respect elders",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69f": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? f. To respect all religions",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? f. To respect all religions",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69g": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? g. To know the history of India’s freedom struggle",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? g. To know the history of India’s freedom struggle",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69h": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? h. To respect the country’s institutions and laws",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? h. To respect the country’s institutions and laws",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69i": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? i. To support India’s cricket team",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? i. To support India’s cricket team",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q69j": {
+    "title": "Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? j. To have Indian ancestry",
+    "wording": "Q69. Some people say that the following things are important to be truly Indian. Others say that they are not important. How important do you think it is ... to be truly Indian? j. To have Indian ancestry",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q70": {
+    "title": "Please tell me if you completely agree, mostly agree, mostly disagree or completely disagree with the following statement: Indian people are not perfect, but Indian culture is superior to others.",
+    "wording": "Q70. Please tell me if you completely agree, mostly agree, mostly disagree or completely disagree with the following statement: Indian people are not perfect, but Indian culture is superior to others.",
+    "valid_codes": {
+      "1": "Completely agree",
+      "2": "Mostly agree",
+      "3": "Mostly disagree",
+      "4": "Completely disagree"
+    }
+  },
+  "Q72a": {
+    "title": "Do you generally …? a. wear a religious pendant, such as an amulet, cross, image or symbol of God",
+    "wording": "Q72. Do you generally …? a. wear a religious pendant, such as an amulet, cross, image or symbol of God",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72b": {
+    "title": "Do you generally …? b. wear a bindi",
+    "wording": "Q72. Do you generally …? b. wear a bindi",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72c": {
+    "title": "Do you generally …? c. wear a skullcap",
+    "wording": "Q72. Do you generally …? c. wear a skullcap",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72d": {
+    "title": "Do you generally …? d. wear a turban",
+    "wording": "Q72. Do you generally …? d. wear a turban",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72e": {
+    "title": "Do you generally …? e. wear a janeu",
+    "wording": "Q72. Do you generally …? e. wear a janeu",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72f": {
+    "title": "Do you generally …? f. wear a tilak",
+    "wording": "Q72. Do you generally …? f. wear a tilak",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72g": {
+    "title": "Do you generally …? g. wear a kara",
+    "wording": "Q72. Do you generally …? g. wear a kara",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72h": {
+    "title": "Do you generally …? h. carry a kirpan",
+    "wording": "Q72. Do you generally …? h. carry a kirpan",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q72i": {
+    "title": "Do you generally …? i. keep your hair long",
+    "wording": "Q72. Do you generally …? i. keep your hair long",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q73a": {
+    "title": "Outside your home, do you keep the practice of covering your head?",
+    "wording": "Q73a. Outside your home, do you keep the practice of covering your head?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "q73abrec": {
+    "title": "Outside your home, do you keep the practice of covering your head? [If yes] Do you wear a …?",
+    "wording": "Q73abrec. Outside your home, do you keep the practice of covering your head? [If yes] Do you wear a …?",
+    "valid_codes": {
+      "1": "Yes cover head, Hijab",
+      "2": "Yes cover head, Niqab",
+      "3": "Yes cover head, Burka",
+      "4": "Yes cover head, something else (DO NOT READ)",
+      "5": "Yes cover head, DK/ Refused",
+      "6": "No, does not cover head"
+    }
+  },
+  "QAGErec": {
+    "title": "Age in five categories (18-25/26-34/35-44/45-59/60+)",
+    "wording": "QAGErec. Age in five categories (18-25/26-34/35-44/45-59/60+)",
+    "valid_codes": {
+      "1": "18-25",
+      "2": "26-34",
+      "3": "35-44",
+      "4": "45-59",
+      "5": "60+"
+    }
+  },
+  "QFERTrec": {
+    "title": "How many children have you had? Please count all children born at any time in your life.",
+    "wording": "QFERTrec. How many children have you had? Please count all children born at any time in your life.",
+    "valid_codes": {
+      "1": "No Children",
+      "2": "One Child",
+      "3": "Two Children",
+      "4": "Three Children or More Children"
+    }
+  },
+  "QCHGENabrec": {
+    "title": "How many are daughters?",
+    "wording": "QCHGENabrec. How many are daughters?",
+    "valid_codes": {
+      "0": "No children",
+      "1": "No daughters among children",
+      "2": "At least one daughter"
+    }
+  },
+  "QMARRIEDrec": {
+    "title": "Are you currently …?",
+    "wording": "QMARRIEDrec. Are you currently …?",
+    "valid_codes": {
+      "1": "Married or living with a partner",
+      "2": "Divorced, separated, partner is no longer alive",
+      "3": "Unmarried"
+    }
+  },
+  "QSPRELrec": {
+    "title": "What is your [spouse/partner]’s religion, if any? Are they Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or no religion?",
+    "wording": "QSPRELrec. What is your [spouse/partner]’s religion, if any? Are they Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or no religion?",
+    "valid_codes": {
+      "1": "Spouse’s religion same as respondent",
+      "2": "Spouse’s religion different from respondent"
+    }
+  },
+  "QCHSPRELrec": {
+    "title": "Was your spouse/partner raised [QSPREL]? [If no] What religion was your spouse/partner raised as, if any? Were they Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or no religion?",
+    "wording": "QCHSPRELrec.Was your spouse/partner raised [QSPREL]? [If no] What religion was your spouse/partner raised as, if any? Were they Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or no religion?",
+    "valid_codes": {
+      "1": "Yes, spouse’s childhood religion same as their current religion",
+      "2": "No, spouse raised in a different religion than their current religion"
+    }
+  },
+  "QHHCH": {
+    "title": "Are you the parent or legal guardian of any children under the age of 18 who currently live in your household?",
+    "wording": "QHHCH. Are you the parent or legal guardian of any children under the age of 18 who currently live in your household?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QCHILDrec": {
+    "title": "In what religion, if any, are you raising your child/children? Are they being raised Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or no religion?",
+    "wording": "QCHILDrec. In what religion, if any, are you raising your child/children? Are they being raised Hindu, Muslim, Christian, Sikh, Buddhist, Jain, some other religion or no religion?",
+    "valid_codes": {
+      "1": "Raising child/children in same religion as respondent",
+      "2": "Raising child/children in different religion than respondent"
+    }
+  },
+  "Q74a": {
+    "title": "Does your child/do your children ever …? a. [go to the temple/go to the mosque/go to the gurudwara/attend religious services]",
+    "wording": "Q74. Does your child/do your children ever …? a. [go to the temple/go to the mosque/go to the gurudwara/attend religious services]",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Not applicable/Children too young (DO NOT READ)"
+    }
+  },
+  "Q74b": {
+    "title": "Does your child/do your children ever …? b. Pray",
+    "wording": "Q74. Does your child/do your children ever …? b. Pray",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Not applicable/Children too young (DO NOT READ)"
+    }
+  },
+  "Q74c": {
+    "title": "Does your child/do your children ever …? c. Read scripture",
+    "wording": "Q74. Does your child/do your children ever …? c. Read scripture",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Not applicable/Children too young (DO NOT READ)"
+    }
+  },
+  "Q74d": {
+    "title": "Does your child/do your children ever …? d. Receive religious instruction outside the home",
+    "wording": "Q74. Does your child/do your children ever …? d. Receive religious instruction outside the home",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Not applicable/Children too young (DO NOT READ)"
+    }
+  },
+  "Q75": {
+    "title": "How important is it for you that children in your family keep their hair long?",
+    "wording": "Q75. How important is it for you that children in your family keep their hair long?",
+    "valid_codes": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not too important [OR]",
+      "4": "Not at all important"
+    }
+  },
+  "Q76": {
+    "title": "Do you currently live in a joint family?",
+    "wording": "Q76. Do you currently live in a joint family?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q77arec": {
+    "title": "Did you vote in the last national election? [If yes] Which party did you vote for in the last national election?",
+    "wording": "Q77arec. Did you vote in the last national election? [If yes] Which party did you vote for in the last national election?",
+    "valid_codes": {
+      "1": "Voted, Bharatiya Janata Party (BJP)",
+      "2": "Voted, Congress Party / Indian National Congress (INC)",
+      "24": "Voted, Other party",
+      "994": "Voted, Don’t know (DO NOT READ)",
+      "995": "Voted, Refused (DO NOT READ)"
+    }
+  },
+  "QEDU": {
+    "title": "What is the highest level of school you have completed or the highest degree received?",
+    "wording": "QEDU. What is the highest level of school you have completed or the highest degree received?",
+    "valid_codes": {
+      "1": "Illiterate",
+      "2": "Literate but no formal schooling",
+      "3": "Primary education (primary certificate)",
+      "4": "Upper primary (upper primary certificate)",
+      "5": "High school; Industrial training institute (matriculation certificate or ITI certificate)",
+      "6": "Senior secondary / Intermediate (senior secondary school leaving certificate)",
+      "7": "Technical education training",
+      "8": "Nursing, general nursing and midwifery (GNM); Junior teachers training (diploma)",
+      "9": "Bachelor (university 1st) / MBBS, LLB",
+      "10": "Master (university 2nd) / Post-graduate diploma",
+      "11": "Doctor (tertiary 2nd)"
+    }
+  },
+  "ISCED": {
+    "title": "ISCED 1997 recoding of education.",
+    "wording": "ISCED. ISCED 1997 recoding of education.",
+    "valid_codes": {
+      "0": "ISCED 0",
+      "1": "ISCED 1",
+      "2": "ISCED 2",
+      "3": "ISCED 3",
+      "4": "ISCED 4",
+      "5": "ISCED 5"
+    }
+  },
+  "QINCINDrec": {
+    "title": "Here is a list of monthly household incomes. Which of these does your household typically fall into counting all wages, salaries, pensions and other incomes that come in? Just tell me which group your household falls into, before taxes a",
+    "wording": "QINCINDrec. Here is a list of monthly household incomes. Which of these does your household typically fall into counting all wages, salaries, pensions and other incomes that come in? Just tell me which group your household falls into, before taxes a",
+    "valid_codes": {
+      "1": "Rs. 10,000 and below",
+      "2": "Rs. 10,001 and above"
+    }
+  },
+  "QINT": {
+    "title": "Do you use the internet?",
+    "wording": "QINT. Do you use the internet?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QMOBILE": {
+    "title": "Do you use a mobile phone?",
+    "wording": "QMOBILE. Do you use a mobile phone?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q78": {
+    "title": "Can it connect to the internet?",
+    "wording": "Q78. Can it connect to the internet?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q79": {
+    "title": "Is it a smartphone?",
+    "wording": "Q79. Is it a smartphone?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q81": {
+    "title": "Do you use social media applications, such as Facebook or WhatsApp?",
+    "wording": "Q81. Do you use social media applications, such as Facebook or WhatsApp?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q82a": {
+    "title": "Do you ever use these apps to share information about …? a. religion",
+    "wording": "Q82. Do you ever use these apps to share information about …? a. religion",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q82b": {
+    "title": "Do you ever use these apps to share information about …? b. politics and current events",
+    "wording": "Q82. Do you ever use these apps to share information about …? b. politics and current events",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q82c": {
+    "title": "Do you ever use these apps to share information about …? c. music and movies",
+    "wording": "Q82. Do you ever use these apps to share information about …? c. music and movies",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q82d": {
+    "title": "Do you ever use these apps to share information about …? d. sports",
+    "wording": "Q82. Do you ever use these apps to share information about …? d. sports",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QPOVa": {
+    "title": "Have there been times during the last year when you did not have enough money … ? a. to buy food your family needed",
+    "wording": "QPOV. Have there been times during the last year when you did not have enough money … ? a. to buy food your family needed",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QPOVb": {
+    "title": "Have there been times during the last year when you did not have enough money … ? b. to pay for medical and health care your family needed",
+    "wording": "QPOV. Have there been times during the last year when you did not have enough money … ? b. to pay for medical and health care your family needed",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QPOVc": {
+    "title": "Have there been times during the last year when you did not have enough money … ? c. to pay rent or housing costs",
+    "wording": "QPOV. Have there been times during the last year when you did not have enough money … ? c. to pay rent or housing costs",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q83": {
+    "title": "In your home, do you have a …?",
+    "wording": "Q83. In your home, do you have a …?",
+    "valid_codes": {
+      "1": "Pit latrine",
+      "2": "Flush toilet [OR]",
+      "3": "Neither of these"
+    }
+  },
+  "QPTYrec": {
+    "title": "Regardless of which party you voted for in the last national election, which political party, if any, do you feel closest to?",
+    "wording": "QPTYrec. Regardless of which party you voted for in the last national election, which political party, if any, do you feel closest to?",
+    "valid_codes": {
+      "1": "Bharatiya Janata Party (BJP)",
+      "2": "Congress Party / Indian National Congress (INC)",
+      "24": "Other party",
+      "25": "Do not feel close to any party"
+    }
+  },
+  "QPTY2a": {
+    "title": "Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of ...? a. the BJP",
+    "wording": "QPTY2. Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of ...? a. the BJP",
+    "valid_codes": {
+      "1": "Very favorable",
+      "2": "Somewhat favorable",
+      "3": "Somewhat unfavorable",
+      "4": "Very unfavorable"
+    }
+  },
+  "QPTY2b": {
+    "title": "Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of ...? b. Congress",
+    "wording": "QPTY2. Please tell me if you have a very favorable, somewhat favorable, somewhat unfavorable or very unfavorable opinion of ...? b. Congress",
+    "valid_codes": {
+      "1": "Very favorable",
+      "2": "Somewhat favorable",
+      "3": "Somewhat unfavorable",
+      "4": "Very unfavorable"
+    }
+  },
+  "Q85": {
+    "title": "Were you raised in a …?",
+    "wording": "Q85. Were you raised in a …?",
+    "valid_codes": {
+      "1": "City",
+      "2": "Small town [OR]",
+      "3": "Village",
+      "4": "Other (DO NOT READ)"
+    }
+  },
+  "q85arec": {
+    "title": "In what state or union territory were you raised?",
+    "wording": "Q85arec. In what state or union territory were you raised?",
+    "valid_codes": {
+      "1": "Same as current state/union territory",
+      "2": "Different from current state/union territory"
+    }
+  },
+  "Q86a": {
+    "title": "Do you have relatives who live in other countries that you have communicated with or visited in the past 12 months?",
+    "wording": "Q86a. Do you have relatives who live in other countries that you have communicated with or visited in the past 12 months?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "Q86b_1": {
+    "title": "In what countries do these relatives live? 1. United Arab Emirates (UAE)",
+    "wording": "Q86b. In what countries do these relatives live? 1. United Arab Emirates (UAE)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_2": {
+    "title": "In what countries do these relatives live? 2. United States of America (USA)",
+    "wording": "Q86b. In what countries do these relatives live? 2. United States of America (USA)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_3": {
+    "title": "In what countries do these relatives live? 3. Saudi Arabia",
+    "wording": "Q86b. In what countries do these relatives live? 3. Saudi Arabia",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_4": {
+    "title": "In what countries do these relatives live? 4. Pakistan",
+    "wording": "Q86b. In what countries do these relatives live? 4. Pakistan",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_5": {
+    "title": "In what countries do these relatives live? 5. Oman",
+    "wording": "Q86b. In what countries do these relatives live? 5. Oman",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_6": {
+    "title": "In what countries do these relatives live? 6. Kuwait",
+    "wording": "Q86b. In what countries do these relatives live? 6. Kuwait",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_7": {
+    "title": "In what countries do these relatives live? 7. United Kingdom (UK, England, Great Britain)",
+    "wording": "Q86b. In what countries do these relatives live? 7. United Kingdom (UK, England, Great Britain)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_8": {
+    "title": "In what countries do these relatives live? 8. Qatar",
+    "wording": "Q86b. In what countries do these relatives live? 8. Qatar",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_9": {
+    "title": "In what countries do these relatives live? 9. Canada",
+    "wording": "Q86b. In what countries do these relatives live? 9. Canada",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_10": {
+    "title": "In what countries do these relatives live? 10. Nepal",
+    "wording": "Q86b. In what countries do these relatives live? 10. Nepal",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_11": {
+    "title": "In what countries do these relatives live? 11. Australia",
+    "wording": "Q86b. In what countries do these relatives live? 11. Australia",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_12": {
+    "title": "In what countries do these relatives live? 12. Bahrain",
+    "wording": "Q86b. In what countries do these relatives live? 12. Bahrain",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_13": {
+    "title": "In what countries do these relatives live? 13. Singapore",
+    "wording": "Q86b. In what countries do these relatives live? 13. Singapore",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_14": {
+    "title": "In what countries do these relatives live? 14. Italy",
+    "wording": "Q86b. In what countries do these relatives live? 14. Italy",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_15": {
+    "title": "In what countries do these relatives live? 15. Malaysia",
+    "wording": "Q86b. In what countries do these relatives live? 15. Malaysia",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_16": {
+    "title": "In what countries do these relatives live? 16. Bangladesh",
+    "wording": "Q86b. In what countries do these relatives live? 16. Bangladesh",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_17": {
+    "title": "In what countries do these relatives live? 17. Sri Lanka",
+    "wording": "Q86b. In what countries do these relatives live? 17. Sri Lanka",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_18": {
+    "title": "In what countries do these relatives live? 18. Bhutan",
+    "wording": "Q86b. In what countries do these relatives live? 18. Bhutan",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_19": {
+    "title": "In what countries do these relatives live? 19. China",
+    "wording": "Q86b. In what countries do these relatives live? 19. China",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_20": {
+    "title": "In what countries do these relatives live? 20. Burma (Myanmar)",
+    "wording": "Q86b. In what countries do these relatives live? 20. Burma (Myanmar)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_21": {
+    "title": "In what countries do these relatives live? 21. Mauritius",
+    "wording": "Q86b. In what countries do these relatives live? 21. Mauritius",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_97": {
+    "title": "In what countries do these relatives live? 97. Somewhere else",
+    "wording": "Q86b. In what countries do these relatives live? 97. Somewhere else",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_98": {
+    "title": "In what countries do these relatives live? 98. Don’t know (DO NOT READ)",
+    "wording": "Q86b. In what countries do these relatives live? 98. Don’t know (DO NOT READ)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q86b_99": {
+    "title": "In what countries do these relatives live? 99. Refused (DO NOT READ)",
+    "wording": "Q86b. In what countries do these relatives live? 99. Refused (DO NOT READ)",
+    "valid_codes": {
+      "1": "Selected",
+      "2": "Not Selected"
+    }
+  },
+  "Q87": {
+    "title": "Have you ever traveled outside of India?",
+    "wording": "Q87. Have you ever traveled outside of India?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "QIV7": {
+    "title": "Did the respondent have a beard?",
+    "wording": "QIV7. Did the respondent have a beard?",
+    "valid_codes": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "REGION": {
+    "title": "Indian zonal council region name",
+    "wording": "REGION. Indian zonal council region name",
+    "valid_codes": {
+      "1": "Northeast",
+      "2": "North",
+      "3": "Central",
+      "4": "East",
+      "5": "West",
+      "6": "South"
+    }
+  },
+  "Urban": {
+    "title": "Urbanicity",
+    "wording": "Urban. Urbanicity",
+    "valid_codes": {
+      "1": "Urban",
+      "2": "Rural"
+    }
+  }
+}
