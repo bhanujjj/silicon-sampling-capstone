@@ -16,5 +16,13 @@ bitsandbytes>=0.43
 accelerate>=0.33
 pandas
 pyarrow
-numpy
+# <2 pinned on purpose: this container ships a system-level scipy/scikit-learn
+# (pulled in transitively by transformers' generation utils) compiled against
+# NumPy 1.x. --upgrade-strategy eager (needed to fix a stale typing_extensions,
+# see the Bootstrap cell) otherwise bumps numpy to 2.x, which breaks those
+# compiled C extensions with "_ARRAY_API not found" / "numpy.core.multiarray
+# failed to import" -- hit for real on the actual lab GPU job. torch/
+# transformers/peft/trl at these versions all work fine on NumPy 1.x, so this
+# is the safe side to pin, not a limitation for this project.
+numpy<2
 huggingface_hub
