@@ -25,7 +25,15 @@ pyarrow
 # transformers/peft/trl at these versions all work fine on NumPy 1.x, so this
 # is the safe side to pin, not a limitation for this project.
 numpy<2
-huggingface_hub
+# <2.0 pinned on purpose: transformers==5.17.0's own runtime version check
+# (dependency_versions_check.py) requires huggingface-hub>=1.5.0,<2.0 and
+# raises ImportError otherwise -- this is STRICTER than what pip's resolver
+# infers on its own (a real, unconstrained `huggingface_hub` here resolved
+# to 2.0.0 without complaint, then failed at import time instead of install
+# time). Same class of issue as the typing_extensions pin above: don't
+# trust pip's resolver alone against this container's package set: verify
+# what transformers' own dependency_versions_check.py actually demands.
+huggingface_hub>=0.34,<2.0
 # gpt-oss-20b ships pre-quantized in MXFP4. Without the `kernels` package,
 # transformers silently falls back to dequantizing the whole model to bf16
 # in GPU memory instead -- roughly 4x the memory footprint (bf16 is ~2
