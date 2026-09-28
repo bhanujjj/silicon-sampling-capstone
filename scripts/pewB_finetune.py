@@ -229,18 +229,19 @@ def preflight(args) -> bool:
 
     write_status("preflight", f"loading {args.model} in 4-bit and running one real train step (this is the slow part, several minutes)")
     try:
-        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+        from transformers import AutoModelForCausalLM, AutoTokenizer
         from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True, bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.bfloat16,
-        )
+        # gpt-oss-20b ships PRE-quantized (MXFP4, declared in its own config.json)
+        # -- a separate BitsAndBytesConfig on top of that makes from_pretrained
+        # raise "model is quantized with Mxfp4Config but you are passing a
+        # BitsAndBytesConfig" (hit for real on the actual lab GPU job). No
+        # quantization_config needed: it already loads in its own ~4-bit format.
         tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
         model = AutoModelForCausalLM.from_pretrained(
-            args.model, quantization_config=bnb_config, device_map="auto", trust_remote_code=True,
+            args.model, device_map="auto", trust_remote_code=True,
         )
         model.config.use_cache = False
         model = prepare_model_for_kbit_training(model)
@@ -638,7 +639,7 @@ def main():
         write_status("failed", f"data build error: {e}", extra_log_path=dirs["logs"])
         sys.exit(1)
 
-    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+    from transformers import AutoModelForCausalLM, AutoTokenizer
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
     tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True, padding_side="right")
@@ -646,12 +647,10 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
 
     def model_loader():
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True, bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.bfloat16,
-        )
+        # See the matching note in preflight() -- gpt-oss-20b is pre-quantized
+        # (MXFP4) already, no separate BitsAndBytesConfig needed or accepted.
         m = AutoModelForCausalLM.from_pretrained(
-            args.model, quantization_config=bnb_config, device_map="auto", trust_remote_code=True,
+            args.model, device_map="auto", trust_remote_code=True,
         )
         m.config.use_cache = False
         m = prepare_model_for_kbit_training(m)
