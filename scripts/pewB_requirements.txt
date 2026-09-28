@@ -26,3 +26,10 @@ pyarrow
 # is the safe side to pin, not a limitation for this project.
 numpy<2
 huggingface_hub
+# gpt-oss-20b ships pre-quantized in MXFP4. Without the `kernels` package,
+# transformers silently falls back to dequantizing the whole model to bf16
+# in GPU memory instead -- roughly 4x the memory footprint (bf16 is ~2
+# bytes/param vs MXFP4's ~0.5), which came within a hair of OOMing on the
+# actual lab GPU's 42GB MIG slice. Pinned to the exact range transformers
+# itself asks for (its own warning names 0.16.0 <= version < 0.17.0).
+kernels==0.16.0
