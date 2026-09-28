@@ -241,7 +241,7 @@ def preflight(args) -> bool:
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
         model = AutoModelForCausalLM.from_pretrained(
-            args.model, device_map="auto", trust_remote_code=True,
+            args.model, device_map="auto", trust_remote_code=True, torch_dtype=torch.bfloat16,
         )
         model.config.use_cache = False
         model = prepare_model_for_kbit_training(model)
@@ -650,7 +650,7 @@ def main():
         # See the matching note in preflight() -- gpt-oss-20b is pre-quantized
         # (MXFP4) already, no separate BitsAndBytesConfig needed or accepted.
         m = AutoModelForCausalLM.from_pretrained(
-            args.model, device_map="auto", trust_remote_code=True,
+            args.model, device_map="auto", trust_remote_code=True, torch_dtype=torch.bfloat16,
         )
         m.config.use_cache = False
         m = prepare_model_for_kbit_training(m)
