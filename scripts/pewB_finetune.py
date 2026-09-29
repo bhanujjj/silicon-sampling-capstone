@@ -473,7 +473,7 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
     total_steps = int(steps_per_epoch * args.epochs)
 
     progress_jsonl = dirs["logs"] / "train_progress.jsonl"
-    hf_dataset = Dataset.from_list(train_examples)
+    hf_dataset = Dataset.from_list([{"text": e["text"]} for e in train_examples])  # text-only: a "prompt" column makes trl expect "completion"
 
     while batch_size >= 1:
         try:
