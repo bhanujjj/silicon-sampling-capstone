@@ -8,9 +8,11 @@ same prompt/parsing pipeline shape, swapped to:
       vs WVS's 1,692) + pew_selected_items.json + pew_folds.json
     - demographics: src.prompts.verbalize_pew (Pew column names) instead
       of src.prompts.verbalize
-    - model: openai/gpt-oss-20b by default (not gpt-oss-120b) -- ~5x
-      smaller download, same MoE architecture/chat template, fits
-      comfortably on a single lab GPU in 4-bit
+    - model: Qwen/Qwen2.5-7B-Instruct by default, standard 4-bit QLoRA
+      (~6GB on the GPU) -- fits the lab GPU's 40GB slice easily.
+      gpt-oss-20b was tried first and cannot be fine-tuned on this
+      hardware: transformers marks its native MXFP4 format non-trainable,
+      and dequantizing to bf16 needs ~42GB
 
 Data note: the raw CSV, cleaned parquet, codebook (302/304 columns
 verified, parsed from Pew's own DDI metadata XML -- see
@@ -105,9 +107,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-DEFAULT_MODEL = "openai/gpt-oss-20b"
-MIN_FREE_DISK_GB = 60  # gpt-oss-20b native MXFP4 is ~13GB; generous headroom for checkpoints + HF cache
-MIN_GPU_MEM_GB = 16  # gpt-oss-20b in 4-bit needs far less than the 120B model's 60GB floor
+DEFAULT_MODEL = "Qwen/Qwen2.5-7B-Instruct"
+MIN_FREE_DISK_GB = 60  # ~15GB model download; generous headroom for checkpoints + HF cache
+MIN_GPU_MEM_GB = 16  # a 7B model in 4-bit needs ~6GB + activations
 STATUS_PATH = Path("pewB_status.json")  # repo-root path -- see TRACKB_LAB_INSTRUCTIONS.md for the (shared) tmux/nohup workflow
 
 
@@ -229,19 +231,19 @@ def preflight(args) -> bool:
 
     write_status("preflight", f"loading {args.model} in 4-bit and running one real train step (this is the slow part, several minutes)")
     try:
-        from transformers import AutoModelForCausalLM, AutoTokenizer
+        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
         from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
-        # gpt-oss-20b ships PRE-quantized (MXFP4, declared in its own config.json)
-        # -- a separate BitsAndBytesConfig on top of that makes from_pretrained
-        # raise "model is quantized with Mxfp4Config but you are passing a
-        # BitsAndBytesConfig" (hit for real on the actual lab GPU job). No
-        # quantization_config needed: it already loads in its own ~4-bit format.
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True, bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.bfloat16,
+        )
         tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
         model = AutoModelForCausalLM.from_pretrained(
-            args.model, device_map="auto", trust_remote_code=True, torch_dtype=torch.bfloat16,
+            args.model, quantization_config=bnb_config, device_map="auto",
+            trust_remote_code=True, torch_dtype=torch.bfloat16,
         )
         model.config.use_cache = False
         model = prepare_model_for_kbit_training(model)
@@ -564,7 +566,7 @@ def main():
     ap.add_argument("--fold", type=int, default=0)
     ap.add_argument("--n-items", type=int, default=8, help="73 items pass full screening (data/processed/pew_selected_items.json); 8 keeps the real run to roughly a quarter of the steps that 15 needs, more overnight-run friendly -- raise this if you have more GPU time")
     ap.add_argument("--epochs", type=float, default=1.0)
-    ap.add_argument("--batch-size", type=int, default=4, help="gpt-oss-20b is far smaller than the 120B model -- preflight will tell you if you can safely go higher still")
+    ap.add_argument("--batch-size", type=int, default=4, help="Conservative for a 7B model in 4-bit -- preflight reports peak memory so you can judge if it can go higher")
     ap.add_argument("--grad-accum", type=int, default=8)
     ap.add_argument("--lr", type=float, default=2e-4)
     ap.add_argument("--save-steps", type=int, default=50, help="Frequent by default -- checkpoints are small LoRA adapters, cheap to save often, expensive to lose")
@@ -639,7 +641,7 @@ def main():
         write_status("failed", f"data build error: {e}", extra_log_path=dirs["logs"])
         sys.exit(1)
 
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
     tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True, padding_side="right")
@@ -647,10 +649,13 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
 
     def model_loader():
-        # See the matching note in preflight() -- gpt-oss-20b is pre-quantized
-        # (MXFP4) already, no separate BitsAndBytesConfig needed or accepted.
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True, bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.bfloat16,
+        )
         m = AutoModelForCausalLM.from_pretrained(
-            args.model, device_map="auto", trust_remote_code=True, torch_dtype=torch.bfloat16,
+            args.model, quantization_config=bnb_config, device_map="auto",
+            trust_remote_code=True, torch_dtype=torch.bfloat16,
         )
         m.config.use_cache = False
         m = prepare_model_for_kbit_training(m)

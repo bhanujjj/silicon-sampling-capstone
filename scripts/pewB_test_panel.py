@@ -13,7 +13,7 @@ answer) rows read far better than a table of aggregate metrics alone.
 
 Usage:
     python scripts/pewB_test_panel.py \\
-        --model-path pewB_run/model_fold0 --base-model openai/gpt-oss-20b \\
+        --model-path pewB_run/model_fold0 --base-model Qwen/Qwen2.5-7B-Instruct \\
         --fold 0 --n-respondents 8 --n-items 5
 """
 
@@ -106,7 +106,7 @@ def to_markdown(rows: list) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model-path", required=True)
-    ap.add_argument("--base-model", default="openai/gpt-oss-20b")
+    ap.add_argument("--base-model", default="Qwen/Qwen2.5-7B-Instruct")
     ap.add_argument("--fold", type=int, default=0)
     ap.add_argument("--n-respondents", type=int, default=8)
     ap.add_argument("--n-items", type=int, default=5)

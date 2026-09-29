@@ -1,43 +1,34 @@
-# transformers/trl/peft are pinned to EXACT versions on purpose: this whole
-# script was verified (real forward/backward step, real SFTConfig
-# construction, real Trainer callback dispatch) against these exact
-# versions. `trl>=0.9` used to resolve to trl 1.13.0 -- a major-version jump
-# with breaking API changes (SFTConfig replacing TrainingArguments,
-# processing_class replacing tokenizer=, max_length replacing
-# max_seq_length=) that silently broke this script. Do not loosen these
-# pins unless you re-verify SFTConfig/SFTTrainer construction against
-# whatever version you switch to.
+# transformers/trl/peft are pinned to EXACT versions on purpose: the training
+# code was verified (real SFTConfig construction, real Trainer callback
+# dispatch) against these exact versions. `trl>=0.9` once resolved to trl
+# 1.13.0 -- a major-version jump that silently broke it. Do not loosen these
+# pins unless you re-verify SFTConfig/SFTTrainer construction.
 torch>=2.1
 transformers==5.17.0
 peft==0.21.0
 trl==1.13.0
 datasets>=2.14
 bitsandbytes>=0.43
-accelerate>=0.33
 pandas
 pyarrow
-# <2 pinned on purpose: this container ships a system-level scipy/scikit-learn
-# (pulled in transitively by transformers' generation utils) compiled against
-# NumPy 1.x. --upgrade-strategy eager (needed to fix a stale typing_extensions,
-# see the Bootstrap cell) otherwise bumps numpy to 2.x, which breaks those
-# compiled C extensions with "_ARRAY_API not found" / "numpy.core.multiarray
-# failed to import" -- hit for real on the actual lab GPU job. torch/
-# transformers/peft/trl at these versions all work fine on NumPy 1.x, so this
-# is the safe side to pin, not a limitation for this project.
+
+# Everything below is pinned to what transformers==5.17.0's OWN runtime check
+# (transformers/dependency_versions_table.py) demands. pip's resolver alone
+# is not enough on the lab container: an unconstrained huggingface_hub
+# resolved to 2.0.0 and transformers then refused to import.
+accelerate>=1.1.0
+huggingface_hub>=1.5.0,<2.0
+tokenizers>=0.23.1,<0.24.0
+safetensors>=0.8.0
+regex>=2025.10.22
+
+# The lab container ships system-level scipy/scikit-learn/typing_extensions
+# compiled for NumPy 1.x / far too old (missing TypeIs, Self). transformers
+# imports sklearn unconditionally, so a NumPy 2.x install broke it with
+# "_ARRAY_API not found". numpy<2 plus our own fresh scipy/scikit-learn/
+# typing_extensions in user site-packages (which shadow the system copies)
+# keeps them mutually consistent.
 numpy<2
-# <2.0 pinned on purpose: transformers==5.17.0's own runtime version check
-# (dependency_versions_check.py) requires huggingface-hub>=1.5.0,<2.0 and
-# raises ImportError otherwise -- this is STRICTER than what pip's resolver
-# infers on its own (a real, unconstrained `huggingface_hub` here resolved
-# to 2.0.0 without complaint, then failed at import time instead of install
-# time). Same class of issue as the typing_extensions pin above: don't
-# trust pip's resolver alone against this container's package set: verify
-# what transformers' own dependency_versions_check.py actually demands.
-huggingface_hub>=0.34,<2.0
-# gpt-oss-20b ships pre-quantized in MXFP4. Without the `kernels` package,
-# transformers silently falls back to dequantizing the whole model to bf16
-# in GPU memory instead -- roughly 4x the memory footprint (bf16 is ~2
-# bytes/param vs MXFP4's ~0.5), which came within a hair of OOMing on the
-# actual lab GPU's 42GB MIG slice. Pinned to the exact range transformers
-# itself asks for (its own warning names 0.16.0 <= version < 0.17.0).
-kernels==0.16.0
+scipy
+scikit-learn
+typing_extensions>=4.12

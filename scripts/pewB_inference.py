@@ -16,12 +16,12 @@ Usage (after training has produced e.g. pewB_run/model_fold0/):
 
     python scripts/pewB_inference.py \\
         --model-path pewB_run/model_fold0 \\
-        --base-model openai/gpt-oss-20b \\
+        --base-model Qwen/Qwen2.5-7B-Instruct \\
         --question-id Q37a --sex Female --religion Hindu --urban-rural Rural
 
     # or from Python / another notebook cell:
     from scripts.pewB_inference import PewSimulator
-    sim = PewSimulator.load("pewB_run/model_fold0", base_model="openai/gpt-oss-20b")
+    sim = PewSimulator.load("pewB_run/model_fold0", base_model="Qwen/Qwen2.5-7B-Instruct")
     sim.answer("Q37a", sex="Female", religion="Hindu", urban_rural="Rural")
 
 Optional --merge writes a second, standalone directory with the LoRA
@@ -124,7 +124,7 @@ class PewSimulator:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model-path", required=True, help="Path to the saved LoRA adapter dir, e.g. pewB_run/model_fold0")
-    ap.add_argument("--base-model", default="openai/gpt-oss-20b")
+    ap.add_argument("--base-model", default="Qwen/Qwen2.5-7B-Instruct")
     ap.add_argument("--question-id", required=True)
     ap.add_argument("--sex")
     ap.add_argument("--religion")

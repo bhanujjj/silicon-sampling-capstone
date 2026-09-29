@@ -126,11 +126,11 @@ python -m scripts.pewB_finetune --fold 0
 
 # After training: answer new questions without retraining
 python scripts/pewB_inference.py --model-path pewB_run/model_fold0 \
-  --base-model openai/gpt-oss-20b --question-id Q43b --sex Female --religion Hindu
+  --base-model Qwen/Qwen2.5-7B-Instruct --question-id Q43b --sex Female --religion Hindu
 
 # Paper-ready results table
 python scripts/pewB_test_panel.py --model-path pewB_run/model_fold0 \
-  --base-model openai/gpt-oss-20b --fold 0 --n-respondents 8 --n-items 5
+  --base-model Qwen/Qwen2.5-7B-Instruct --fold 0 --n-respondents 8 --n-items 5
 ```
 
 **To regenerate the processed data from scratch** (only if you replace the
@@ -147,16 +147,27 @@ test panel), run the same reporting pipeline Track A/B already use — the
 predictions parquet this script writes matches that exact schema:
 
 ```bash
-python -m src.report.evaluate_run --predictions results/predictions/pewB_openai_gpt-oss-20b_fold0_P2.parquet
+python -m src.report.evaluate_run --predictions results/predictions/pewB_Qwen_Qwen2.5-7B-Instruct_fold0_P2.parquet
 ```
 
-## Why gpt-oss-20b instead of gpt-oss-120b
+## Why Qwen2.5-7B-Instruct (and not gpt-oss)
 
-Same MoE family and chat template as the WVS Track B model, ~5x smaller
-download (~13GB vs ~60GB), fits easily in 4-bit on a single lab GPU
-(`MIN_GPU_MEM_GB = 16` in the preflight check, vs 60 for the 120B model).
-Change `CONFIG["model"]` / `--model` back to `openai/gpt-oss-120b` if you
-want the larger model instead — nothing else needs to change either way.
+`Qwen/Qwen2.5-7B-Instruct` with standard 4-bit QLoRA: ungated, ~15GB download,
+~6GB on the GPU, fits the lab GPU's 40GB MIG slice with room to spare.
+
+`gpt-oss-20b` was tried first and is **not usable for fine-tuning on this
+hardware** (found by reading the installed transformers/peft source after a
+long chain of failures on the lab machine):
+
+- transformers' MXFP4 loader is marked `is_trainable = False`, and the Trainer
+  raises "quantization method do not support training" for it.
+- The documented workaround (`Mxfp4Config(dequantize=True)`) needs ~42GB for
+  the weights alone; the lab slice has 39.5GB (it ran out of memory at 33GB).
+- peft's `prepare_model_for_kbit_training` also upcasts its bf16 weights to
+  fp32, which is what produced the `triton.language.float32` kernel crash.
+
+If you get a bigger GPU (80GB+), gpt-oss-20b becomes possible via
+`Mxfp4Config(dequantize=True)` -- that is a different code path from this one.
 
 ## A real bug this package's verification found and fixed
 
