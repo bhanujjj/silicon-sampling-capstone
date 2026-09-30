@@ -473,7 +473,7 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
     total_steps = int(steps_per_epoch * args.epochs)
 
     progress_jsonl = dirs["logs"] / "train_progress.jsonl"
-    hf_dataset = Dataset.from_list([{"text": e["text"]} for e in train_examples])  # text-only: a "prompt" column makes trl expect "completion"
+    hf_dataset = Dataset.from_list([{"prompt": e["prompt"], "completion": "\n\n" + e["answer"]} for e in train_examples])  # prompt/completion: loss only on the answer
 
     while batch_size >= 1:
         try:
@@ -505,7 +505,7 @@ def train_with_oom_backoff(args, train_examples, tokenizer, model_loader, dirs: 
                 report_to="none",
                 packing=False,
                 max_length=768,
-                dataset_text_field="text",
+                completion_only_loss=True,
             )
             trainer = SFTTrainer(
                 model=model,
@@ -565,14 +565,14 @@ def main():
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--fold", type=int, default=0)
     ap.add_argument("--n-items", type=int, default=8, help="73 items pass full screening (data/processed/pew_selected_items.json); 8 keeps the real run to roughly a quarter of the steps that 15 needs, more overnight-run friendly -- raise this if you have more GPU time")
-    ap.add_argument("--epochs", type=float, default=1.0)
+    ap.add_argument("--epochs", type=float, default=0.5)
     ap.add_argument("--batch-size", type=int, default=4, help="Conservative for a 7B model in 4-bit -- preflight reports peak memory so you can judge if it can go higher")
     ap.add_argument("--grad-accum", type=int, default=8)
     ap.add_argument("--lr", type=float, default=2e-4)
     ap.add_argument("--save-steps", type=int, default=50, help="Frequent by default -- checkpoints are small LoRA adapters, cheap to save often, expensive to lose")
     ap.add_argument("--smoke-test", action="store_true")
     ap.add_argument("--preflight", action="store_true", help="Run ONLY the safety checks, then exit. Do this first, always.")
-    ap.add_argument("--output-dir", default="./pewB_run", help="Single folder holding cache/checkpoints/logs/predictions for this run -- safe to copy off the lab machine as one directory")
+    ap.add_argument("--output-dir", default="./pewB_run_v2", help="Single folder holding cache/checkpoints/logs/predictions for this run -- safe to copy off the lab machine as one directory")
     ap.add_argument("--rebuild-data", action="store_true", help="Ignore any cached training examples in output-dir/cache and rebuild from the parquet")
     args = ap.parse_args()
 
@@ -756,7 +756,7 @@ def main():
             pd.DataFrame(rows).to_parquet(dirs["predictions"] / "partial_predictions.parquet")
 
     pred_df = pd.DataFrame(rows)
-    out_name = f"pewB_{args.model.replace('/', '_')}_fold{args.fold}_P2.parquet"
+    out_name = f"pewB_{args.model.replace('/', '_')}_fold{args.fold}_answeronly_P2.parquet"
     out_path = Path(RESULTS_DIR) / "predictions" / out_name
     out_path.parent.mkdir(parents=True, exist_ok=True)
     pred_df.to_parquet(out_path)
